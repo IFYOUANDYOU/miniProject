@@ -1,0 +1,35 @@
+{
+  "pages":[
+
+    "pages/index/index",
+    "pages/authorize/authorize",
+
+    "pages/user/user",
+    "pages/news/news",
+    "pages/chatroom/chatroom",
+    "pages/arecord/arecord",
+    "pages/billDt/billDt",
+    "pages/attention/attention",
+    "pages/withdraw/withdraw",
+    "pages/wdResult/wdResult",
+    "pages/feedback/feedback",
+
+    "pages/visitDT/visitDT",
+    "pages/visitCard/visitCard",
+    
+    "pages/followup/followup",
+    "pages/outpatient/outpatient",
+    "pages/step1/step1",
+    "pages/step2/step2",
+    "pages/step3/step3",  
+    
+    "pages/drugDT/drugDT"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "康复链 - 患者端",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,93 @@
+    <!--幻灯片-->
+    <view class="slider-container" >
+        <swiper class="wx-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  current="{{CUrrent}}" bindchange="swiperChange">
+            <block wx:for="{{newsdata}}" wx:key="k" wx:for-index="index">
+                <swiper-item bindtap="click_swiper" data-index="{{index}}">
+                <image src="{{item.mood_img}}" data-index="{{index}}" class="wx-swiper-image" bindload="imgSy" style="height:{{item.imageheight}}px;"  />
+                <!--新增5.8号
+                <view class="slider_foot_box {{item.slider_foot == 1?'hide':''}}">
+                  <view class="slider_foot_box_a fl" bindtap="slider_xz" data-index="{{index}}">
+                    <image class="slider_foot_box_a_img" src="/images/icon/slider_xz.png"></image>
+                    <text class="slider_foot_box_a_text">下载图片</text>
+                  </view>
+                  <view class="slider_foot_box_a fl" bindtap="slider_fz" data-index="{{index}}">
+                    <image class="slider_foot_box_a_img" src="/images/icon/slider_fz.png"></image>
+                    <text class="slider_foot_box_a_text">复制文本</text>
+                  </view>
+                  <button open-type="share" class="slider_foot_box_a slider_foot_box_a_bt fl">
+                    <image class="slider_foot_box_a_img" src="/images/icon/icon_fx.png"></image>
+                    <text class="slider_foot_box_a_text">生成海报</text>
+                  </button>
+                </view>-->
+
+                </swiper-item>
+                <view class="slider-fz" style="">
+                {{newsdata[Index_text].mood_word}}
+                </view>        
+               
+                <!--<view class="slid_box">
+                  <view class="slid_xz fl"></view>
+                  <view class="slid_fz fl"></view>
+                  <view class="slid_fx fl"></view>
+                </view>-->
+
+            </block>
+            <!--曾经的当前序号-->
+            <view class="slider_number" style="top:{{(windowHeight)/2}}px;">
+                <!--{{Hq_index}}/{{newsDtata.length}}-->
+            </view>
+            
+        </swiper>
+        <view style="position: absolute;bottom:20rpx;width:100%">
+            <view class="home_swiper_function">
+                <view class="home_swiper_function_1" bindtap="click_zan"><image class="home_swiper_function_1_img" src=" {{ swiper_data.is_like==1 ?'/images/icon/new_xq_pic1.png':'/images/icon/new_xq_pic5.png'}}"></image> 赞</view>
+                <view class="home_swiper_function_1" bindtap="click_pay"><image class="home_swiper_function_1_img2" src="/images/icon/new_xq_pic2.png"></image> 赏</view>
+                <view class="home_swiper_function_1" bindtap="click_shouchang"><image class="home_swiper_function_1_img3" src=" {{ swiper_data.is_collect==1 ?'/images/icon/new_xq_pic3.png':'/images/icon/new_xq_pic6.png'}}"></image> 收藏</view>
+                <!--<view class="home_swiper_function_1"><image class="home_swiper_function_1_img4" src="/images/icon/new_xq_pic4.png"></image> 下载</view>-->
+            </view>
+            <view class="home_swiper_btn">
+                <text class="home_swiper_btn_text" bindtap="produce_haibao" data-id="{{item.id}}">生成海报</text> 
+            </view>
+        </view>
+        <!--赏 页面-->
+        <view class="{{ hide_page == 0?'home_swiper_hide_page_box2':'home_swiper_hide_page_box' }}">
+            <view  class=" {{bg_gray_judge == 1?'bg_gray':'home_swiper_hide_page'}}">
+                <view class="home_swiper_hide_page_imgbox"><image class="home_swiper_hide_page_img" src="/images/icon/cancel.png" bindtap="cancel_"></image></view>
+                <view style="width:100%;height:100rpx;display: flex;align-items: center;justify-content: center;">
+                    <view class="home_swiper_hide_page_logo">赏</view>
+                </view>
+                <view class="home_swiper_hide_price">
+                    <text class="home_swiper_hide_price1">0.16</text>
+                    <text class="home_swiper_hide_price1" style="margin:0 30rpx">0.66</text>
+                    <text class="home_swiper_hide_price1">1.68</text>
+                </view>
+                <view class="home_swiper_hide_price">
+                    <text class="home_swiper_hide_price1">3.88</text>
+                    <text class="home_swiper_hide_price1" style="margin:0 30rpx">5.20</text>
+                    <text class="home_swiper_hide_price1">8.88</text>
+                </view>
+                <view class="home_swiper_hide_price_else" bindtap="click_others_price">其他金额</view>
+                <view class="home_swiper_hide_info">注：赞赏是为了表示鼓励而对作者的无偿赠予</view>
+                <!--其他金额-->
+                <view class="{{hide_page2 == 0?'home_swiper_hide_price_others_page_box2':'home_swiper_hide_price_others_page_box'}}">
+                    <view class="home_swiper_hide_price_others_page">
+                        <view class="home_swiper_hide_page_imgbox" style="justify-content: space-between;margin-top:15rpx;border-bottom: 1rpx solid #eeeeee;padding:30rpx 0 50rpx 0;">
+                            <image class="home_swiper_hide_page_img" src="/images/icon/cancel.png" bindtap="cancel_2"></image>
+                            <text class="home_swiper_hide_page_text">其他金额</text>
+                            <view ></view>
+                        </view>
+                        <view class="home_swiper_hide_price_form_box">
+                            <form>
+                                <view style="display: flex;align-items: center;justify-content: space-around;margin:20rpx 0;">
+                                    <text style="margin-left:50rpx">金额（元）</text>
+                                    <input class="home_swiper_hide_price_form_input" placeholder="可填写1-256" />
+                                </view>
+                                <button type="primary">赞赏</button>
+                            </form>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+

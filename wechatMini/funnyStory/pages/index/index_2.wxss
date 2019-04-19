@@ -1,0 +1,44 @@
+/* pages/index/index_2.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.mjs_layer{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.mjs_choose_box{
+  width: 100%;
+  height: 450rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.img_box{
+  width: 200rpx;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  font-family: SimHei;
+  color: #a1a1a1;
+  transform: translateY(300rpx) scale(0);
+}
+.img{
+  width: 100%;
+  height: 200rpx;
+  margin-bottom: 32rpx;
+
+}
+.mar{
+  margin:0 28rpx;
+}

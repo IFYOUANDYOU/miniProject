@@ -1,0 +1,27 @@
+<!--pages/zhufuhua-ku/zhufuhua-ku.wxml-->
+<view class='bg'>
+  <image class='bg-img' src='../image/zhufuhua-bg.png'></image>
+  <scroll-view scroll-x="{{true}}" class='top_croll' >
+       <block wx:for="{{type_list}}" wx:key="{{index}}">
+        <view class="{{current_index==item.id?'txt-one txt-one1':'txt-one'}}" catchtap='change_currrent' data-id="{{item.id}}" >{{item.name}}</view>
+       </block>
+  </scroll-view>
+  <scroll-view scroll-y class='content' bindscrolltolower="get_list">
+    <view class='yu-ku'>
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <view class='list' catchtap='show' style='background:url("{{bg_img}}") center center no-repeat;background-size: 100% 100%;' data-index="{{index}}">
+        <!-- <image class='list-bg' src='../image/zhufuhua-ku-bg.png'></image> -->
+        <view class='text' >{{item.content}}</view>
+        <view class='select'wx:if="{{item.show}}">
+          <image src='../image/zhufuhua-ku-c.png'></image>
+          <view class='se-btn'>
+            <view class='sebtn1' catchtap='choose' data-content="{{item.content}}">选择</view>
+            <view class='sebtn2' catchtap='copy' data-index="{{index}}" data-content="{{item.content}}">复制</view>
+          </view>
+        </view>
+      </view>
+    </block>
+    </view>
+  </scroll-view>
+</view>
+

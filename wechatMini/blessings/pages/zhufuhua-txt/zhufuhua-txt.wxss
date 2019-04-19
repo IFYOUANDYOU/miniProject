@@ -1,0 +1,233 @@
+/* pages/zhufuhua-txt/zhufuhua-txt.wxss */
+page{
+	background: #db2727;
+	font-family: "微软雅黑";
+  height: 100%;
+  overflow: hidden;
+}
+
+
+canvas{
+  width: 100%;
+  height: 100%;
+}
+.mycanvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1500rpx;
+  left: 0rpx;
+}
+.content{
+	width: 628rpx;
+	height: 815rpx;
+	margin: 0 auto;
+	margin-top: 53rpx;
+	background: #fff;
+	border-radius: 36rpx;
+	position: relative;
+	overflow: hidden;
+}
+.content .con-bg{
+	width: 628rpx;
+	height: 815rpx;
+	
+}
+.content .detail{
+	width: 628rpx;
+	height: 815rpx;
+	position: absolute;
+	left: 0;top: 0;
+}
+.content .detail .user-img{
+	width: 180rpx;
+	height: 180rpx;
+	margin: 0 auto;
+	margin-top: 85rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.content .detail .user-img image{
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
+}
+.content .detail .to{
+	overflow: hidden;
+	margin-left: 50rpx;
+	margin-top: 40rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .detail .to .todo{
+	font-size: 38rpx;
+	color: #7e7d7d;
+	float: left;
+}
+.content .detail .to .to-in{
+	float: left;
+	font-size: 36rpx;
+	margin-left: 15rpx;
+	color: #7e7d7d;
+	margin-top: 2rpx;
+}
+.content .detail .do-txt{
+	font-size: 40rpx;
+	color: #1e1818;
+	width: 530rpx;
+	height: 220rpx;
+	margin:  0 auto;
+	margin-top: 10rpx;
+	line-height: 50rpx;
+}
+.mess{
+	width: 100%;
+ box-sizing: border-box;
+ padding-right: 50rpx;
+  margin: 0 auto;
+  margin-right: 50rpx;
+	margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.mess .name{
+
+	font-size: 30rpx;
+	color: #7e7d7d;
+	overflow: hidden;
+  width: 220rpx;
+  text-align: center;
+}
+.mess .time{
+  width: 220rpx;
+  text-align: center;
+
+	font-size: 30rpx;
+	color: #7e7d7d;
+	margin-top: 5rpx;
+	overflow: hidden;
+}
+.ku-url{
+	font-size: 40rpx;
+	color: #eab11f;
+	text-decoration: underline;
+	margin-top: 40rpx;
+	margin-left: 60rpx;
+}
+.btn{
+	width: 630rpx;
+	margin: 0 auto;
+	margin-top: 40rpx;
+}
+.btn .h-btn{
+	width: 286rpx;
+	height: 96rpx;
+	border: 2rpx solid #eab11f;
+	border-radius: 10rpx;
+	float: left;
+	color: #eab11f;
+	font-size: 46rpx;
+	line-height: 96rpx;
+	background-color: #db2727;
+}
+.btn .f-btn{
+	width: 290rpx;
+	height: 100rpx;
+	border-radius: 10rpx;
+	float: right;
+	color: #fff;
+	font-size: 46rpx;
+	background-color: #eab11f;
+	line-height: 96rpx;
+  text-align: center;
+}
+
+
+
+
+.share_box{
+  width: 100%;
+  height: 448rpx;
+  background: RGBA(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(448rpx);
+}
+.share{
+  width: 190rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+  color: RGBA(205, 205, 205, 1);
+  font-family: "Adobe Heiti Std R";
+}
+.margin{
+  margin-right: 160rpx;
+}
+.share_img{
+  width: 190rpx;
+  height: 190rpx;
+ 
+
+}
+.txt{
+   margin-top: 20rpx;
+}
+button{
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 190rpx;
+  padding: 0;
+}
+
+
+
+
+
+
+/*图片展示  */
+.show_img{
+  width: 100%;
+  height: 100%;
+  background: RGBA(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.img_center{
+  width: 70%;
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: white;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img{
+  width: 100%;
+  margin: 20rpx 0;
+}
+
+

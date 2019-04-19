@@ -1,0 +1,21 @@
+.prescrip{border-bottom: 2rpx solid #f0f0f0;background-color: #f9f9f9;margin: 42rpx;}
+.prescrip image{border: 2rpx solid #fff;width: 668rpx;}
+.prescrip .upimg{position: relative;background-image: url(http://ys9958.com/public/upload/public/loading.gif);background-repeat: no-repeat;background-position: center center;background-size: 40rpx auto;}
+.prescrip .del{display: block;position: absolute;top: 2rpx;right: 2rpx;background: #4c4c4c;color: #fff;width: 44rpx;height: 44rpx;line-height: 44rpx;text-align: center;font-size: 36rpx;}
+.prescrip .del::after{font-family: "iconfont";content: "\e646";}
+
+.up::before,.upload::before{display: block;font-family: "iconfont";}
+.up{text-align: center;font-size: 24rpx;background: #f9f9f9;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.up::before{content: "\e6d9";font-size: 46rpx;color: #a1a5a5;}
+.upload{text-align: center;border-bottom: 2rpx solid #f0f0f0;padding-bottom: 60rpx;padding-top: 20rpx;}
+.upload::before{content: "\e77f";font-size: 92rpx;}
+
+.takebtns{display: flex;position: absolute;bottom: 0;left: 0;right: 0;justify-content: space-around;background: #fff;}
+.takebtns .tbtn{box-shadow: none;background: transparent;flex: 1;height: 88rpx;line-height: 88rpx;background: #ccc;color: #fff;border-radius: 0;font-size: 32rpx;}
+.takebtns .tbtn::before,.takebtns .tbtn::after{display: none;}
+.takebtns .confirm{background: #3081f2;}
+
+.camerapop{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0, 0, 0, 0.8);}
+.controls {position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+.noticeTXT{font-size: 30rpx;line-height: 88rpx;color: #f00;position: absolute;top: 45%;left: 0;right: 0;text-align: center;z-index: 9;}
+.camera{position: absolute;top: 0;bottom: 88rpx;background: rgba(0, 0, 0, 0.4);}

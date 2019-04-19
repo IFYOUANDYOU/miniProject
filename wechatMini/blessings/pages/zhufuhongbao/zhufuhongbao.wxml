@@ -1,0 +1,84 @@
+<!--pages/zhufuhongbao/zhufuhongbao.wxml-->
+<view class='bg'>
+
+  <image class='page-bg' src='../image/zhufuhua-bg.png'></image>
+  <view class='nr'>
+    <view class='fs'>
+      <image wx:if="{{playing}}" class='play_gif' src='../image/gif.gif'></image>
+      <view class='fs-one' wx:if="{{send_type}}">
+        <input bindinput='get_content' value='{{content}}' placeholder='输入口令或祝福；'></input>
+      </view>
+      <view class='fs-two' wx:else >
+        <image class='record' wx:if="{{ready}}" bindtouchstart='star_record' bindtouchend='end_record' src='../image/zhufuhongbao-yu.png'></image>
+        <view wx:else class='listion'>
+          <image class='listion_img' bindtap='listen' src='../image/ready.png'></image>
+          <image class='repeal_img' catchtap='repeal' src='../image/repeal.png'></image>
+        </view>
+      </view>
+    </view>
+   
+    <view class='txt'>
+      <view class='btn-qi' catchtap='change_type'>改为文字口令或祝福</view>
+      <navigator url='../zhufuhua-ku/zhufuhua-ku' class='yuku-url'>祝福语库</navigator>
+    </view>
+
+    <view class='money'>
+      <view class='input'>
+        <view class='mon' wx:if="{{fixed_or_random}}">
+          <text class='yuan'>元</text>
+          <view class='ioc'>随</view>
+          <input type='digit' maxlength="6" bindinput='get_money' value="{{money}}" bindblur="inspect_money" placeholder='总金额（元）'></input>
+        </view>
+        <view class='mon' wx:else>
+          <text class='yuan'>元</text>
+          <view class='ioc'>固</view>
+          <input type='digit' maxlength="6" bindinput='get_money' value="{{money}}" bindblur="inspect_money" placeholder='单个金额(元）'></input>
+        </view>
+        <view class='num'>
+        <text class='ge'>个</text>
+          <input type='number' maxlength='8' value='{{num}}' bindinput='get_num' placeholder='填写个数'></input>
+        </view>
+      </view>
+      <view class='tis' wx:if="{{show_tishi}}">红包个数不能小于1</view>
+      
+      <view class='bind'>每人领到的金额随机，改为<text catchtap='change_num_type'>{{fixed_or_random?"固定金额":"随机金额"}}</text></view>
+    </view>
+    <view class='gable-money'>金额：<text>{{show_money}}</text></view>
+    <form bindsubmit='send' report-submit='{{true}}'>
+      <button class='pay-btn' form-type='submit'>
+        生成口令红包
+      </button>
+    </form>
+    
+    <view class='pay-ti'>未领取的金额，将于24小时后退至余额</view>
+
+    <view class='nav'>
+      <image class='nav-img' src='../image/zhufuhua-bg.png'></image>
+      <view class='fox-box'>
+        <navigator open-type='reLaunch' class='nav-list'>
+          <view class='text  text-cur'>红包祝福</view>
+          <view class='line'></view>
+        </navigator>
+        <navigator open-type='reLaunch' url="../zhufuhua/zhufuhua" class='nav-list'>
+          <view class='text'>卡片祝福</view>
+        </navigator>
+        <navigator open-type='reLaunch'  url='../mine/mine' class='nav-list'>
+          <view  class='text'>我的</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='window-sucss' wx:if="{{show_success}}">
+  <view class='shade'></view>
+  <view class='win-con'>
+    <view class='icon'>
+    <image src='../image/tixian-icon1.png'></image>
+    </view>
+    <view class='name'>支付成功，请稍后..</view>
+  </view>
+</view>
+
+
+
+

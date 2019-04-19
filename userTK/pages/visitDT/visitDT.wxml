@@ -1,0 +1,27 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container">
+  <view class="title">
+    您的就诊卡
+    <text class="tg">守/护/健/康/的/卡/片</text>
+  </view>
+  <view class="cards" animation="{{animation}}">
+    <block wx:for="{{cards}}" wx:key="key">
+      <navigator wx:if="{{item.name}}" class="card" data-index="{{index+1}}" url="/pages/visitCard/visitCard?cardId={{cardId}}&index={{index}}">
+        <view class="item">
+          <image class="img" mode="aspectFill" src="{{item.img}}"></image>
+          <view class="info">
+            <view class="tt">{{item.name}}</view>
+            {{item.nameTwo}}
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

@@ -1,0 +1,79 @@
+{
+  "pages": [
+   
+    
+    "pages/videos/videos", 
+    "pages/this_sift/this_sift",
+    "pages/index/index_2",
+    "pages/index/index_1",
+    "pages/index/index",    
+    "pages/video/video",
+    "pages/video_sift/video_sift",
+    "pages/index/index_3",
+    "pages/index/index_4",
+    "pages/send_video/send_video",
+    "pages/send_pic/send_pic",
+    "pages/send_forge/send_forge",
+    "pages/other_msg/other_msg",
+    
+    "pages/detail/detail",
+    "pages/pic_sift/pic_sift",
+    "pages/connotation_sift/connotation_sift"    
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "内涵段子",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "color": "#d2d2d2",
+    "selectedColor": "#ffa800",
+    "borderStyle": "#b3b3b3",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/mjs/icon/home.png",
+        "selectedIconPath": "/img/mjs/icon/onhome.png",
+        "color": "#b2b2bb2",
+        "selectedColor": "#515151"
+      },
+      {
+        "pagePath": "pages/videos/videos",
+        "text": "视频",
+        "iconPath": "/img/mjs/icon/new.png",
+        "selectedIconPath": "/img/mjs/icon/onnew.png",
+        "color": "#b2b2bb2",
+        "selectedColor": "#515151"
+      },
+      {
+        "pagePath": "pages/index/index_2",
+        "iconPath": "/img/mjs/icon/add.png",
+        "selectedIconPath": "/img/mjs/icon/onadd.png",
+        "text": "添加",
+        "color": "#b2b2bb2",
+        "selectedColor": "#515151"
+      },
+      {
+        "pagePath": "pages/index/index_3",
+        "text": "发现",
+        "iconPath": "/img/mjs/icon/find.png",
+        "selectedIconPath": "/img/mjs/icon/onfind.png",
+        "color": "#b2b2bb2",
+        "selectedColor": "#515151"
+      },
+      {
+        "pagePath": "pages/index/index_4",
+        "text": "我的",
+        "iconPath": "/img/mjs/icon/mine.png",
+        "selectedIconPath": "/img/mjs/icon/onmine.png",
+        "color": "#b2b2bb2",
+        "selectedColor": "#515151"
+      }
+    ]
+  }
+}

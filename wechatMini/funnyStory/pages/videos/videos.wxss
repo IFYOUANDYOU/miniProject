@@ -1,0 +1,66 @@
+/* pages/videos/videos.wxss */
+
+.images{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 7rpx;
+}
+
+
+.image_box{
+  position: relative
+}
+image{
+  width: 360rpx;
+  height: 550rpx;
+  margin-bottom: 20rpx;
+}
+.name_num{
+  width: 100%;
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.num{
+  height:36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.name{
+  max-width: 210rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+.server{
+  position: fixed;
+  top: 80%;
+  right: 20rpx;
+  width:74rpx;
+  height:110rpx;
+}
+button{
+  background: none;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+button::after{
+  border: none;
+}

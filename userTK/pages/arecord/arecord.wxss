@@ -1,0 +1,6 @@
+.container{margin: 0 44rpx;padding-bottom: 44rpx;}
+.menus{display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #e1e1e1;position: relative;z-index: 2;}
+.menu{line-height: 68rpx;width: 30%;font-size: 28rpx;background: #f0f0f0;color: #666;margin: 30rpx 0;box-shadow: 0 8rpx 12rpx rgba(0, 0, 0, 0.1);}
+.menu.active{background: #3081f2;color: #fff;box-shadow: 0 8rpx 12rpx rgba(48, 129, 242, 0.1);}
+.menu::before,.menu::after{display: none;}
+.arecord{opacity: 0;}

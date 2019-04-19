@@ -1,0 +1,96 @@
+
+<view class="home-container" style="border-bottom:0.5rem solid #EBEBEB;">
+
+        <image bindload="imgSy" data-index="{{index}}" bindtap="click_skip" style="height:{{newsdata.imageheight}}px;border-radius:0" class="home-img" src="{{newsdata.mood_img}}"></image>
+
+        <view class="home-fz" style="margin:1rem;border-bottom:0rem solid #EBEBEB;padding-bottom:0;" bindlongtap="touchtext">
+            {{newsdata.mood_word}}
+        </view>
+        <view class="hhx_change_function_area">
+            <view class="hhx_change_area1" style="margin:0 15rpx">
+                <navigator style="margin-top:8rpx" open-type="switchTab" url='/pages/my/my'><image class="hhx_change_function_area_img_shoucang"  src="/images/go.png"></image></navigator>
+            </view>
+            <view class="hhx_change_area1" style="margin:0 15rpx">
+              <button open-type='share' id='sharebtn'>
+                <image class="hhx_change_function_area_img_shoucang"  src="/images/add/share.png"></image>
+              </button>
+            </view>
+            <view class="hhx_change_area1"  bindtap="click_dianzan" data-id="{{newsdata.is_like}}">
+                <image class="hhx_change_function_area_img_dianzan" src="{{newsdata.is_like == 1?'/images/icon/icon_dz.png':'/images/icon/icon_dz2.png'}}"></image>
+                <view class="hhx_change_margin" wx:if="{{newsdata.good == null}}">0</view>
+                <view class="hhx_change_margin" wx:if="{{newsdata.good > -1}}">{{newsdata.good}}</view>     
+            </view>
+            <view class="hhx_change_area1" style="margin:0 15rpx" catchtap="click_shouchang"  data-id="{{newsdata.is_collect}}">
+                <image class="hhx_change_function_area_img_shoucang"  src="{{newsdata.is_collect == 2?'/images/icon/shoucang2.png':'/images/icon/shoucang.png'}}"></image>
+            </view>
+            
+        </view>
+        
+</view>
+<view class="pl_ifnone">
+   <view class="" wx:if="{{newsdata2 == null}}">
+      评论（0）
+   </view> 
+   <view class="" wx:if="{{newsdata2 > -1}}">
+      评论（{{newsdata2}}）
+   </view> 
+    <!--未修改前点赞、收藏板块-->
+      
+</view>
+
+
+<view class="" wx:if="{{newsdata2 == 0}}" >
+  <view class="pl_plnone"  style="margin-bottom:3rem;">
+    还没有评论，快来抢沙发吧
+  </view>
+</view>
+
+<view class="" style="margin-bottom:3rem;">
+<view class="" wx:if="{{newsdata2 > 0}}" >
+    <block wx:for="{{newsdata1}}">
+      <view class="pl_pl">
+          <view class="pl_pl_d1">
+            <view class="pl_pl_d1_v1 fl">
+            <image class="pl_pl_d1_v1_img"  src="{{item.avatarUrl}}"></image>
+            <!--<image class="pl_pl_d1_v1_img" src="/images/jpg/timg.jpg"></image>-->
+              </view>
+            <view class="pl_pl_d1_v2 fl">{{item.nickName}}</view>
+            <view class="pl_pl_d1_v3 fl">{{item.create_time}}</view>
+          </view>
+          <view class="pl_pl_d2">{{item.content}}</view>
+      </view>
+    </block>
+  <view class="pl_plnone" style="width:100%;height:3rem;line-height:2rem;">
+    已显示全部内容
+  </view>
+  </view>
+</view>
+
+
+<!--提交评论-->
+    <form class="pl_form" bindsubmit="formBindsubmit" bindreset="formReset">
+      <view class="pl_form_in">
+        <input class="pl_form_in_inp fl" name="content" value="{{value}}" placeholder="说说你的看法吧" placeholder-class="pl_form_in_inp_pla" />
+      </view>
+      <view class="pl_form_hf_box">
+        <button class="pl_form_hf" formType="submit" >发送</button>
+      </view>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

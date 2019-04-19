@@ -1,0 +1,372 @@
+/* pages/mine/mine.wxss */
+page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	background: #f7f4ed;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.bg .page-bg{
+	width: 100%;
+	height: 100%;
+  display: block;
+}
+.nr{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+}
+.mine{
+	width: 700rpx;
+	margin: 0 auto;
+	margin-top: 70rpx;
+	overflow: hidden;
+}
+.mine .head-img{
+	width: 174rpx;
+	height: 174rpx;
+	float: left;
+	position: relative;
+}
+.mine .head-img .head-bg{
+	width: 174rpx;
+	height: 174rpx;
+}
+.mine .head-img .user-img{
+	width: 150rpx;
+	height: 150rpx;
+	position: absolute;
+	left: 12rpx;
+	top: 12rpx;
+	border-radius: 50%;
+	
+}
+.mine  .mine-ctener{
+	width: 350rpx;
+	float: left;
+	margin-top: 40rpx;
+	margin-left: 18rpx;
+}
+.mine  .mine-ctener .user-name{
+	width: 350rpx;
+	font-size: 34rpx;
+	color: #2a2a2a;
+	 overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.mine  .mine-ctener  .user-money{
+	width: 350rpx;
+	font-size: 34rpx;
+	color: #2a2a2a;
+	margin-top: 20rpx;
+}
+.mine  .mine-ctener  .user-money text{
+	font-size: 50rpx;
+}
+.mine .tixian{
+	float: right;
+	width: 156rpx;
+	height: 136rpx;
+	margin-top: 34rpx;
+	
+}
+.mine .tixian image{
+	width: 156rpx;
+	height: 136rpx;
+}
+.btn{
+	width: 428rpx;
+	height: 88rpx;
+	margin: 0 auto;
+	margin-top: 68rpx;
+	border-radius: 42rpx;
+	background: #a91515;
+}
+.btn .btn-cur{
+	width: 214rpx;
+	height: 88rpx;
+	border-radius: 42rpx;
+	background-color: #eab11f;
+	text-align: center;
+	line-height: 88rpx;
+	color: #fff;
+	font-size: 40rpx;
+	float: left;
+}
+.btn .cl-btn{
+	width: 214rpx;
+	height: 88rpx;
+	border-radius: 42rpx;
+	text-align: center;
+	line-height: 88rpx;
+	color: #969696;
+	font-size: 40rpx;
+	float: left;
+}
+.detail{
+	width: 700rpx;
+	height: 630rpx;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 98rpx;
+	padding-top: 50rpx;
+}
+.detail .add{
+	width: 700rpx;
+	overflow: hidden;
+}
+.detail .add .ad-mon{
+	float: left;
+	width: 349rpx;
+}
+.detail .add .ad-mon .name{
+	text-align: center;
+	font-size: 36rpx;
+	color: #a1a1a1;
+}
+.detail .add .ad-mon .num{
+	text-align: center;
+	font-size: 60rpx;
+	color: #010101;
+	margin-top: 2rpx;
+}
+.detail .add .line{
+	width: 2rpx;
+	height: 100rpx;
+	background: #e7e7e7;
+	float: left;
+}
+.detail .add .ad-num{
+	float: left;
+	width: 349rpx;
+}
+.detail .add .ad-num .name{
+	text-align: center;
+	font-size: 36rpx;
+	color: #a1a1a1;
+}
+.detail .add .ad-num .num{
+	text-align: center;
+	font-size: 60rpx;
+	color: #010101;
+	margin-top: 2rpx;
+}
+.detail .list{
+	width: 700rpx;
+	border-top: 1px solid #eae9e5;
+	margin: 0 auto;
+	margin-top: 50rpx;
+}
+.detail .list .list-one{
+	width: 670rpx;
+	margin: 0 auto;
+	height: 140rpx;
+	overflow: hidden;
+	border-bottom: 1px solid #dcdcdc;
+}
+.detail .list .list-one .conten{
+	width: 670rpx;
+	margin-top: 20rpx;
+	overflow: hidden;
+}
+.detail .list .list-one .conten .text{
+	  overflow: hidden;
+ 	 text-overflow: ellipsis;
+ 	 white-space: nowrap;
+	width: 450rpx;
+	float: left;
+	font-size: 32rpx;
+	color: #4f4d4d;
+}
+
+.detail .list .list-one .conten .mon{
+	float: right;
+	font-size: 32rpx;
+	color: #4f4d4d;
+}
+.detail .list .list-one .conten1{
+	width: 670rpx;
+	margin-top: 20rpx;
+	overflow: hidden;
+}
+.detail .list .list-one .conten1 image{
+	width: 233rpx;
+	height: 54rpx;
+	float: left;
+}
+.detail .list .list-one .conten1 .mon{
+	float: right;
+	font-size: 32rpx;
+	color: #4f4d4d;
+	margin-top: 10rpx;
+}
+.detail .list .list-one .mess{
+	width: 670rpx;
+	margin-top: 15rpx;
+	overflow: hidden;
+}
+.detail .list .list-one .mess .time{
+	float: left;
+	font-size: 30rpx;
+	color: #c3c1c1;
+}
+.detail .list .list-one .mess .num{
+	float: right;
+	font-size: 30rpx;
+	color: #c3c1c1;
+}
+
+
+/*  */
+.detail2{
+	width: 700rpx;
+	height: 630rpx;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 98rpx;
+	padding-top: 50rpx;
+}
+.detail2 .add{
+	width: 700rpx;
+	overflow: hidden;
+}
+.detail2 .add .ad-mon{
+	float: left;
+	width: 349rpx;
+}
+.detail2 .add .ad-mon .name{
+	text-align: center;
+	font-size: 36rpx;
+	color: #a1a1a1;
+}
+.detail2 .add .ad-mon .num{
+	text-align: center;
+	font-size: 60rpx;
+	color: #010101;
+	margin-top: 2rpx;
+}
+.detail2 .add .line{
+	width: 2rpx;
+	height: 100rpx;
+	background: #e7e7e7;
+	float: left;
+}
+.detail2 .add .ad-num{
+	float: left;
+	width: 349rpx;
+}
+.detail2 .add .ad-num .name{
+	text-align: center;
+	font-size: 36rpx;
+	color: #a1a1a1;
+}
+.detail2 .add .ad-num .num{
+	text-align: center;
+	font-size: 60rpx;
+	color: #010101;
+	margin-top: 2rpx;
+}
+.detail2 .list{
+	width: 700rpx;
+	border-top: 1px solid #eae9e5;
+	margin: 0 auto;
+	margin-top: 50rpx;
+}
+.detail2 .list .list-one{
+	width: 670rpx;
+	margin: 0 auto;
+	height: 140rpx;
+	overflow: hidden;
+	border-bottom: 1px solid #dcdcdc;
+}
+.detail2 .list .list-one .other-head{
+	float: left;
+	width: 100rpx;
+	height: 100rpx;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+}
+.detail2 .list .list-one .other-head image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+}
+.detail2 .list .list-one .mess{
+	float: left;
+	margin-left:20rpx ;
+	margin-top: 35rpx;
+}
+.detail2 .list .list-one .mess .name{
+	font-size: 32rpx;
+	color: #4f4d4d;
+	
+}
+.detail2 .list .list-one .mess .time{
+	font-size: 30rpx;
+	color: #c3c1c1;
+	margin-top: 2rpx;
+}
+.detail2 .list .list-one .mon{
+	font-size: 32rpx;
+	color: #4f4d4d;
+	float: right;
+	margin-right: 15rpx;
+	margin-top: 55rpx;
+}
+
+
+.nav{
+	width: 750rpx;
+	height: 98rpx;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	left: 0;bottom: 0;
+}
+.nav .nav-img{
+	width: 750rpx;
+	height: 1206rpx;
+	position: absolute;
+	left: 0;bottom: 0;
+}
+.nav .fox-box{
+	position: absolute;
+	left: 0;top: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-list{
+	width: 250rpx;
+	height: 98rpx;
+	float: left;
+	overflow: hidden;
+}
+
+.nav .nav-list .text{
+	text-align: center;
+	margin-top: 18rpx;
+	font-size: 38rpx;
+	color: #c1c1c1;
+}
+.nav .nav-list .text-cur{
+	color: #eab11f;
+}
+.nav .nav-list .line{
+	width: 144rpx;
+	height: 4rpx;
+	margin: 0 auto;
+	margin-top: 12rpx;
+	background: #eab11f;
+}

@@ -1,0 +1,180 @@
+ <!-- 顶部轮播 -->
+<!-- <view class="home_swiper">
+  <swiper autoplay circular style="width:100%;height:100%" indicator-dots='true' indicator-active-color='#fff'> -->
+    <!-- <swiper-item style="width:100%;height:100%">
+       <image class="img_box" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505351436&di=230ba045cd25413eed26b532cb5a83ec&imgtype=jpg&er=1&src=http%3A%2F%2Fscimg.jb51.net%2Fallimg%2F160330%2F14-160330095KQ33.jpg"></image>
+    </swiper-item>
+    <swiper-item style="width:100%;height:100%">
+      <image class="img_box" src="/images/33.jpg"></image>
+    </swiper-item>
+    <swiper-item style="width:100%;height:100%">
+      <image class="img_box" src="/images/666.jpg"></image>
+    </swiper-item>  -->
+       <!-- <block wx:for="{{banner}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+            <swiper-item style="width:100%;height:100%">
+              <image catchtap='goread' data-id='{{item.id}}' class="img_box" src="{{item.path}}"></image>
+            </swiper-item>
+      </block>
+  </swiper>
+</view>  -->
+
+
+
+<!--顶部个人信息  -->
+  
+  <view wx:if="{{sign_data.show_status?true:false}}" class='my_user'>
+    <image class='my_head' src='{{sign_data.user_sign_info.avatarUrl}}'></image>
+
+    <view class='my_user_info'>
+        <view class='username'>姓名：{{sign_data.user_sign_info.nickName}}</view>
+        <view wx:if="{{sign_data.user_sign_info.gender==1?true:false}}" class='six'>性别：男</view>
+        <view wx:elif="{{sign_data.user_sign_info.gender==2?true:false}}" class='six'>性别：女</view>
+        <view wx:else class='six'>性别：未知</view>
+        <view class='my_more'>点击试玩更多神器------></view>
+    </view>
+
+    <view class='my_user_go' bindtap='go_app'>
+        <view class='my_center'>
+          
+        </view>
+        <image class='user_go_img' src='/images/add/go.png'></image>
+    </view>
+  </view>
+
+  <!--早安晚安签到  -->
+
+  <view class='sing_in' wx:if="{{sign_data.show_status?true:false}}">
+
+    <block wx:for="{{sign_data.index_sign_img}}" wx:key="{{index}}">
+      <view class='sign'>
+        <image class='bg' data-type="{{item.type}}" catchtap='go_sign' src='{{item.img}}'></image>
+
+        <view class='sign_time'  data-type="{{item.type}}" catchtap='go_sign'>
+          <view class='now_time'><text style='font-size:44rpx'>{{hour}}:{{minutes}}</text>  连续早起 <text style='font-size:40rpx'>{{index==0?sign_data.user_sign_info.morning_continuity_days:sign_data.user_sign_info.night_continuity_days}}</text> 天</view>
+          <view class='people'>{{sign_data.user_count}}人正在参与 比{{index==0?sign_data.user_sign_info.morning_random:sign_data.user_sign_info.night_random}}%的人起的早</view>
+        </view>
+
+        <view class='date'>
+          <text style='font-size:35rpx;'>{{day}}</text>
+          <text>{{month}}月</text>
+        </view>
+         <view wx:if="{{sign_data.show_type-1==index?false:true}}" class='mengban'></view> 
+      </view>
+    </block>
+  </view>
+
+
+<!--内容-->
+<view class="home-container">
+    <block wx:for="{{newsdata}}"  wx:key="{{index}}">
+        <view >
+          <view class="home-subbox">
+           <form   bindsubmit="form_send" report-submit="true" wx:for-index="{{index}}" data-id="{{item.id}}" data-index="{{index}}">
+            <button class='imgbtn'  formType="submit" >
+                  <view class="home-imgbox"  >
+                      <image  mode="widthFix" style="height:{{item.imageheight}}px;"  bind class="home-img" src="{{item.mood_img}}"></image>
+                  </view>
+             </button>
+            </form>
+            <view class='userInfo'>
+              <image src='{{item.avatarUrl}}'></image>
+              <text>{{item.nickName}}</text>
+            </view>
+             <form   bindsubmit="form_send" report-submit="true" wx:for-index="{{index}}" data-id="{{item.id}}" data-index="{{index}}">
+              <button class='textbtn'  formType="submit" >
+                    <view class="home-fz">
+                        {{item.mood_word}}
+                    </view>
+              </button>
+            </form>
+  <!--分享评论点赞收藏-->
+            <view class="yl_xzdzsc">     
+              <!--评论-->
+              <view class="hhx_home_flex" catchtap="click_pl" data-index="{{index}}" id="{{item.id}}">
+                  <view class="yl_xzdzsc_dz fl hhx_img_box1">
+                      <image class="yl_xzdzsc_img hhx_img1" src="/images/icon/icon_pl.png"></image>        
+                  </view>
+                  <text class="hhx_mr" wx:if="{{item.comment == null}}">0</text>       
+                  <text class="hhx_mr" wx:if="{{item.comment > -1}}">{{item.comment}}</text>
+              </view>
+              <!--收藏-->
+                <view catchtap="click_shouchang"  data-id="{{item.id}}" data-is_collect="{{item.is_collect}}" data-index="{{index}}" class="hhx_home_flex fl" style="width:44rpx;height:42rpx;">
+                  <image class="yl_xzdzsc_sc" src="{{item.is_collect == 2?'/images/icon/shoucang2.png':'/images/icon/shoucang.png'}}"></image>
+                  <text></text>
+                </view>
+              <!--点赞-->
+              <view class="hhx_home_flex" catchtap="click_dianzan" data-index="{{index}}" data-is_like="{{item.is_like}}" data-id="{{item.id}}">
+                  <view class="yl_xzdzsc_dz fl hhx_img_box2">
+                      <image class="yl_xzdzsc_img hhx_img2" src="{{item.is_like == 1?'/images/icon/icon_dz.png':'/images/icon/icon_dz2.png'}}"></image>  
+                  </view>
+                  <text class="hhx_mr" wx:if="{{item.good == null}}">0</text>
+                  <text class="hhx_mr" wx:if="{{item.good > -1}}">{{item.good}}</text>
+              </view>
+                
+                <!--下载-->
+                  <view  bindtap='click_popUp'  style="width:44rpx;height:42rpx" data-avatarUrl="{{item.avatarUrl}}" data-nickName="{{item.nickName}}" data-word="{{item.mood_word}}" data-img="{{item.mood_img}}" data-id="{{item.id}}" >
+                    <image style="width:100%;height:100%;display:block" class="yl_xzdzsc_sc2" src="/images/add/share.png"></image>
+                    <text></text>
+                  </view>
+         
+              </view>
+          </view>  
+        </view>
+     
+    </block>
+</view>
+
+
+
+<!-- 底部弹出框  -->
+    <view class="bigbox {{ popView ==1? '':'hid' }}">
+      <view class="{{ popView ==1? 'popUp':'hide_view' }}">
+          <image catchtap='click_cancel' src='/images/close.png' style='position:absolute;top:20rpx;right:10rpx;width:32rpx;height:32rpx'></image>
+          <text style='font-size:40rpx;color:#282828;margin-top:46rpx'>分享</text>
+          <view style='width:100%;height:350rpx;overflow:hidden;margin-top:32rpx;'>
+            <image src="{{detail.mood_img}}" style='width:100%' mode='widthFix'></image>
+          </view>
+
+          <view class='word_xxx' style=''>{{detail.mood_word}}</view>
+
+          <view class='share_box'>
+            <button open-type='share' style='background:#fff;line-height:normal' hover-class='none'>
+              <view style='display: flex;flex-direction:column;align-items: center;justify-content: center;'>
+                <image style='width:100rpx;height:100rpx;' src='/images/add/share_friend.png'></image>
+                <text class='share_txt_word'>分享给好友</text>
+              </view>
+            </button>
+            
+            <view catchtap='click_friend' style='height:100%;display: flex;flex-direction:column;align-items: center;justify-content: center;'>
+              <image style='width:100rpx;height:100rpx;' src='/images/pyq_1.png'></image>
+              <text class='share_txt_word'>分享到朋友圈</text>
+            </view>
+          </view>
+      </view>
+     </view>
+  
+  <!-- 分享到朋友圈名片 -->
+  <view class="{{ ishide == 1?'visited_card_box':'hide'}}" style="width:100%;height:{{windowHeight}}px" bindtap="click_friend">
+    <view class="visited_card" >
+      <view class="visited_card_text1  margin_1">分享到朋友圈</view>
+      <view class="visited_card_imgBox">
+        <image class="visited_card_img" src="{{canvas_img}}"></image>
+      </view>
+      <view class="visited_card_text1 margin_2">朋友圈已保存到相册</view>
+      <view class="visited_card_text1 margin_3">快去微信朋友圈分享吧~</view>
+    </view>
+  </view>
+
+
+    
+
+
+
+
+ 
+
+    <form bindsubmit="" report-submit="true">
+    <button open-type='contact' class='share'>
+      <image style='width:102rpx;height:102rpx' src='/images/server.png'></image>
+    </button>
+  </form>

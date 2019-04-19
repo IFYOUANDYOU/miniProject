@@ -1,0 +1,54 @@
+<view class='page'>
+<!--顶部搜索框  -->
+  <view class='top_search'>
+      <input catchtap='go_search' placeholder='请输入关键词，搜索头像或表情' placeholder-class='place'></input>
+      <image class='search_img' src='/img/icon/search.png'></image>
+  </view>
+
+
+  <!--头像部分  -->
+  <view class='head_expression' >
+    <block wx:for="{{expression_list}}" wx:key="{{index}}">
+      <view class='expression' catchtap='go_head_more' data-id="{{item.id}}">
+        <image class='expression_img' src='{{item.img}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <!--原创头像 -->
+  <view class='recommend'>
+    <view class='rexommend_top'>
+        <view class='img_box'>
+          <image  class='recommend_img' src='/img/icon/selection.png'></image>
+        </view>
+         <text>原创头像</text> 
+         <text class='more' data-type="0" catchtap='go_more'>查看更多</text>
+    </view>
+
+    <view class='recommend_box'>
+      <block wx:for="{{my_list}}" wx:key="{{index}}">
+      <view class='rela'>
+          <image catchtap='go_detail' data-type="0" data-id="{{item.id}}" data-src="{{item.path}}" class='recommend_box_img' src='{{item.path}}'></image>
+          <image class='hot' src="/img/icon/hot.png"></image>
+      </view>
+        
+      </block>
+    </view>
+  </view>
+
+<!--推荐 -->
+  <view class='recommend'>
+    <view class='rexommend_top'>
+        <view class='img_box'>
+          <image  class='recommend_img' src='/img/icon/recommend.png'></image>
+        </view>
+        <text>每日推荐</text> 
+    </view>
+
+    <view class='recommend_box'>
+      <block wx:for="{{recommend_list}}" wx:key="{{index}}">
+        <image catchtap='go_detail' data-type="{{item.is_original?0:2}}" data-id="{{item.id}}" data-src="{{item.path}}" class='recommend_box_img' src='{{item.path}}'></image>
+      </block>
+    </view>
+  </view>
+</view>

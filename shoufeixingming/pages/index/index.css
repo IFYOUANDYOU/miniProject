@@ -1,0 +1,135 @@
+.index{
+  width:750rpx;
+  font-size: 35rpx;
+  padding-bottom:110rpx;  
+}
+.index-top-bg{
+  width: 100%;
+} 
+.index-top-bg-1{
+  height:398rpx;
+}
+.index-top-bg-img1{
+   width:100%;
+   height:398rpx;
+}
+.index-top-bg-2{
+   height:527rpx;
+}
+.index-top-bg-img2{
+  width:100%;
+  height:527rpx;
+  position: absolute;
+}
+
+.index-top-content{
+  width:100%;
+ position: absolute;
+}
+.index-top-name{
+  width: 100%;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content:center;
+  height:250rpx;
+}
+.index-top-box{
+  width:50%;
+  color: #fff;
+  text-align: center;
+}
+.index-box-name{
+  position: relative; 
+  width:200rpx;
+  height:100rpx;
+  margin: 0 auto;
+}
+.index-box-name-bg{
+  top:0;
+  left:0;
+  position: absolute;
+  width:200rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.clear{
+  clear: both;
+}
+.index-box-xing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rpx auto;
+  padding: 0 20rpx;
+}
+.index-box-xing view{
+  width:40%; 
+}
+.index-box-xing input{
+  width:60%;
+  background: #fff;
+  border-radius:5rpx;
+  padding: 5rpx;
+}
+.index-pd{
+   background: linear-gradient(#fff058,#fec303);
+  
+  text-align: center;
+  border-radius: 20rpx;
+  margin: 10rpx auto;
+  width:300rpx;
+  height:70rpx;
+  line-height:70rpx;
+  color:#333;
+  box-shadow: 1px 3px 20px #333;
+}
+.index-number{
+  text-align: center;
+  color:#fff;
+}
+.index-number{
+  color:#ffe713;
+}
+.index-content-title{
+  padding: 20rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  text-align: center;
+  color:#fff;
+  margin: 20rpx;
+  background:  #f6b4c4;
+   box-shadow: 0px 1px 10px 2px #f6b4c4;
+}
+.index-content-list{
+  margin: 20rpx;
+  padding: 20rpx;
+  box-shadow: 0px 1px 10px 2px #f6b4c4;
+  border-radius: 5rpx;
+}
+.index-content-subheading{
+  text-align: center;
+  color:#f6b4c4;
+}
+.index-content-subheading text{ 
+  color:#d10b3b;
+  margin: 0 20rpx;
+}
+.index-content-discript{
+  text-align: justify;
+  text-align-last: left;
+  margin:20rpx 0; 
+}
+.index-content-user{
+  text-align: left;
+  color:#ff6c00;
+  display: flex;
+  justify-content: space-between;
+}
+.index-content-user text{
+  background: #f6b4c4;
+  box-shadow:  1px 1px 1px #ccc;
+  color: #fff;
+  padding: 0 10rpx; 
+  border-radius: 5rpx;
+} 

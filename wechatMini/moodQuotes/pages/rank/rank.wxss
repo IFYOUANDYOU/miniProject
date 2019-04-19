@@ -1,0 +1,89 @@
+/* pages/rank/rank.wxss */
+
+.container{
+  width: 100%;
+  background: #F5F6FA;
+  overflow: hidden;
+}
+
+.top{
+  width: 506rpx;
+  height: 84rpx;
+  background: #E8EDEB;
+  border-radius: 42rpx;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.box{
+  width: 50%;
+  height: 100%;
+  border-radius: 42rpx;
+  text-align: center;
+  line-height: 84rpx;
+  font-size: 34rpx;
+  color:#A7A7A7;
+}
+
+.select{
+  background: #7FCFA1;
+  color: #FFFFFF
+}
+
+
+.list{
+  width: 625rpx;
+  margin: 0 auto;
+}
+.item{
+  width: 625rpx;
+  height: 125rpx;
+  border-bottom: 1rpx solid #E7E7EE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.user{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user_head{
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  margin: 0 16rpx;
+}
+.mingci{
+  font-size: 32rpx;
+  color: #FFFFFF;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #D6D8E0;
+  border-radius: 50%;
+}
+
+.user_name{
+  font-size: 30rpx;
+  color: #999999;
+  max-width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.day{
+  max-width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 30rpx;
+  color: #999999;
+}

@@ -1,0 +1,70 @@
+<view class="select_box" wx:if="{{show}}">
+    <swiper bindchange="change" indicator-dots="{{true}}" indicator-color="RGBA(221, 245, 237, 1)" indicator-active-color="RGBA(107, 179, 155, 1)">
+      
+      <block wx:for="{{swiper_list}}" wx:key="{{index}}">
+      <swiper-item>
+        <image style='width:100%;height:100%' src='{{item.img}}'></image>
+        <view class='time'>
+          <view style='font-size:60rpx;font-weight:bolder'>{{month}}/{{day}}</view>
+          <view style='font-size:40rpx;'>{{xiqi}}</view>
+          <view style='font-size:30rpx;'>{{year}}</view>          
+        </view>
+
+        <view class='txt'>
+            <view>在每个星光陨落的晚上</view>
+            <view>一遍一遍数我的寂寞</view>
+        </view>
+      </swiper-item>
+        </block>
+              
+    </swiper>
+
+    <view class='affirm' catchtap='affirm'>确认模版</view>
+</view>
+
+
+
+<view class='write' wx:else>
+    <view class='write_img'>
+      <image class='selected_img' src='{{swiper_list[index].img}}'></image>
+      <view class='time'>
+          <view style='font-size:60rpx;font-weight:bolder'>{{month}}/{{day}}</view>
+          <view style='font-size:40rpx;'>{{xiqi}}</view>
+          <view style='font-size:30rpx;'>{{year}}</view>          
+        </view>
+        <view class='txt'>
+            <view>在每个星光陨落的晚上</view>
+            <view>一遍一遍数我的寂寞</view>
+        </view>
+    </view>
+    
+
+
+    <view class='txt_name'>
+    <checkbox-group bindchange="box_name_change">
+       <label class="checkbox">
+       <!--<checkbox value='name'/>   -->
+          <text>显示名字</text> 
+       </label>
+      </checkbox-group>
+       <input bindinput='get_name' placeholder='请输入您的名字（最多5个字)' maxlength='5'></input>
+    </view>
+
+
+
+    <view class='txt_content'>
+      <checkbox-group bindchange="box_content_change">
+       <label class="checkbox">
+       <!-- <checkbox checked="{{item.checked}}"/> -->
+            <text>更改内容</text>  
+       </label>
+      </checkbox-group>
+       <textarea bindinput='get_content' placeholder='请输入您的内容（请注意字数，使用句号换行,每行最多20字）' maxlength='41'></textarea>
+    </view> 
+
+    <text style='font-size:26rpx;color:#B5B4B7;margin:28rpx 0;'>也可以选择不填使用随机的哦</text>
+    <view class='ok' catchtap='ok' data-id="{{swiper_list[index].id}}">生成日签</view>
+</view>
+
+
+

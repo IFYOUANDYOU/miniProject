@@ -1,0 +1,39 @@
+<view class='container'>
+  <!--banner  -->
+
+  <swiper indicator-dots="{{true}}" indicator-color="RGBA(255, 163, 180, 1)" indicator-active-color="RGBA(255, 120, 145, 1)" autoplay="{{true}}" circular="{{true}}">
+    <block wx:for="{{type_list}}" wx:key="{{index}}">
+      <swiper-item bindtap='go_detail' data-id = "{{item.id}}">
+          <image class='banner_bg' src='/img/banner_bg.png'></image>
+          <view class='item_box'>
+            <view class='banner_name'>{{item.name}}</view>
+            <view class='banner_title'>{{item.title}}</view>
+            <image class='banner_img' mode='widthFix' src="{{item.img}}"></image>
+          </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <!--类型列表  -->
+  <view class='type_list'>
+    <block wx:for="{{type_list}}" wx:key="{{index}}">
+      <view class='type_item' bindtap='go_detail' data-id = "{{item.id}}" style='margin-right:{{(index+1)%3==0?"0rpx":"6rpx"}}'>
+          <text>{{item.name}}</text>
+          <text class='item_detail'>{{item.title}}</text>
+          <image class='item_img' src="{{item.img}}"></image>
+      </view>
+    </block>
+  </view>
+
+</view>
+ <!--客服按钮  -->
+  <form report-submit='{{true}}' bindsubmit='send_formID'>
+      <button hover-class='none' class='server' form-type='submit' open-type='contact'>
+        <image class='server_img' src='/img/icon/server.png'></image>
+        <view class='txt'>
+          <text style='font-size:28rpx'>点这里</text>
+          <view>开启最IN模式</view>
+        </view>
+      </button>
+  </form>

@@ -1,0 +1,9 @@
+<view class='nav'>
+	<image class='nav-img' src='/images/zhufuhua-bg.png'></image>
+    <view class='fox-box'>
+		<navigator s-for="bar,index in barlist" open-type='reLaunch' url="{{bar.path}}" class='nav-list'>
+			<view class='text {{bar.name == curName ? "text-cur" : ""}}'>{{bar.title}}</view>
+            <view s-if='{{bar.name == curName}}' class='line'></view>
+		</navigator>
+	</view>
+</view>

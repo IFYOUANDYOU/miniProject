@@ -1,0 +1,32 @@
+<!-- "pages/camera/camera", -->
+<view wx:if="{{prescripimg}}" class="prescrip" id="prescrip">
+  <view class="item upimg" data-index="{{index}}">
+    <image src="{{prescripimg}}" mode="aspectFit"></image>
+    <text class="del" catchtap="delimg" data-index="{{index}}"></text>
+  </view>
+</view>
+
+<view wx:else class="upload" catchtap="getcamera">上传处方</view>
+
+<block wx:if="{{camera}}">
+
+</block>
+<block wx:else>
+
+</block>
+
+
+
+<block wx:if="{{showcamera}}">
+  <view class="camerapop">
+    <cover-view class="noticeTXT">请将处方单放入白色框内</cover-view>
+    <camera class="camera" mode="normal" device-position="back" flash="auto" binderror="error">
+      <cover-view class="controls">
+      </cover-view>
+    </camera>
+    <view class="takebtns">
+      <button class="btn confirm" bindtap="takePhoto">拍照</button>
+      <button class="btn cancel" bindtap="getcamera">取消</button>
+    </view>
+  </view>
+</block>

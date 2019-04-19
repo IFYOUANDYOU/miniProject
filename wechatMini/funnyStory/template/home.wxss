@@ -1,0 +1,149 @@
+.mjs_contentBox{
+  width: 100%;
+  font-size: SimHei;
+  border-bottom: 1rpx solid rgba(243,243,243,1);
+}
+.mjs_usermsg{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  box-sizing: border-box;
+  padding:35rpx 24rpx 22rpx 36rpx;  
+}
+.userhead{
+  display: inline-block;
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+}
+.mjs_username_time{
+
+  border-radius: 50%;
+}
+.mjs_username_time{
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.mjs_username{
+  color: rgba(77,77,77,1);
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}
+.mjs_time{
+  color: rgba(173,173,173,1);
+  font-size: 24rpx;
+}
+.mjs_contentTxt{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 34rpx;
+  margin-bottom: 24rpx;
+  font-size: 36rpx;
+  color: rgba(110,110,110,1);
+}
+.mjs_contentImg{
+  width: 700rpx;
+  margin: 0 auto;
+
+}
+.mjs_contentImg{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.contentImg{
+  width: 100%;
+}
+
+.videoBox{
+  width: 700rpx;
+  margin: 0 auto;
+
+}
+video{
+  width: 100%;
+  
+}
+
+/*底部ICON  */
+.mjs_bottomIcon{
+  width: 700rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mjs_icon_num{
+  width: 160rpx;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* line-height: 100rpx; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: SimHei;
+  font-size: 36rpx;
+}
+
+.iconImg{
+  width: 38rpx;
+  height: 38rpx;
+  /* margin-right: 12rpx; */
+}
+.otxt{
+  margin-left: 10rpx;
+}
+
+button{
+  background: white;
+  width: 84rpx;
+  height: 80rpx;
+  display: inline-block;
+  line-height: 80rpx;
+}
+button::after{
+  border: none;
+}
+
+
+/*标签样式  */
+.mjs_label{
+  width: 700rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.item_label{
+  height: 44rpx;
+  text-align: center;
+   line-height: 25rpx; 
+  background: rgba(255,222,157,1);
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: rgba(79,79,79,1);
+  font-family: "Adobe Heiti Std R";
+  box-sizing: border-box; 
+  padding: 10rpx 10rpx;
+}
+
+video{
+  background: white;
+}
+.obtn{
+  width: 43rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin-right:10rpx; 
+}

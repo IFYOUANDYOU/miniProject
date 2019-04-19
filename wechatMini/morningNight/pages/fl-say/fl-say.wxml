@@ -1,0 +1,28 @@
+<!--<view class="mood-container">
+    <block wx:for="{{newsdata}}"  wx:key="*this"  wx:for-index="navIndex">
+        <view class="mood-subbox" bindtap="showArticle" data-index="{{navIndex}}" id='{{item.id}}'>
+            <view class="mood-subbox-imgbox fl">
+                <image class="mood-subbox-img"  src="{{item.cate_img}}"></image>
+            </view>
+            <view class="mood-subbox-fzbox fl">
+                <view class="mood-subbox-fz1">{{item.cate_name}}</view>
+                <view class="mood-subbox-fz2">{{item.cate_abstract}}</view>
+                <image class="mood-subbox-fzimg" src="../../images/jpg/more.png"></image>
+            </view>
+        </view>      
+        
+    </block>
+</view>-->
+
+
+<!--分类新变化-->
+
+<view class="mood-container">
+  <block wx:for="{{newsdata}}"  wx:key="*this"  wx:for-index="navIndex">
+    <view class="mood_bg fl"  bindtap="showArticle"  data-index="{{navIndex}}" data-id='{{item.id}}' id="{{item.cate_name}}">
+      <image class="mood_bg_img" src="{{item.cate_img}}" ></image>
+    </view>
+  </block>
+</view>
+
+

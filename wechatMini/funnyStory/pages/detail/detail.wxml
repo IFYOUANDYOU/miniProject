@@ -1,0 +1,148 @@
+<view class='mjs_contentBox'>
+  <view class='mjs_usermsg'>
+    <image class='userhead' src='{{item.user_msg.avatar}}'></image>
+    <view class='mjs_username_time'>
+      <view class='mjs_username'>{{item.user_msg.username}}</view>
+      <view class='mjs_time'>{{item.created_time}}</view>
+    </view>
+  </view>
+  <!--内容  -->
+  <view atchtap='godetail' data-id="{{item.id}}" class='mjs_contentTxt' catchtap='godetail'>
+    {{item.content}}
+  </view>
+  <!--图片  -->
+  <view catchtap='godetail' data-id="{{item.id}}" wx:if="{{item.type==2?true:false}}" class='mjs_contentImg'>
+    <image class='contentImg' src='{{item.image}}' bindload='getheight' style='height:{{height}}rpx'></image>
+  </view>
+
+  <!--视频  -->
+  <view wx:if="{{item.type==4?true:false}}" class='videoBox'>
+    <video catchtap='myplay' id="{{'video'+item.id}}" objectFit='fill' src='{{item.image}}'></video>
+  </view>
+
+  <!--标签  -->
+  <view class='mjs_label' wx:if="{{item.tags_list.length>0}}">
+    <block wx:for="{{item.tags_list}}" wx:key="{{index}}">
+      <view class='item_label'>{{item.name}}</view>
+    </block>
+  </view>
+   <!--关注图标  -->
+   <!-- wx:if="{{id==myid?false:true}}" -->
+  <view  class='careIcon' catchtap='care'>
+    <image class='careImg' src="{{item.isfollow?'/img/mjs/icon/care.png':'/img/mjs/icon/nocare.png'}}"></image>
+  </view>
+  <!--底部图标  -->
+  <view class='mjs_bottomIcon'>
+    <!--点赞  -->
+    <view class='mjs_icon_num'>
+      <image catchtap='click_thumbs' class='iconImg' data-id="{{item.id}}" data-type="{{item.isgood?'cancel':'good'}}" src="{{item.isgood?'/img/mjs/icon/my-zanup.png':'/img/mjs/icon/zanup.png'}}"></image>
+      <text
+      class='otxt'
+      catchtap='click_thumbs'
+      data-id="{{item.id}}" data-type="{{item.isgood?'cancel':'good'}}"
+       style='color:{{item.isgood?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'>{{item.good_num}}</text>
+    </view>
+    <!--点踩 -->
+    <view class='mjs_icon_num'>
+      <image class='iconImg' catchtap='click_zandown' data-id="{{item.id}}" data-type="{{item.isbad?'cancel':'good'}}" 
+      src="{{item.isbad?'/img/mjs/icon/my-zandown.png':'/img/mjs/icon/zandown.png'}}"></image>
+      <text
+        catchtap='click_zandown' data-id="{{item.id}}" data-type="{{item.isbad?'cancel':'good'}}"
+        class='otxt'
+       style='color:{{item.isbad?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'>{{item.bad_num}}</text>
+    </view>
+    <!--收藏    -->
+    <view catchtap='collection' data-id="{{item.id}}" class='mjs_icon_num'>
+      <image class='iconImg' src="{{item.iscollection?'/img/mjs/icon/collection.png':'/img/mjs/icon/nocollection.png'}}"></image>
+      <text class='otxt' style='color:{{item.iscollection?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'>{{item.collection_num}}</text>
+    </view>
+    <!--分享  -->
+    <view class='mjs_icon_num'>
+      <button open-type='share' data-id="{{item.id}}" hover-stay-time="0">
+        <image class='iconImg' src='/img/mjs/icon/share.png'></image>
+      </button>
+
+      <text style='color:rgba(195,195,195,1)'>{{item.share_num}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+<view class='comment'>
+  <view class='txt'>最新评论</view> 
+  <block wx:for="{{comment_list}}" wx:key="{{index}}">
+      <view class='top_comment_1'>
+          <view class='userinfo_time'>
+              <image class='headimg' src="{{item.user_msg.avatar}}"></image>
+              <view class='name_time'>
+                <text class='oname'  catchtap='change_sendname' data-id="{{item.id}}" data-name="{{item.user_msg.username}}">{{item.user_msg.username}}</text>
+                <text catchtap='change_sendname' data-id="{{item.id}}" data-name="{{item.user_msg.username}}" >{{item.created_time}}</text>
+              </view>
+          </view>
+          <view class='icons'>
+            <image 
+            class='icon_img marg' 
+            catchtap='comment_up' 
+            data-id="{{item.id}}" 
+            data-type="{{item.isgood?'cancel':'good'}}"
+            src="{{item.isgood?'/img/mjs/icon/my-zanup.png':'/img/mjs/icon/zanup.png'}}"></image>
+            <text
+            catchtap='comment_up' 
+            data-id="{{item.id}}" 
+            data-type="{{item.isgood?'cancel':'good'}}"
+             style='color:{{item.isgood?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'>{{item.good_num}}</text>
+            <image class='icon_img  mar' 
+            catchtap='comment_down' 
+            data-id="{{item.id}}"
+             data-type="{{item.isbad?'cancel':'good'}}"
+            src="{{item.isbad?'/img/mjs/icon/my-zandown.png':'/img/mjs/icon/zandown.png'}}"
+            ></image>
+            <text
+            catchtap='comment_down' 
+            data-id="{{item.id}}"
+             data-type="{{item.isbad?'cancel':'good'}}"  
+            style='color:{{item.isbad?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'
+             >{{item.bad_num}}</text>
+          </view>
+      </view>
+
+      <view class='comment_son'>
+          <block wx:for="{{item.child}}" wx:for-item="otem" wx:key="{{index}}">
+            <view wx:if="{{index<2 || !item.more}}" class='son_one'>
+                 <view class='top'>
+                 <!-- <image class='son_img' src='{{item.user_msg.avatar}}'></image> -->
+                  <view class='nameTime'>
+                    <text  class='son_name' catchtap='change_sendname' data-id="{{otem.id}}" data-name="{{otem.user_msg.username}}">
+                    {{otem.user_msg.username}}</text>
+                   <text style='color:#adadad'>{{otem.created_time}}</text> 
+                  </view>
+                </view>
+                <view  class='son_content'>
+                  {{otem.content}}
+                </view>
+            </view>
+          </block>
+
+          <view class='show_more' data-id="{{item.id}}" catchtap='show_more' wx:if="{{item.more}}">点击查看更多</view>
+      </view>
+      <view class='max_txt' catchtap='change_sendname' data-id="{{item.id}}" data-name="{{item.user_msg.username}}">{{item.content}}</view>
+      
+  </block>
+  
+</view>
+
+
+
+<!--catchtap='change_type'  -->
+<view class='my_comment'>
+  <image class='send_type'   src='{{send_type?"/img/mjs/icon/text.png":"/img/mjs/icon/audio.png"}}'></image>
+  <input wx:if="{{send_type}}" 
+  value='{{send_content}}' 
+  placeholder="{{send_name?send_name:'请输入评论内容'}}" 
+  bindinput='get_content' 
+  bindblur='onblur'
+  ></input>
+  <button class='say' catchtouchstart="on_start" catchtouchend="on_end" wx:else>按住说话</button>
+  <text catchtap='send'>发送</text>
+</view>

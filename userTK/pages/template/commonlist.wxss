@@ -1,0 +1,118 @@
+/*用户端首页 就诊记录卡片*/
+.m-record{background: #fff;box-shadow: 0 8rpx 12rpx rgba(0, 0, 0, 0.1);padding: 0 20rpx;line-height: 38rpx;}
+.m-record .nav{position: relative;padding: 14rpx 0;border-bottom: 2rpx solid #f0f0f0;}
+.m-record .item{font-size: 24rpx;}
+.m-record .hospital{font-size: 32rpx;margin: 10rpx 0 16rpx;}
+.m-record .more::before{content: '\e6a3';font-size: 32rpx;}
+.m-record .doctor{color: #f2af3d;}
+.m-record .complete{position: absolute;top: 50%;right: 0;margin-top: -18rpx;}
+.m-record .pright{font-size: 24rpx;}
+.m-record .minfo{color: #999;position: relative;padding: 16rpx 4rpx;}
+.m-record .minfo::after{display: block;position: absolute;top: 10rpx;right: 0;font-size: 32rpx;font-family: 'iconfont';content: '\e6a5';color: #666;font-weight: bold;}
+.m-record .status,.m-record .complete,.m-record .minfo.toggle .tt,.m-record .minfo.toggle::after{color: #3081f2;}
+.m-record .minfo.toggle::after{content: '\e6a7';}
+.m-record .mnum{margin-right: 5rpx;}
+/*用户端 医生卡片*/
+.doctor-item .doctor,.doctor-item{display: flex;align-items: center;flex-wrap: wrap;padding: 12rpx;}
+.doctor-item{background: #fff;box-shadow: 0 5rpx 12rpx 5rpx rgba(0, 0, 0, 0.1);color: #666;line-height: 42rpx;}
+.doctor-item .doctor{flex: 1;}
+.doctor-item .avatar{width: 148rpx;height: 148rpx;flex-shrink: 0;margin-right: 20rpx;border-radius: 148rpx;}
+.doctor-item .basis{color: #333;font-weight: bold;}
+.doctor-item .date{font-size: 24rpx;}
+.doctor-item .chat{font-family: "iconfont";line-height: 148rpx;flex-shrink: 0;width: 80rpx;text-align: center;}
+.doctor-item .chat::after{content: "\e743";color: #3081f2;font-size: 42rpx;}
+/*用户端 药品基本信息*/
+.drug-item{background: #fff;box-shadow: 0 5rpx 12rpx 5rpx rgba(0, 0, 0, 0.1);padding: 24rpx;
+/* display: flex;align-items: center;flex-wrap: wrap; */
+color: #666;line-height: 48rpx;margin-top: 24rpx;}
+/* .drug-item .thumbnail{width: 160rpx;height: 130rpx;flex-shrink: 0;margin-right: 20rpx;}
+.drug-item .msg{flex: 1;} */
+.drug-item .basis{color: #333;font-weight: bold;}
+.drug-item .num{color: #3081f2;font-weight: normal;}
+.drug-item .effort{color: #999;line-height: 36rpx;font-size: 26rpx;}
+/*医生端和用户端 消息卡片*/
+.news-item,.arecord-item{background: #fff;padding: 28rpx 0;display: flex;align-items: center;flex-wrap: wrap;color: #666;line-height: 42rpx;margin-top: 24rpx;}
+.news-item .thumbnail{width: 88rpx;height: 88rpx;flex-shrink: 0;margin-right: 20rpx;border-radius: 120rpx;}
+.news-item .msg{flex: 1;}
+.news-item .basis{color: #333;font-weight: bold;}
+.news-item .date{font-weight: normal;margin-right: 20rpx;}
+.news-item .brief{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;line-height: 32rpx;}
+.news-item .brief,.news-item .date{color: #999;font-size: 24rpx;}
+.news-item::after,.arecord-item::after{font-family: "iconfont";content: "\e6a3";color: #3081f2;font-weight: bold;}
+.news-item .dot{display: inline-block;background: #f00;width: 10rpx;height: 10rpx;border-radius: 10rpx;position: relative;top: -12rpx;}
+/*医生端和用户端 账户交易记录*/
+.arecord-item{border-bottom: 2rpx solid #e1e1e1;color: #333;}
+.arecord-item .sum{flex-shrink: 0;margin-right: 24rpx;font-size: 40rpx;}
+.arecord-item .msg{flex: 1;}
+.arecord-item .type{font-size: 34rpx;margin-bottom: 8rpx;}
+.arecord-item .state{color: #3081f2;font-size: 24rpx;margin-left: 12rpx;}
+.arecord-item .time{color: #999;font-size: 24rpx;}
+/*列表为空*/
+.empty{text-align: center;font-size: 32rpx;color: #e1e1e1;position: absolute;top: 0;left: 0;right: 0;bottom: 0;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;flex-direction: column;}
+.empty .icon{display: block;width: 171rpx;height: 248rpx;margin: -60rpx auto 12rpx;}
+.empty .reload{border: 1rpx solid #e1e1e1;background: #f0f0f0;color: #666;font-size: 24rpx;margin: 24rpx;padding: 12rpx;border-radius: 12rpx;}
+/*正在加载中*/
+#loading {background-color: rgba(0, 0, 0, 0.7);height: 100%;width: 100%;position: fixed;z-index: 9;margin-top: 0px;top: 0px;}
+#loading-main {position: absolute;left: 50%;top: 50%;height: 150px;width: 150px;margin-top: -75px;margin-left: -75px;-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.object {width: 20px;height: 20px;background-color: #fff;position: absolute;left: 65px;top: 65px;}
+.object:nth-child(2n+0) {margin-right: 0px;}
+#object_one {-webkit-animation: object_one 2s infinite;animation: object_one 2s infinite;-webkit-animation-delay: 0.2s;animation-delay: 0.2s;}
+#object_two {-webkit-animation: object_two 2s infinite;animation: object_two 2s infinite;-webkit-animation-delay: 0.3s;animation-delay: 0.3s;}
+#object_three {-webkit-animation: object_three 2s infinite;animation: object_three 2s infinite;-webkit-animation-delay: 0.4s;animation-delay: 0.4s;}
+#object_four {-webkit-animation: object_four 2s infinite;animation: object_four 2s infinite;-webkit-animation-delay: 0.5s;animation-delay: 0.5s;}
+#object_five {-webkit-animation: object_five 2s infinite;animation: object_five 2s infinite;-webkit-animation-delay: 0.6s;animation-delay: 0.6s;}
+#object_six {-webkit-animation: object_six 2s infinite;animation: object_six 2s infinite;-webkit-animation-delay: 0.7s;animation-delay: 0.7s;}
+#object_seven {-webkit-animation: object_seven 2s infinite;animation: object_seven 2s infinite;-webkit-animation-delay: 0.8s;animation-delay: 0.8s;}
+#object_eight {-webkit-animation: object_eight 2s infinite;animation: object_eight 2s infinite;-webkit-animation-delay: 0.9s;animation-delay: 0.9s;}
+#object_big {position: absolute;width: 50px;height: 50px;left: 50px;top: 50px;-webkit-animation: object_big 2s infinite;animation: object_big 2s infinite;-webkit-animation-delay: 0.5s;animation-delay: 0.5s;}
+@-webkit-keyframes object_big {
+  50% {-webkit-transform: scale(0.5);}
+}
+@keyframes object_big {
+  50% {transform: scale(0.5);-webkit-transform: scale(0.5);}
+}
+@-webkit-keyframes object_one {
+  50% {-webkit-transform: translate(-65px, -65px);}
+}
+@keyframes object_one {
+  50% {transform: translate(-65px, -65px);-webkit-transform: translate(-65px, -65px);}
+}
+@-webkit-keyframes object_two {
+  50% {-webkit-transform: translate(0, -65px);}
+}
+@keyframes object_two {
+  50% {transform: translate(0, -65px);-webkit-transform: translate(0, -65px);}
+}
+@-webkit-keyframes object_three {
+  50% {-webkit-transform: translate(65px, -65px);}
+}
+@keyframes object_three {
+  50% {transform: translate(65px, -65px);-webkit-transform: translate(65px, -65px);}
+}
+@-webkit-keyframes object_four {
+  50% {-webkit-transform: translate(65px, 0);}
+}
+@keyframes object_four {
+  50% {transform: translate(65px, 0);-webkit-transform: translate(65px, 0);}
+}
+@-webkit-keyframes object_five {
+  50% {-webkit-transform: translate(65px, 65px);}
+}
+@keyframes object_five {
+  50% {transform: translate(65px, 65px);-webkit-transform: translate(65px, 65px);}
+}
+@-webkit-keyframes object_six {
+  50% {-webkit-transform: translate(0, 65px);}
+}
+@keyframes object_six {
+  50% {transform: translate(0, 65px);-webkit-transform: translate(0, 65px);}
+}
+@-webkit-keyframes object_seven {
+  50% {-webkit-transform: translate(-65px, 65px);}
+}
+@keyframes object_seven {
+  50% {transform: translate(-65px, 65px);-webkit-transform: translate(-65px, 65px);}
+}
+@-webkit-keyframes object_eight {
+  50% {-webkit-transform: translate(-65px, 0);}
+}

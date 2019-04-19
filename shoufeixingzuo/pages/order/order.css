@@ -1,0 +1,229 @@
+.order{
+    background: #352160;
+}
+.order-top{
+    width: 100%;
+    background: #352160;
+    position: relative;
+}
+.order-top .order-top-bg{
+    height:897rpx;
+    width:750rpx;
+    top:0;
+    position: absolute;
+     
+}
+.order-bg{
+ background: #352160;
+}
+.order-top-content{
+    width:100%;
+    position: absolute;
+    padding-top:128rpx; 
+    text-align: center;
+   
+    
+}
+.order-top-title{
+    text-align: center;
+    font-size: 48rpx;
+    color:#fff;
+    margin-bottom:22rpx; 
+}
+.order-top-content .order-top-year{
+    width:616rpx;
+    height:165rpx;
+}
+.order-title{
+    width:710rpx;
+    height:149rpx;
+}
+.order-null{
+    margin: 30rpx 0;
+}
+.order-content-title-1{
+    background:#03CEB0;
+    color:#fff;
+    text-align: center;
+    width: 180rpx;
+    border-radius: 50rpx;
+    margin: 30rpx auto;
+    font-size: 36rpx;
+    letter-spacing: 2rpx;
+     padding: 10rpx 20rpx 5rpx 20rpx;
+}
+
+.order-content-title-2{
+    background:#FF4A81;
+    color:#fff;
+    text-align: center;
+    width: 180rpx;
+    border-radius: 50rpx;
+   padding: 10rpx 20rpx 5rpx 20rpx;
+    margin: 30rpx auto;
+    font-size: 36rpx;
+} 
+.order-content-title-3{
+    background:#FFC924;
+    color:#fff;
+    text-align: center;
+    width: 180rpx;
+    border-radius: 50rpx;
+    padding: 10rpx 20rpx 5rpx 20rpx;
+    margin: 30rpx auto;
+    font-size: 36rpx;
+}
+.order-content-title-4{
+    background:#4C8CE9;
+    color:#fff;
+    text-align: center;
+    width: 180rpx;
+    padding: 10rpx 20rpx 5rpx 20rpx;
+    border-radius: 50rpx; 
+    margin: 30rpx auto;
+    font-size: 36rpx;
+}
+.order-content{
+    width:710rpx;
+    padding-top:10rpx; 
+    padding-bottom: 30rpx;
+    margin: -10rpx auto 0 auto;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius:0 0 20rpx 20rpx;
+
+}
+.left{
+    width:170rpx;
+}
+.right{
+    width:460rpx;
+}
+.content-list{
+    margin-top: 60rpx;
+}
+.order-content-lab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color:#03CEB0;
+    padding:  0rpx 40rpx;
+    box-sizing: border-box;
+}
+.order-content-lab text{ 
+    color:#fff; 
+}
+.order-content-lab-list:nth-child(2n-1){
+    width:60%;
+    display: flex;
+    margin-bottom: 20rpx;
+    justify-content: start;
+}
+.order-content-lab-list:nth-child(2n){
+    width:40%;
+    display: flex;
+    margin-bottom: 20rpx;
+    justify-content: start;
+}
+.order-subhead{
+    text-align: left; 
+    color:#03CEB0;
+    padding-left: 40rpx;
+    box-sizing: border-box;
+}
+.order-sub-content{
+    padding-left: 40rpx;
+    text-align: left;
+    padding-bottom:20rpx;
+    box-sizing: border-box;
+    color:#fff;
+}
+.order-ys{
+    display: flex;
+    justify-content: flex-start; 
+    color:#FF4A81;
+    text-align: left;
+    padding: 10rpx 40rpx;
+}
+.order-ys-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:#FFC924;
+    text-align: left;
+    padding: 10rpx 40rpx;
+}
+.order-ys-3-text{
+    color:#FFC924;
+    text-align: center;
+    margin: 20rpx;
+}
+ .order-ys-4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:#4C8CE9;
+    text-align: left;
+    padding: 10rpx 40rpx;
+}
+.yellow{
+    color:#FFE92D;
+}
+.white{
+    color:#fff;
+}
+.blue{
+    color:#4C8CE9;
+}
+.order-ys-4-text{
+    color:#4C8CE9;
+    text-align: center;
+    margin: 20rpx;
+}
+.order-yes-zxt{
+    width:680rpx;
+    height:476rpx;
+}
+.order-ys-list{
+    display: flex;
+
+}
+.star{
+    width:31rpx;
+    height:31rpx;
+    margin-right:20rpx; 
+}
+.order-ys-more{
+    padding:0 40rpx;
+    color:#fff;
+    text-align: justify;
+    text-align-last: left;
+}
+.order-footer{
+    position: fixed;
+    bottom: 0rpx;
+    padding: 20rpx 0;
+    box-sizing: border-box;
+    width: 100%; 
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-footer-box{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    font-size: 48rpx;
+    height:116rpx;
+    line-height: 116rpx;
+    color:#fff;
+    top:20rpx;
+    left: 0; 
+}
+.order-footer-bg{
+    width:606rpx;
+    height:116rpx; 
+    position: relative;
+}

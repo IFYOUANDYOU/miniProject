@@ -1,0 +1,6 @@
+<view class="ready2Text1">测测你的前任在干嘛</view>
+<image src='https://za.jiqixing.com/static/images/readtImg2.png' class="readtImg2"></image>
+<form>
+  <input placeholder='请输入前任姓名' placeholder-style='color:a7a7a7;font-size:30rpx' class='readtInput' maxlength='5' bindblur='inputbind' ></input>
+</form>
+<view class="playBtn" bindtap='beginTest'>开始</view>

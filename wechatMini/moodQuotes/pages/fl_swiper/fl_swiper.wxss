@@ -1,0 +1,29 @@
+page{position: relative}
+.bg_gray{background: rgb(52, 52, 52);opacity: 0.9;width: 600rpx;height: 518rpx;}
+.slider_foot_box_a_text{font-size: 26rpx;color: #ffffff;margin-left: 10rpx}
+/**/
+.home_swiper_function{width: 100%;color: #ffffff;display: flex;align-items: center;justify-content: space-around;}
+.home_swiper_btn{width: 100%;text-align: center;margin: 0 auto;margin-top: 40rpx}
+.home_swiper_btn_text{font-size: 36rpx;color: #000000;letter-spacing: 4rpx;background: #ffffff;border: 1rpx solid #ffffff;padding: 15rpx 25rpx;}
+.home_swiper_function_1_img{width: 35rpx;height: 32rpx;display: inline-block}
+.home_swiper_function_1_img2{width: 37rpx;height: 37rpx;display: inline-block}
+.home_swiper_function_1_img3{width: 33rpx;height: 40rpx;display: inline-block}
+.home_swiper_function_1_img4{width: 36rpx;height: 37rpx;display: inline-block}
+
+/*赏*/
+.home_swiper_hide_page_box{width: 100%;display: flex;justify-content: center;position: absolute;bottom:500rpx;opacity: 1}
+.home_swiper_hide_page_box2{width: 100%;display: flex;justify-content: center;position: absolute;bottom:500rpx;background: transparent;opacity: 0}
+.home_swiper_hide_page{width: 600rpx;height: 518rpx;background:rgb(255, 255, 255)}
+.home_swiper_hide_page_imgbox{width: 100%;height: 36rpx;display: flex;justify-content: flex-end;align-items: center;}
+.home_swiper_hide_page_img{width: 36rpx;height: 36rpx;margin: 50rpx 20rpx 20rpx 20rpx}
+.home_swiper_hide_page_logo{width: 100rpx;height: 100rpx;text-align: center;line-height: 100rpx;border: 4rpx solid rgb(249, 86, 86);border-radius: 50%;color: rgb(249, 86, 86);font-size: 60rpx;font-weight: bolder;box-sizing: border-box}
+.home_swiper_hide_price{width: 100%;display: flex;align-items: center;justify-content: center;margin: 20rpx 0}
+.home_swiper_hide_price1{padding: 10rpx 20rpx;color: rgb(249, 86, 86);font-size: 34rpx;border: 2rpx solid rgb(249, 86, 86);border-radius: 15rpx}
+.home_swiper_hide_price_else{width: 100%;text-align: center;color: rgb(67, 201, 237);font-size: 26rpx;margin: 30rpx 0 20rpx 0}
+.home_swiper_hide_info{color: rgb(160, 160, 160);font-size: 24rpx;text-align: center}
+.home_swiper_hide_price_others_page_box{position: absolute;width:100%;opacity: 1;background: #ffffff;}
+.home_swiper_hide_price_others_page_box2{display: none}
+.home_swiper_hide_price_others_page{position: absolute;width: 600rpx;height: 300rpx;top: -320rpx;opacity: 1;left: 50%;margin-left: -373rpx;background: #ffffff;}
+.home_swiper_hide_price_others_page2{position: absolute;width: 100%;height: 300rpx;top: -320rpx;background: transparent;opacity: 0}
+.home_swiper_hide_page_text{font-size: 38rpx;color: rgb(51, 51, 51);margin-right: 50rpx}
+.home_swiper_hide_price_form_input{width: 226rpx;height: 36rpx;display: inline-block;margin-right: 50rpx}

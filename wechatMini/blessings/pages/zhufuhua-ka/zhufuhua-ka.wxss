@@ -1,0 +1,169 @@
+/* pages/zhufuhua-ka/zhufuhua-ka.wxss */
+page{
+	background: #db2727;
+	font-family: "微软雅黑";
+}
+.content{
+	width: 628rpx;
+	height: 815rpx;
+	margin: 0 auto;
+	margin-top: 53rpx;
+	background: #fff;
+	border-radius: 36rpx;
+	position: relative;
+	overflow: hidden;
+}
+.content .con-bg{
+	width: 628rpx;
+	height: 815rpx;
+	
+}
+.content .detail{
+	width: 628rpx;
+	height: 815rpx;
+	position: absolute;
+	left: 0;top: 0;
+}
+.content .detail .user-img{
+	width: 180rpx;
+	height: 180rpx;
+	margin: 0 auto;
+	margin-top: 85rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.content .detail .user-img image{
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
+}
+.content .detail .to{
+	overflow: hidden;
+	margin-left: 50rpx;
+	margin-top: 40rpx;
+}
+.content .detail .to .todo{
+	font-size: 38rpx;
+	color: #7e7d7d;
+	float: left;
+}
+.content .detail .to .to-in{
+	float: left;
+	font-size: 36rpx;
+	margin-left: 15rpx;
+	color: #7e7d7d;
+	margin-top: 2rpx;
+}
+.content .detail .do-txt{
+	font-size: 40rpx;
+	color: #1e1818;
+	width: 530rpx;
+	height: 220rpx;
+	margin:  0 auto;
+	margin-top: 30rpx;
+	line-height: 50rpx;
+}
+.mess{
+	width: 520rpx;
+	margin: 0 auto;
+	margin-top: 10rpx;
+}
+.mess .name{
+	width: 100%;
+	float: right;
+	font-size: 30rpx;
+	text-align: right;
+	color: #7e7d7d;
+	overflow: hidden;
+}
+.mess .time{
+	width: 100%;
+	float: right;
+	text-align: right;
+	font-size: 30rpx;
+	color: #7e7d7d;
+	margin-top: 5rpx;
+	overflow: hidden;
+}
+.ku-url{
+	font-size: 40rpx;
+	color: #eab11f;
+	text-decoration: underline;
+	margin-top: 40rpx;
+	margin-left: 60rpx;
+}
+.btn{
+	width: 630rpx;
+	margin: 0 auto;
+	margin-top: 130rpx;
+}
+
+.btn .f-btn{
+	margin: 0 auto;
+	width: 290rpx;
+	height: 100rpx;
+	border-radius: 10rpx;
+	color: #fff;
+	font-size: 46rpx;
+	background-color: #eab11f;
+	line-height: 96rpx;
+   text-align: center;
+}
+
+.window{
+	position: fixed;
+	left: 0;bottom: 0;
+	width: 750rpx;
+	height: 447rpx;
+	z-index: 99999;
+	display: none;
+}
+.window .win-bg{
+	width: 750rpx;
+	height: 447rpx;
+}
+.window .win-con{
+	position: absolute;
+	left: 0;top: 0;
+	width: 750rpx;
+	height: 447rpx;
+}
+.window .win-con .win-top{
+	font-size: 36rpx;
+	color: #fff;
+	margin-left: 30rpx;
+	margin-top: 30rpx;
+}
+.window .win-con .btn1{
+	width: 190rpx;
+	float: left;
+	margin-top: 50rpx;
+	margin-left: 110rpx;
+}
+.window .win-con .btn1 image{
+	width: 190rpx;
+	height: 190rpx;
+}
+.window .win-con .btn1 .txt{
+	font-size: 34rpx;
+	color: #cdcdcd;
+	text-align: center;
+	margin-top: 15rpx;
+}
+
+.window .win-con .btn2{
+	width: 190rpx;
+	float: right;
+	margin-top: 50rpx;
+	margin-right: 110rpx;
+}
+.window .win-con .btn2 image{
+	width: 190rpx;
+	height: 190rpx;
+}
+.window .win-con .btn2 .txt{
+	font-size: 34rpx;
+	color: #cdcdcd;
+	text-align: center;
+	margin-top: 15rpx;
+}

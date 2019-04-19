@@ -1,0 +1,87 @@
+<view class="fx-box" s-if="{{!showStar}}">
+	<image class="fx-bg" src="../../images/fx_bg.png"></image>
+	<view class="fx-name-box">
+		<view class="fx-name">狮子座<text>的</text></view>
+		<view class="fx-title">2019运势分析</view>
+		<view class="fx-list-box">
+
+			<view class="fx-list" s-for="item in fenxi">
+				<image s-if="{{item.state==0}}" class="loading" src="../../images/loading.png"></image>
+				<image s-if="{{item.state==1}}" src="../../images/yes.png"></image>
+				<view>{{item.name}}</view>
+			</view>
+
+		</view>
+		<view class="fx-over" s-if="{{showBg}}">分析完成，生成报告中...</view>
+	</view>
+</view>
+<view s-if="{{showStar}}">
+	<view class="order-top">
+		<image class="order-top-bg" src="../../images/index_top.jpg"></image>
+		<view class="order-top-lab">
+			<view>当前星座：<text>狮子座</text></view>
+			<image src="../../images/change.png"></image>
+		</view>
+
+	</view>
+	<view class="order-box">
+		<view class="order-content">
+			<view class="order-box-title">完整解析包含以下内容</view>
+			<view class="order-about">
+				<view class="order-about-list">
+					<view class="order-about-dian"></view>
+					<view>你的脱单详细攻略</view>
+				</view>
+				<view class="order-about-list">
+					<view class="order-about-dian"></view>
+					<view>你和TA的感情状况</view>
+				</view>
+				<view class="order-about-list">
+					<view class="order-about-dian"></view>
+					<view>你今年能否发财</view>
+				</view>
+				<view class="order-about-list">
+					<view class="order-about-dian"></view>
+					<view>你的大额支出详情</view>
+				</view>
+				<view class="order-about-list">
+					<view class="order-about-dian"></view>
+					<view>你的职场机遇风险</view>
+				</view>
+				<view class="order-about-list">
+					<view class="order-about-dian"></view>
+					<view>你的事业转型现状</view>
+				</view>
+			</view>
+			<view class="order-car">
+				<image class="order-car-bg" src="../../images/car.png"></image>
+				<view class="order-car-content">
+					<view class="order-car-title">距优惠结束</view>
+					<view class="order-car-time">{{timeEnd}}</view>
+					<view class="order-car-footer">
+						<view></view>
+						<view class="order-car-btn">限时优惠：￥19.9</view>
+						<view class="order-car-yj">原价 ￥<text>138.8</text></view>
+					</view>
+				</view>
+			</view>
+			<view class="order-cat-pay" bindtap="goInfo">立即支付</view>
+		</view>
+		<view class="order-dis">支付后，可查看以下所有内容</view>
+		<view class="order-car-down">
+			<image src="../../images/down.png"></image>
+		</view>
+		<view class="order-ys">
+			<image class="order-ys-1" bindtap="goInfo" src="../../images/ys1.png"></image>
+		</view>
+		<view class="order-ys">
+			<image class="order-ys-2" bindtap="goInfo" src="../../images/ys2.png"></image>
+		</view>
+		<view class="order-ys">
+			<image class="order-ys-3" bindtap="goInfo" src="../../images/ys3.png"></image>
+		</view>
+		<view class="order-see-box" s-if="{{showBtn}}">
+			<view class="order-see"  bindtap="goInfo">查看完整解析（￥8.8）</view>
+		</view>
+	</view>
+</view>

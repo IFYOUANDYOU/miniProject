@@ -1,0 +1,48 @@
+<view class="topay">
+	<view class="topay-top">
+		<image src="../../images/hd.jpg"></image>
+		<view class="topay-info">
+			<view>姓名：张三</view>
+			<view>x性别：男</view>
+			<view>生日：1973-9-8</view>
+		</view>
+	</view>
+	<view class="topay-discript">已有 69852134人进行测试， 98.7%以上的测算用户都觉得对自身的前程有很大的帮助。 大师团队利用传统四柱八字推测出你的一生财运、事业、感情、健康、人际等重要问题！</view>
+	<view class="topay-row"><text class="red">98.7%</text>以上用户对分析结果非常满意！</view>
+	<view class="topay-row red">支付完成后</view>
+	<view class="topay-row">将为你<text class="red">解锁</text>以下六项重要内容</view>
+	<view>
+		<image mode="widthFix" src="../../images/top.png"></image>
+		<view class="topay-row-content" style="background-image:url(../../images/center.png)">
+			<image class="row-title" src="../../images/title_1.png"></image>
+			<view class="topay-row-box">
+				<view>1.想知道你的 五行属性？</view>
+				<view>2.想知道你的 好运需要 哪种五行帮助？</view>
+				<view>3.想知道你的 人生高峰期在什么时候？</view>
+			</view>
+			<view class="topay-row-btn">支付后查看分析</view>
+		</view>
+		<image mode="widthFix" src="../../images/bottom.png"></image>
+
+	</view>
+	<view>
+		<image mode="widthFix" src="../../images/top.png"></image>
+		<view class="topay-row-content" style="background-image:url(../../images/center.png)">
+			<image class="row-title" src="../../images/title_3.png"></image>
+			<view class="topay-row-box">
+				<view>1.想知道你的 五行属性？</view>
+				<view>2.想知道你的 好运需要 哪种五行帮助？</view>
+				<view>3.想知道你的 人生高峰期在什么时候？</view>
+			</view>
+			<view class="topay-row-btn">支付后查看分析</view>
+		</view>
+		<image mode="widthFix" src="../../images/bottom.png"></image>
+
+	</view>
+		<image class="topay-row-end" mode="widthFix" src="../../images/title_other.png"></image>
+	
+</view>
+<view class="index-footer" s-if="{{showBtn}}">
+	<view class="index-footer-go">付费解锁全部选项</view>
+
+</view>

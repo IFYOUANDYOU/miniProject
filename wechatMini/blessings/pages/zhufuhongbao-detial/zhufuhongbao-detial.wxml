@@ -1,0 +1,107 @@
+<!--pages/zhufuhongbao-detial/zhfuhongbao-detial.wxml-->
+<view class='top'>
+  <image class='top-bg' src='../image/zhufuhongbao-sbg.png'></image>
+  <view class='top-content'>
+    <view class='detail'>
+      <image class='de-bg' src='../image/zhufuhongbao-fa-de.png'></image>
+      <view class='text' wx:if="{{data.wishes.type==0?true:false}}">
+        <view class='txt'>{{data.wishes.content}} </view>
+      </view>
+      <view class='audio' wx:if="{{data.wishes.type==1?true:false}}" data-src ="{{data.wishes.content}}"  catchtap='listen'>
+        <image class='icon' src='../image/audio.png'></image>
+        <view class='txt'>收听祝福</view>
+      </view>
+    </view>
+    <view class='mess'>
+      <view class='head-img'>
+        <image src='{{data.wishes.avatar}}'></image>
+      </view>
+      <view class='text'>
+        <view class='user-name'>{{data.wishes.nickname}}</view>
+        <view class='txt-name'>送你的祝福红包</view>
+      </view>
+    </view>
+    <view class='cl-btn'>
+      <view animation="{{lingquhongbao}}" class='cl-btn1' catchtap='get_num' wx:if="{{data.wishes.order_status==1&&!data.wishes.my_get_money?true:false}}">
+        <image src='../image/zfhb-d1.png'></image>
+      </view>
+      <view  class='cl-btn2' catchtap='no_num' wx:elif="{{data.wishes.order_status==0||data.wishes.order_status==2&&!data.wishes.my_get_money?true:false}}">
+        <image src='../image/zfhb-d2.png'></image>
+      </view>
+      <view class='cl-btn2' wx:else>
+        <image src='../image/111.png'></image>
+        <view class='my_money'>{{data.wishes.my_get_money}}</view>
+      </view>
+    </view>
+    <view class='danmuBox'>
+      <block wx:for="{{data.list}}" wx:key="{{index}}">
+      <view animation="{{item.oanimation}}" class='danmu1 animation{{index+1}}'>
+        <image class='user-img' src='{{item.avatar}}'></image>
+        <view class='text'>获得{{item.money}}赏金</view>
+      </view>
+      </block>
+      <block wx:for="{{liuyan_list}}" wx:key="{{index}}">
+      <view animation="{{item.oanimation}}" class='danmu1 animation{{index+1}}'>
+        <image class='user-img' src='{{item.avatar}}'></image>
+        <view class='text'>{{item.content}}</view>
+      </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='btn'>
+  <view class='fa-btn' catchtap='go_fa'>
+    <image src='../image/zfhb-d3.png'></image>
+    <view class='btn-name' >我要发</view>
+  </view>
+  
+  <view class='fen-btn'>
+  <button  open-type='share'>
+      <image src='../image/zfhb-d4.png'></image>
+    <view class='btn-name'>去分享</view>
+  </button>
+    
+  </view>
+  <view class='liu-btn' catchtap='show_liuyan'>
+  <view class='btn-name' ></view>
+    <image src='../image/zfhb-d5.png'></image>
+    <view class='btn-name' >留言</view>
+  </view>
+</view>
+
+<view class='detial'>
+  <view class='de-co'>
+    <view class='text'>共{{data.wishes.money}}元，领取{{data.wishes.get_num}}/{{data.wishes.sum_num}}个</view>
+    <view class='list'>
+
+    <block wx:for="{{data.list}}" wx:key="{{index}}">
+      <view class='list-one'>
+          <view class='other-head'>
+            <image src='{{item.avatar}}'></image>
+          </view>
+          <view class='mess'>
+            <view class='name'>{{item.nickname}}</view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+          <view class='mon'>￥{{item.money}}</view>
+      </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<view class='ly-window' wx:if="{{liuyan}}" >
+  <view class='ly-shade' catchtap='hide_liuyan'></view>
+  <view class='ly-con'>
+    <view class='win-top'>
+      <image src='../image/zfhb-ly.png'></image>
+      <view class='title'>留言感谢</view>
+    </view>
+    <view class='inp-txt'>
+      <textarea bindinput='get_txt_num' class='texta' maxlength='20'></textarea>
+      <view class='inp-ti'>{{txt_num}}/20</view>
+    </view>
+    <view class='btm-line'></view>
+    <view catchtap='send_liuyan' class='sure-btn'>发送</view>
+  </view>
+</view>

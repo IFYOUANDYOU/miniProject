@@ -1,0 +1,123 @@
+.index-top-img{
+  width:750rpx;
+  height:397rpx;
+  padding: 0;
+  margin: 0;
+}
+.index-top{
+  height:397rpx;
+}
+ 
+.index-content{ 
+  font-size: 35rpx;
+  color:#666;
+  width:750rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #fff; 
+}
+.index-form{
+  border:1px solid #e2ccb0;
+  background: #fff;
+}
+.index-form-lab{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  align-items: center;
+}
+.index-form-lab:nth-child(2){
+  border-top:1px solid #e2ccb0;
+  border-bottom:1px solid #e2ccb0;
+}
+.index-form-left{
+  margin-right:20rpx; 
+}
+.pickers{
+  text-align: center;
+}
+picker-view  .pickers:nth-child(4n){ 
+   font-size: 25rpx;
+} 
+
+.index-picker{
+  display: flex;
+  justify-content: space-between;
+  width:600rpx;
+  margin:100rpx auto 100rpx auto;
+  border:1px solid #cd383e;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.index-picker-class{
+  width:50%;
+  text-align: center;
+  padding: 10rpx 0;
+  color:#cd383e;
+}
+.index-picker-on{
+  color:#fff;
+  background: #cd383e;
+}
+.index-picker-box{
+  padding: 0;
+  width:100%;
+}
+.picker{
+  position: fixed;
+  top:0;
+  width:100%;
+  height:100vh; 
+  background:#fff;
+  z-index: 9999;
+}
+.picker-btn{
+  width:600rpx;
+  margin: 100rpx auto 0 auto;
+  text-align: center;
+  background: #d21e3d;
+  color:#fff;
+  height:70rpx;
+  line-height: 70rpx;
+} 
+.index-form-left{
+  width:140rpx;
+  text-align: justify;
+  text-align-last: justify;
+}
+.index-form-right{
+  width:500rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.index-form-right radio-group{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.index-form-right radio-group label{
+  margin-right:40rpx; 
+}
+.index-form-date{
+  width:56rpx;
+  height:56rpx;
+}
+.index-personal{
+  text-align: center;
+}
+.index-personal text{
+  color:#f00;
+}
+.index-img-1{
+  width: 100%;
+  margin: 20rpx 0;
+}
+.index-img-end{
+  background: #fff;
+}
+.top-5{
+  margin-top:-30rpx; 
+}
+.index-img-list{
+  margin-bottom: 60rpx;
+}

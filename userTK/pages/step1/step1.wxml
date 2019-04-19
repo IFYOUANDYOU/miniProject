@@ -1,0 +1,33 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container" style="padding-bottom: {{step==3?0:'180rpx'}}">
+  <view class="steps">
+    <view class="step {{step>=1?'active':''}}">第一步</view>
+    <view class="line {{step>=2?'active':''}}"></view>
+    <view class="step {{step>=2?'active':''}}">第二步</view>
+    <view class="line {{step>=3?'active':''}}"></view>
+    <view class="step {{step>=3?'active':''}}">第三步</view>
+  </view>
+  <view class="inner">
+    <view class="step1" animation="{{animation}}">
+      <view wx:if="{{drugs.length!=0}}" class="addtt">
+        添加药品
+        <button class="suberror" type="button" catchtap="subError">识别有误？</button>
+      </view>
+      <block wx:for="{{drugs}}" wx:key="key" wx:for-item="drugItem">
+        <template is="drug" data="{{...drugItem}}" />
+      </block>
+      <view wx:if="{{tp!='A'}}" class="addbtn" catchtap="entryDrug">{{drugs.length==0?'扫码录入用药':'继续添加'}}</view>
+    </view>
+    <view class="submit">
+      <navigator wx:if="{{tp=='A'}}" class="btn" open-type="redirect" url="/pages/step2/step2?cardId={{cardId}}&error={{haserror}}">下一步</navigator>
+      <view wx:else class="btn" catchtap="addCatch">下一步</view>
+    </view>
+  </view>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

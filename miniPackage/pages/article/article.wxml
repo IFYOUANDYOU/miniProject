@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="top-bar">
+    <button hover-class="none" wx:for="{{bar}}" class="bar-item" data-id="{{item.id}}" wx:key="{{item.id}}" catchtap="bingTopChange">
+      <image src="/img/{{item.icon}}_active.png"></image>
+      <view>{{item.name}}</view>
+    </button>
+    <button class="bar-item" hover-class="none" open-type="share">
+      <image src="/img/share_active.png"></image>
+      <view>分享</view>
+    </button>
+  </view>
+  <!-- 标题 -->
+  <view class="title">{{article.title}}</view>
+  <!-- 正文 -->
+  <view class="content" style="background-image:url({{article.backgif}})">
+    <rich-text class="richtext" nodes="{{article.content}}" />
+  </view>
+  <!-- 分享按钮 -->
+  <view class="share-btn">
+    <button class="share-item" hover-class="none" open-type="share">
+      <image src='/img/share.png'></image>
+      <view>分享给好友</view>
+    </button>
+    <button class="share-item" hover-class="none" open-type="share">
+      <image src='/img/share.png'></image>
+      <view>分享到群</view>
+    </button>
+  </view>
+  <!-- 用户 -->
+  <view class="user">
+    <image class="user-thumb" src='http://img1.imgtn.bdimg.com/it/u=3523617831,1288544462&fm=26&gp=0.jpg'></image>
+    <view class="user-name">大大</view>
+    <view class="user-time">2019-9-8</view>
+  </view>
+  <image class="line" mode="widthFix" src="/img/line1.png"></image>
+  <!-- 相关推荐 recommend -->
+  <view class="r-title">_____ 相关推荐 _____</view>
+  <view class="r-lists">
+    <view wx:for="{{recommend}}" wx:key="{{item.id}}" data-id="{{item.id}}" class="r-item" catchtap="bindRecom">
+      <text>{{item.title}}</text>
+      <image class="r-thumb" src="{{item.thumb}}" mode="aspectFill"></image>
+    </view>
+  </view>
+  <image class="line" mode="widthFix" src="/img/line2.png"></image>
+  <!-- 返回首页 -->
+  <view class="returnTop">返回首页</view>
+  <!-- 音乐 -->
+  <image class="music" bindtap="payMusic" src="/img/music.png"></image>
+</view>

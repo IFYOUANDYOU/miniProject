@@ -1,0 +1,17 @@
+.container{margin: 0 32rpx;}
+.steps{display: flex;align-items: center;justify-content: space-around;margin: 40rpx 24rpx;}
+.step{width: 120rpx;height: 120rpx;line-height: 120rpx;text-align: center;background: #e1e1e1;color: #999;border-radius: 140rpx;position: relative;flex-shrink: 0;font-weight: bold;}
+.line{height: 4rpx;background: #e1e1e1;width: 90rpx;margin: 0 20rpx;border-bottom: none;}
+.step.active{background: #fff;border: 6rpx solid #3081f2;color: #3081f2;}
+.line.active{background: #3081f2;}
+
+.addtt{font-size: 32rpx;margin-left: 24rpx;line-height: 72rpx;}
+.addtt .suberror{float: right;color: #f2af3d;background: transparent;line-height: 72rpx;height: 72rpx;font-size: 28rpx;padding: 0 12rpx;}
+.addtt .suberror::before,.addtt .suberror::after{display: none;}
+.drug-item{margin-left: 12rpx;margin-right: 12rpx;}
+.addbtn{border: 2rpx dashed #3081f2;color: #3081f2;text-align: center;line-height: 78rpx;margin: 50rpx 12rpx;font-size: 30rpx;}
+.addbtn::before{font-family: "iconfont";content: "\e689";margin-right: 8rpx;font-size: 32rpx;font-weight: bold;}
+/* .step3{transform: translateX(300%);} */
+
+.feedback .text{padding: 12rpx;background: #f5f7fc;margin-top: 24rpx;}
+.feedback textarea{width: 100%;height: 120rpx;overflow: scroll;}

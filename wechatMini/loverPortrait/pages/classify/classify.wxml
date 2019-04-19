@@ -1,0 +1,14 @@
+<view class='page'>
+  <!-- <view class='gif_top'>
+       <view class='img_box'>
+          <image class='gif_top_img' src='/img/icon/selection.png'></image>
+        </view>
+         <text>精选推荐</text> 
+  </view> -->
+
+  <view class='img_content_box'>
+      <block wx:for="{{list}}" wx:key="{{index}}">
+        <image catchtap='go_detail' data-type="{{type}}" data-id="{{item.id}}" data-src="{{item.path}}" class='gif_img' src='{{item.path}}'></image>
+      </block>
+  </view>
+</view>

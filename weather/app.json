@@ -1,0 +1,15 @@
+{
+    "pages": [
+       
+        "pages/index/index",  
+          "pages/test/test",
+        "pages/conlist/conlist"
+       
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "星座运程",
+        "backgroundTextStyle": "light"
+    }
+}

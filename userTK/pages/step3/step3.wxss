@@ -1,0 +1,13 @@
+@import "/pages/step1/step1.wxss";
+.inner{transform: translateX(200%);}
+form{display: block;}
+.survey,.feedback{padding: 24rpx;box-shadow: 0 5rpx 12rpx 3rpx rgba(0, 0, 0, 0.15);background: #fff;margin: 24rpx 12rpx;line-height: 40rpx;}
+.survey{font-size: 30rpx;color: #999;}
+.survey .title,.feedback .title{color: #333;font-size: 32rpx;}
+.survey .radio-group{margin-left: 24rpx;margin-top: 16rpx;}
+.survey .radio{padding: 12rpx 0;display: flex;align-items: center;justify-content: space-between;}
+.survey .radio.select{color: #3081f2;}
+.survey .check{position: absolute;right: 0;top: 32rpx;width: 32rpx;height: 32rpx;}
+.survey radio{display: none;}
+.survey .radio::after{font-family: "iconfont";content: "\e72f";color: #d5dae0;font-size: 40rpx;font-weight: bold;}
+.survey .radio.select::after{content: "\e71f";color: #3081f2;}

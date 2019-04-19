@@ -1,0 +1,13 @@
+/*detail_pic*/
+.new_page_pic{width: 100%;height: 469rpx;display: block}
+/*text*/
+.text{font-size: 30rpx;color: #000;width: 655rpx;height: 77rpx;margin: 48rpx;line-height: 50rpx}
+/*function_area*/
+.function_area_box{width: 610rpx;display: flex;align-items: center;justify-content: space-around;margin: 0 auto;padding-top: 46rpx}
+.function_area_min1{display: flex;align-items: center}
+.function_area_text{font-size: 28rpx;color: rgb(86, 207, 150);margin-left: 8rpx}
+.function_area_icon1{width: 31rpx;height: 27rpx;display: block}
+.function_area_icon2{width: 28rpx;height: 28rpx;display: block}
+/*button*/
+.button_box{width: 100%;height: 60rpx;display: flex;align-items: center;margin-top: 350rpx;justify-content: center}
+.button_btn{width: 240rpx;height: 60rpx;border-radius: 10rpx;color: rgb(255, 255, 255);font-size: 36rpx;text-align: center;line-height: 60rpx;background-color: rgb(86, 207, 150)}

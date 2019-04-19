@@ -1,0 +1,46 @@
+/* pages/sign_ok/sign_ok.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.sing_success{
+  width: 100%;
+  height: 100%;
+  background: #F5F6FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ok_img{
+  width:578rpx;
+  height:912rpx;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42rpx;
+}
+
+.save{
+  width: 230rpx;
+  height: 84rpx;
+  background:#7FCFA1;
+  font-size: 36rpx;
+  color: #fff;
+  line-height: 84rpx;
+  text-align: center;
+  border-radius: 42rpx;
+}
+
+button{
+   width: 230rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #7FCFA1;
+  border: 3rpx solid #7FCFA1;
+  border-radius: 42rpx;
+  margin-left: 44rpx;
+}

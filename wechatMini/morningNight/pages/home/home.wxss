@@ -1,0 +1,352 @@
+page{
+  background: #fff;
+}
+.img_box{width: 100%;height: 100%}
+.hhx_img_box2{width: 40rpx;height: 40rpx;display: block}
+.hhx_img_box1{width: 44rpx;height: 44rpx;display: block}
+.hhx_img1{position: static;display: block}
+.hhx_img2{position: static;display: block}
+.hhx_mr{margin-left: 15rpx;margin-top: 10rpx}
+.home-img{
+  display: block;
+}
+button::after{
+  border: none;margin: 0;padding: 0;border-radius: 0;overflow: initial;
+}
+#hhx_btn{
+  background: transparent;border-radius: 0;overflow: initial;
+}
+.textbtn{
+  background: #fff;
+  border: none;
+  text-align: left;
+   border-bottom: none; 
+  background-color:#fff; 
+}
+.textbtn::after{
+  border: none;
+  
+}
+.userInfo{
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #9f9d99;
+  margin-top: 20rpx;
+}
+.userInfo image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius:30rpx; 
+  margin-left: 14rpx;
+  margin-right: 16rpx;
+}
+
+
+
+
+
+
+/* 底部弹出框 */
+
+.bigbox{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.8) ;
+  z-index: 99;
+}
+.hid{
+  display: none;
+}
+
+.popUp{
+  width: 602rpx;height: 855rpx;box-sizing: border-box;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.hide_view{
+  width: 100%;height: 0;box-sizing: border-box;position: fixed;bottom: 0;z-index: 0
+}
+
+.popUp_top{
+  width: 100%;
+  height: 200rpx;background: #eeeeee;display: flex;align-items: center;justify-content: flex-start;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+}
+.popUp_top_a{
+  width: 100rpx;margin: 0 60rpx;
+}
+.popUp_icon{
+  width: 100%;height: 120rpx;border-radius: 15rpx;background: #fff;
+}
+.popUp_icon_wx{
+  width: 64rpx;height: 64rpx;display: block
+}
+
+.popUp_icon{
+  width: 100%;height: 120rpx;border-radius: 10rpx;background: #fff;
+}
+.popUp_icon_pyq{
+  width: 110rpx;height: 50rpx;display: block
+}
+
+
+
+.popUp_text{
+  width: 100%;text-align: center;font-size: 28rpx;color: #000;white-space: nowrap;margin-top: 5rpx
+}
+.popUp_icon_btn{
+  line-height: initial;margin: 0;padding: 0;display: flex;align-items: center;justify-content: center
+}
+
+.popUp_cancel{
+  width: 100%;height: 100rpx;background: #fff;color: #000;font-size: 32rpx;text-align: center;line-height: 100rpx;
+  font-weight: bold;border-bottom-left-radius: 15rpx;border-bottom-right-radius: 15rpx;
+}
+
+
+/* 分享到朋友圈名片 */
+
+.visited_card_box{
+  position: fixed;top: 0;z-index: 9999;display: flex;align-items: center;justify-content: center;background: rgba(0, 0, 0, .4)
+}
+.visited_card{
+  width: 600rpx;border-radius: 10rpx;border: 1rpx solid gainsboro;background: #fff
+}
+/* 遮罩层 */
+.visited_card_text1{
+  font-size: 38rpx;width: 100%;text-align: center;color: #000
+}
+.margin_1{
+  padding: 30rpx 0 10rpx 0;
+}
+.margin_2{
+  padding: 10rpx 0;
+}
+.margin_3{
+  padding: 10rpx 0 30rpx 0;
+}
+.visited_card_img{
+  width: 100%;height: 100%;display: block
+}
+.visited_card_imgBox{
+  width: 450rpx;height: 500rpx;border-radius: 10rpx;border: 1rpx solid groove;margin: 0 auto;margin-bottom: 20rpx
+}
+.visited_card_text2{
+  font-size: 38rpx;width: 100%;padding: 20rpx 0;text-align: center;color: skyblue;border-top: 2rpx solid gainsboro
+}
+
+
+
+
+.my_user{
+  width: 702rpx;
+  height: 193rpx;
+  background: #F6F5F7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20rpx;
+}
+
+.my_head{
+  width: 154rpx;
+  height: 154rpx;
+  border-radius: 20rpx;
+  margin: 0 20rpx;
+}
+.my_user_info{
+ 
+  height: 154rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #242525;
+  font-size: 30rpx;
+ 
+}
+.user_name{
+   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+   max-width: 342rpx;
+}
+
+.my_user_go{
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  background: #F8B62D;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80rpx;
+}
+
+.user_go_img{
+  width: 24rpx;
+  height: 42rpx;
+}
+
+
+.sing_in{
+  width: 702rpx;
+  height: 424rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 24rpx;
+}
+
+.sign{
+  width: 340rpx;
+  height: 100%;
+  position: relative;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+}
+
+.sign_time{
+  padding: 14rpx;
+  width: 311rpx;
+  height: 106rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: RGBA(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.now_time{
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  color: #343737;
+}
+
+.people{
+  font-size: 17rpx;
+  color: RGBA(130, 130, 130, 1);
+}
+
+.date{
+  width: 61rpx;
+  height: 64rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background: RGBA(248, 182, 45, 1);
+  font-size: 17rpx;
+  color: #fff;
+}
+
+.mengban{
+  width: 100%;
+  height: 100%;
+  background: RGBA(0, 0, 0, 0.39);
+  border-radius: 20rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pop_center{
+  width: 602rpx;
+  height: 855rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+}
+
+.share_box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:50rpx; 
+}
+
+.share_txt_word{
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #282828;
+}
+
+.word_xxx{
+  font-size: 30rpx;
+	color: #282828;
+	width: 520rpx;
+	max-height: 115rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 30rpx;
+  word-break:break-all;
+  box-sizing:border-box;
+  font-family:SimHei;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+}
+
+.share{
+  position: fixed;
+  right: 20rpx;
+  top: 50%;
+  z-index: 20;
+  background: transparent;
+  
+}
+.share::after{
+  border: none;
+}

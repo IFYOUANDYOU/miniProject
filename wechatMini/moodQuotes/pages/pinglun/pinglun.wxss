@@ -1,0 +1,14 @@
+.hhx_change_function_area{display: flex;width: 95%;margin: 0 auto;align-items: center;justify-content: flex-end;margin-bottom: 15rpx}
+.hhx_change_margin{margin: 0 10rpx}
+.hhx_change_area1{display: flex;align-items: center;margin:0 10rpx}
+.hhx_change_function_area_img_dianzan{width:40rpx;height: 40rpx}
+.hhx_change_function_area_img_shoucang{width: 40rpx;height: 40rpx}
+button{
+ background: #ffffff;
+ overflow: visible;
+ line-height: 0;
+ margin-right: 20rpx;
+}
+button::after{
+  border: none
+}

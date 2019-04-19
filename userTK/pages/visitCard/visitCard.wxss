@@ -1,0 +1,40 @@
+.scroll-fullpage{height: 100%;width: 100%;position: fixed;padding: 0;top: 0;left: 0;right: 0;bottom: 0;display: flex;flex-wrap: nowrap;transition: all 0.3s;}
+.section{height: 100%;width: 100%;flex-shrink: 0;}
+.none{color: #999;}
+/*顶部步骤*/
+.step{position: fixed;top: 0;left: 0;right: 0;bottom: 0;transform: translateY(100%);}
+.h2{font-size: 48rpx;text-align: center;line-height: 80rpx;margin: 30rpx 0;}
+.stp{color: #fff;border: 9rpx solid rgba(48, 129, 242, 0.4);margin: 0 auto;text-align: center;box-shadow: 0 2rpx 8rpx 2rpx rgba(48, 129, 242, 0.4);font-size: 78rpx;}
+.stp text,.stp{display: block;border-radius: 50%;width: 124rpx;height: 124rpx;}
+.stp text{background: #3081f2;line-height: 124rpx;}
+/*第一步*/
+.cards{box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.2);margin: -70rpx 60rpx 60rpx;border-radius: 16rpx;position: relative;background: #fff;z-index: -1;padding: 88rpx 30rpx 30rpx;line-height: 38rpx;height: 60%;width: auto;}
+.cards .tp{margin-bottom: 24rpx;}
+.cards .username{font-size: 36rpx;line-height: 42rpx;}
+.cards .date,.cards .drug{color: #666;}
+.cards .drugtt{margin: 24rpx 0;}
+.cards .drugs{height: 60%;}
+/*第二步*/
+.service{text-align: center;}
+.line{border-bottom: 2rpx solid #f0f0f0;margin: 60rpx 0;}
+.service:last-child{border-bottom: none;}
+.service .t{font-size: 36rpx;line-height: 48rpx;}
+.service .score{width: 235rpx;height: 33rpx;margin: 28rpx 0;}
+.service .dt{text-align: left;color: #666;}
+.service .tags{display: flex;flex-wrap: wrap;}
+.service .tag{padding: 0 12rpx;background: #e8e8e8;border-radius: 8rpx;font-size: 24rpx;color: #999;margin: 8rpx;line-height: 48rpx;border: none;overflow: hidden;}
+.service .tag::before,.appraise .tag::after{display: none;}
+.service .select{color: #fff;background: #3081f2;}
+/*第二步*/
+.subject{border-bottom: 2rpx solid #f0f0f0;line-height: 48rpx;padding: 36rpx 0;}
+.subject::last-child{border-bottom: none;}
+.subject .tt{font-size: 36rpx;}
+.subject .dt{color: #3081f2;text-indent: 24rpx;font-size: 30rpx;margin-top: 16rpx;}
+.subject .dt::after{float: right;content: "\e71f";font-family: "iconfont";font-size: 32rpx;font-weight: bold;}
+.remark{margin-top: 36rpx;color: #666;}
+/*底部箭头*/
+.arrows{font-family: "iconfont";text-align: center;display: flex;align-items: center;justify-content: center;font-size: 76rpx;line-height: 76rpx;}
+.arrow{margin: 0 12rpx;color: #b4b6c2;}
+.arrow.active{color: #3081f2;}
+.arrow::before{display: block;content: "\e618";}
+.left::before{transform: rotate(180deg);}

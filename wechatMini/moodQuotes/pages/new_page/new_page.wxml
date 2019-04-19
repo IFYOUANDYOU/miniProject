@@ -1,0 +1,59 @@
+
+  <block wx:if="{{isshow}}">
+  <!--detail_pic-->
+  <image src="{{detail.mood_img}}" bindtap="previewImage" bindload='imgSy' class="new_page_pic" style='height:{{imgheight}}px;width:{{imgwidth}}px'></image>
+  <!--text-->
+  <view class="text">{{detail.mood_word}}</view>
+  <!--function_area-->
+  <view class="function_area_box">
+      <view class="function_area_min1" bindtap="click_dianzan">
+          <image src="{{detail.is_like == 1?'/images/icon/icon_dz.png':'/images/icon/icon_dz2.png'}}" class="function_area_icon1"></image>
+          <text class="function_area_text">点赞</text>
+      </view>
+      <view class="function_area_min1" bindtap="click_shouchang">
+          <image src="{{detail.is_collect == 1?'/images/icon/shoucang.png':'/images/icon/shoucang2.png'}}" class="function_area_icon2"></image>
+          <text class="function_area_text">收藏</text>
+      </view>
+      <view class="function_area_min1" bindtap="click_pay">
+          <image src="/images/change_pay.png" class="function_area_icon2"></image>
+          <text class="function_area_text">打赏</text>
+      </view>
+  </view>
+  <!--button-->
+  <view class="button_box">
+      <view class="button_btn" bindtap='click_popUp'>分享好友</view>
+  </view>
+  <!-- 底部弹出框  -->
+  <view class="{{ popView ==1? 'popUp':'hide_view' }} {{ ishide == 0? '':'hide'}}">
+    <view class="popUp_top"> 
+      <view class="popUp_top_a">
+      
+        <button class="popUp_icon popUp_icon_btn" open-type="share">
+          <image src='/images/wx_icon.png' class="popUp_icon_wx"></image>
+        </button>
+        <view class="popUp_text">微信好友</view>
+      </view>
+      <view class="popUp_top_a">
+        <button class="popUp_icon   popUp_icon_btn" bindtap="click_friend">
+          <image src="/images/pyq_icon.png" class="popUp_icon_pyq"></image>
+        </button>
+        <view class="popUp_text">朋友圈</view>
+      </view>
+    </view>
+    <view class="popUp_cancel" bindtap="click_cancel">取消</view>
+  </view>
+  </block>
+
+  <!-- 分享到朋友圈名片 -->
+  <view class="{{ ishide == 1?'visited_card_box':'hide'}}" style="width:100%;height:{{windowHeight}}px" bindtap="click_friend">
+    <view class="visited_card" >
+      <view class="visited_card_text1  margin_1">分享到朋友圈</view>
+      <view class="visited_card_imgBox">
+        <image class="visited_card_img" src="{{canvas_img}}"></image>
+      </view>
+      <view class="visited_card_text1 margin_2">朋友圈已保存到相册</view>
+      <view class="visited_card_text1 margin_3">快去微信朋友圈分享吧~</view>
+    </view>
+  </view>
+
+

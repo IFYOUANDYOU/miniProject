@@ -1,0 +1,92 @@
+<view class='bg'>
+	<image class='page-bg' src='/images/zhufuhua-bg.png'></image>
+	<view class='nr'>
+		<view class='mine'>
+			<view class='head-img'>
+				<image class='head-bg' src='/images/mine-head-bg.png'></image>
+				<image class='user-img' src='{{user.avatar}}'></image>
+			</view>
+			<view class='mine-ctener'>
+				<view class='user-name'>{{user.nickName}}</view>
+				<view class='user-money'>余额:￥
+					<text>{{user.money}}</text>
+				</view>
+			</view>
+			<navigator url='/pages/tixian/tixian?money={{user.money}}' class='tixian'>
+				<image src='/images/mine-tixian.png'></image>
+			</navigator>
+		</view>
+		<view class='btn'>
+			<view bindtap='active' data-num='1' class='{{active==1? "btn-cur":"cl-btn"}}'>发出</view>
+			<view bindtap='active' data-num='2' class='{{active==2? "btn-cur":"cl-btn"}}'>收到</view>
+		</view>
+		<!--发出  -->
+		<scroll-view s-if="{{show1==true}}" class='detail' scroll-y>
+			<view class='add'>
+				<view class='ad-mon'>
+					<view class='name'>总赏金（元）</view>
+					<view class='num'>{{my_list.sum_money}}</view>
+				</view>
+				<view class='line'></view>
+				<view class='ad-num'>
+					<view class='name'>总数量（个）</view>
+					<view class='num'>{{my_list.sum_num}}</view>
+				</view>
+			</view>
+			<view class='list'>
+				<block s-for="{{my_list.list}}" s-key="{{index}}">
+					<navigator s-if="{{item.type==0}}" url='{{"../zhufuhongbao-detial/zhufuhongbao-detial?order_id="+item.id}}' class='list-one'>
+						<view class='conten'>
+							<view class='text'>{{item.content}}</view>
+							<view class='mon'>￥{{item.money}}</view>
+						</view>
+						<view class='mess'>
+							<view class='time'>{{item.time}}</view>
+							<view class='num'>{{item.get_num}}/{{item.sum_num}}</view>
+						</view>
+					</navigator>
+					<navigator s-else url='{{"../zhufuhongbao-detial/zhufuhongbao-detial?order_id="+item.id}}' class='list-one'>
+						<view class='conten1'>
+							<image src='/images/mine-yuyin.png'></image>
+							<view class='mon'>￥{{item.money}}</view>
+						</view>
+						<view class='mess'>
+							<view class='time'>{{item.time}}</view>
+							<view class='num'>{{item.get_num}}/{{item.sum_num}}</view>
+						</view>
+					</navigator>
+				</block>
+
+			</view>
+		</scroll-view>
+		<!--收到  -->
+		<scroll-view s-if="{{show1==false}}" class='detail2' scroll-y>
+			<view class='add'>
+				<view class='ad-mon'>
+					<view class='name'>总赏金（元）</view>
+					<view class='num'>{{other_list.sum_money}}</view>
+				</view>
+				<view class='line'></view>
+				<view class='ad-num'>
+					<view class='name'>总数量（个）</view>
+					<view class='num'>{{other_list.sum_num}}</view>
+				</view>
+			</view>
+			<view class='list'>
+				<block s-for="{{other_list.list}}" s-key="{index}">
+					<view class='list-one'>
+						<view class='other-head'>
+							<image src='{{item.avatar}}'></image>
+						</view>
+						<view class='mess'>
+							<view class='name'>{{item.nickname}}</view>
+							<view class='time'>{{item.time}}</view>
+						</view>
+						<view class='mon'>￥{{item.money}}</view>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+</view>
+<navigat-bar curName="{{curName}}" />

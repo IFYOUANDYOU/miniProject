@@ -1,0 +1,23 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container">
+  <view class="menus">
+    <button class="menu {{mode==2?'active':''}}" type="button" data-mode="2" catchtap="getCurlist">全部</button>
+    <button class="menu {{mode==0?'active':''}}" type="button" data-mode="0" catchtap="getCurlist">收入</button>
+    <button class="menu {{mode==1?'active':''}}" type="button" data-mode="1" catchtap="getCurlist">消费</button>
+  </view>
+  <view class="arecord" animation="{{animation}}">
+    <block wx:if="{{curlist.length==0}}">
+      <template is="empty" data="{{text:'暂无账户交易记录'}}" />
+    </block>
+    <block wx:for="{{curlist}}" wx:key="key" wx:for-item="recordItem">
+      <template is="arecord" data="{{...recordItem}}" />
+    </block>
+  </view>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

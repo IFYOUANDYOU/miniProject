@@ -1,0 +1,296 @@
+/* pages/zhufuhongbao/zhufuhongbao.wxss */
+page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	background: #f7f4ed;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.bg .page-bg{
+	width: 100%;
+	height: 100%;
+  display: block;
+}
+.nr{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+}
+.fs{
+	overflow: hidden;
+}
+/* 
+.fs .fs-one{
+	 display: none; 
+} */
+.fs .fs-one input{
+	width: 606rpx;
+	height: 82rpx;
+	border: 2rpx solid #e5ab16;
+	padding: 0 15rpx;
+	margin: 0 auto;
+	margin-top: 80rpx;
+	font-size:36rpx ;
+	color: #000000;
+	background: #fff;
+	border-radius: 6rpx;
+}
+.fs .fs-two{
+	display: block;
+	width: 640rpx;
+	height: 86rpx;
+	margin: 0 auto;
+	margin-top: 80rpx;
+}
+.fs .fs-two .record{
+	width: 640rpx;
+	height: 86rpx;
+}
+.txt{
+	width: 638rpx;
+	margin: 0 auto;
+	margin-top: 32rpx;
+	overflow: hidden;
+}
+.txt .btn-qi{
+	float: left;
+	font-size: 30rpx;
+	color: #eab11f;
+	text-decoration: underline;
+}
+.txt .yuku-url{
+	float: right;
+	font-size: 30rpx;
+	color: #eab11f;
+	text-decoration: underline;
+}
+.money{
+	width: 640rpx;
+	margin: 0 auto;
+	margin-top: 70rpx;
+	
+}
+.money .input{
+	width: 640rpx;
+	overflow: hidden;
+}
+.money .input .mon{
+	float: left;
+	width: 290rpx;
+	height: 82rpx;
+	border: 2rpx solid #e5ab16;
+	border-radius: 6rpx;
+	background-color: #fff;
+  position: relative;
+  padding-right:24rpx; 
+}
+.yuan{
+  color: red;
+  font-size: 34rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 19rpx;
+}
+.money .input .mon .ioc{
+	width: 63rpx;
+	height: 63rpx;
+	border-radius: 50%;
+	background-color: #f7f4ed;
+	text-align: center;
+	line-height: 63rpx;
+	font-size: 42rpx;
+	color: #010101;
+	float: left;
+	margin-top: 10rpx;
+	margin-left: 2rpx;
+}
+.money .input .mon input{
+	width: 200rpx;
+	height: 82rpx;
+	float: left;
+	margin-left: 7rpx;
+  
+  color: #000000;
+	font-size: 34rpx;
+}
+.money .num{
+	float: right;
+	width: 270rpx;
+	height: 82rpx;
+	border: 2rpx solid #e5ab16;
+	border-radius: 6rpx;
+	background-color: #fff;
+  position: relative;
+	padding-right:20rpx; 
+}
+.ge{
+  color: red;
+  font-size: 34rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 10rpx;
+}
+.money .num input{
+	width: 270rpx;
+	height: 82rpx;
+	text-align: center;
+	font-size: 34rpx;
+	color: #000000;
+}
+.money  .tis{
+	width: 640rpx;
+	text-align: right;
+	font-size: 26rpx;
+	color: #fc4d4d;
+	margin-top: 12rpx;
+	overflow: hidden;
+}
+.money .bind{
+	font-size: 30rpx;
+	color: #c1c1c1;
+	margin-top: 30rpx;
+}
+.money .bind text{
+	color: #eab11f;
+}
+.gable-money{
+	font-size: 46rpx;
+	color: #000000;
+	text-align: center;
+	margin-top: 70rpx;
+}
+.gable-money text{
+	font-size: 72rpx;
+}
+.pay-btn{
+	width: 400rpx;
+	height: 96rpx;
+	margin: 0 auto;
+	background-color: #eab11f;
+	border-radius: 6rpx;
+	font-size: 44rpx;
+	color: #fff;
+	margin-top: 110rpx;
+  text-align: center;
+  line-height: 96rpx;
+}
+.pay-ti{
+	font-size: 30rpx;
+	color: #d6d6d6;
+	text-align: center;
+	margin-top: 15rpx;
+}
+
+.nav{
+	width: 750rpx;
+	height: 98rpx;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	left: 0;bottom: 0;
+}
+.nav .nav-img{
+	width: 750rpx;
+	height: 1206rpx;
+	position: absolute;
+	left: 0;bottom: 0;
+}
+.nav .fox-box{
+	position: absolute;
+	left: 0;top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-list{
+	width: 250rpx;
+	height: 98rpx;
+
+	overflow: hidden;
+}
+
+.nav .nav-list .text{
+	text-align: center;
+	margin-top: 18rpx;
+	font-size: 38rpx;
+	color: #c1c1c1;
+}
+.nav .nav-list .text-cur{
+	color: #eab11f;
+}
+.nav .nav-list .line{
+	width: 144rpx;
+	height: 4rpx;
+	margin: 0 auto;
+	margin-top: 12rpx;
+	background: #eab11f;
+}
+.window-sucss{
+	overflow: hidden;
+
+}
+.window-sucss .shade{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;top: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 99999;
+}
+.window-sucss .win-con{
+	width: 560rpx;
+	height: 360rpx;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -280rpx;
+	margin-top: -180rpx;
+	background: #fff;
+	z-index: 9999999;
+	border-radius: 12rpx;
+	overflow: hidden;
+}
+.window-sucss .win-con .icon{
+	width: 160rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	margin-top: 70rpx;
+}
+.window-sucss .win-con image{
+	width: 160rpx;
+	height: 160rpx;
+}
+.window-sucss .win-con .name{
+	text-align: center;
+	font-size: 40rpx;
+	color: #101010;
+	margin-top: 40rpx;
+}
+
+
+
+.play_gif{
+  width: 360rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 200rpx;
+}
+
+.listion_img{
+  width: 500rpx;
+  height: 82rpx;
+}
+.repeal_img{
+  width: 92rpx;
+  height: 82rpx;
+  margin-left:  24rpx;
+  display: inline-block;
+}

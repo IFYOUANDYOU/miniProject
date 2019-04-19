@@ -1,0 +1,65 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx5e877f458aec7ca5",
+	"projectname": "userTK",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "群消息",
+					"pathName": "pages/attention/attention",
+					"query": "share=1",
+					"scene": "1008"
+				},
+				{
+					"id": -1,
+					"name": "好友消息",
+					"pathName": "pages/attention/attention",
+					"query": "share=1",
+					"scene": "1007"
+				},
+				{
+					"id": 2,
+					"name": "扫码",
+					"pathName": "pages/index/index",
+					"query": "id=26",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

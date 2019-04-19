@@ -1,0 +1,30 @@
+<!--<view class="a_new_haibao_box">
+    <view class="a_new_haibao_box_sec_1"></view>
+    <view class="a_new_haibao_box_sec_2">
+        <view class="a_new_haibao_box_sec_2_top">
+            <image class="a_new_haibao_box_sec_2_top_img" src="{{src}}"></image>
+            <view class="a_new_haibao_box_sec_2_top_text">
+               接受突如其来的失去，珍惜不期而遇的惊喜。当情绪低落慵懒无力时，把情绪收到别人看不到的地方，一个人学会坚强.
+            </view>
+        </view>
+        <view class="a_new_haibao_box_sec_2_bottom">
+            <view class="a_new_haibao_box_sec_2_bottom_icon"><image style="width:100%;height:100%;display:inline-block" src="{{path}}"></image></view>
+            <view class="a_new_haibao_box_sec_2_bottom_banner">心情语录@小程序 生成</view>
+        </view>
+    </view>
+</view>-->
+<block wx:if="{{isshow}}">
+
+<!-- canvas  -->
+<canvas canvas-id="myCanvas" style="width:100%;height:{{height_style}}px;position:absolute;margin-bottom:10rpx;" />
+
+<!--保存到手机-->
+<view class="a_new_haibao_btn_box" style="top:{{height_style}}px;position:absolute;"><view class="a_new_haibao_btn" bindtap='save'>保存到手机</view></view>
+
+</block>
+<!--底部功能区-->
+<!--<view class="a_new_haibao_b_fun">
+    <!--<image class="a_new_haibao_b_fun_img1" src="/images/icon/a_new_haibao1.png"></image>-->
+    <!--<image class="a_new_haibao_b_fun_img2" src="/images/icon/a_new_haibao2.png"></image>
+    <button open-type="share"><image class="a_new_haibao_b_fun_img3" src="/images/icon/a_new_haibao3.png"></image></button>
+</view>-->

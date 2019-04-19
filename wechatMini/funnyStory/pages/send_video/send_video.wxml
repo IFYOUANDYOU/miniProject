@@ -1,0 +1,33 @@
+<view class='sendBox'>
+    <textarea placeholder='发表帖子，请勿发布色情，正式等违法国家法律的内容；' 
+    placeholder-style='color:rgba(193,193,193,1);font-size:32rpx;font-family:SimHei;line-height: 40rpx;'
+    bindinput="change_send_message"
+    value="{{content}}"
+    ></textarea>
+
+
+    <view class='choose_img'>
+        <view catchtap='choose_video' class='choose'>添加视频</view>
+        <view class='img_allbox' wx:if="{{video_src}}">
+            <video src='{{video_src}}' objectFit="fill"></video>
+            <progress show-info="{{true}}" percent="{{up_num}}" color='rgba(243,243,243,1)' activeColor="rgba(255,168,0,1)"></progress>
+         </view>
+    </view> 
+
+    <view class='check_box'>
+      <view class='item_box' catchtap='change_format' data-index="2">
+        <view class='{{format==2?"check_dot":"dot"}}'></view>
+        <text class='txt'>匿名发布</text>
+      </view>
+      <view class='item_box margin_item' catchtap='change_format' data-index="1">
+        <view class='{{format==1?"check_dot":"dot"}}'></view>
+        <text class='txt'>段友名发布</text>
+      </view>
+      <view class='item_box' catchtap='change_format' data-index="0" >
+        <view class='{{format==0?"check_dot":"dot"}}'></view>
+        <text class='txt'>微信名发布</text>
+      </view>
+    </view>
+    <!-- <view class='send'>发布</view> -->
+    <button catchtap='send_pic'>发送</button>
+</view>

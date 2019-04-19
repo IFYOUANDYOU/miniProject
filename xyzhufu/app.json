@@ -1,0 +1,16 @@
+{
+    "pages": [ 
+        "pages/index/index", 
+        "pages/info/info"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "逍遥祝福",
+        "navigationBarTextStyle": "white"
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wx096f51af35afb469"
+    ],
+    "sitemapLocation": "sitemap.json"
+}

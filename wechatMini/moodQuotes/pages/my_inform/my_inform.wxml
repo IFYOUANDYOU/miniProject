@@ -1,0 +1,56 @@
+<!--nav-->
+<view class="top_nav">
+    <view class="root_nav {{judge_nav_a ==1?'change_bg':''}}" bindtap="click_nav_a">收到的评论</view>
+    <view class="border_side"></view>
+    <view class="root_nav {{judge_nav_b ==1?'change_bg':''}}" bindtap="click_nav_b">发出的评论</view>
+    <view class="border_side"></view>
+    <view class="root_nav {{judge_nav_c ==1?'change_bg':''}}" bindtap="click_nav_c">系统消息</view>
+</view>
+<!--收到的评论对应的内容-->
+<view class="{{ judge_nav_a == 1?'':'hide' }}" wx:if="{{isshow}}">
+    <view class="receive_box" wx:if="{{comdata}}" wx:for = "{{comdata}}" >
+        <view class="receive_blcok_1">
+            <view class="receive_blcok_1_left">
+                <view class="user_img_box"><image class="user_img" src="{{item.img}}"></image></view>
+                <text class="user_name">{{item.name}}</text>
+            </view>
+            <!--<view class="receive_blcok_1_right">2017-07-09</view>-->
+            <view class="receive_blcok_1_right">{{item.time}}</view>
+        </view>
+        <view class="receive_blcok_2" bindtap="click_skip" data-id="{{item.artid}}">
+            <text class="art_start" style="margin-left:24rpx">原文: </text>
+            <text class="art_content">{{item.mood}}</text>
+        </view>
+        <view class="receive_blcok_3" catchtap="click_pl" data-id="{{item.artid}}">
+            <text class="art_start">评论: </text>
+            <text class="art_content">{{item.con}}</text>
+        </view>
+    </view>
+    <view class="no_info" wx:if="{{comdata.length==0}}">暂无更多内容</view>
+</view>
+<!--发出的评论对应的内容-->
+<view class="{{ judge_nav_b == 1?'':'hide' }}" wx:if="{{isshow}}"  >
+    <view class="receive_box" wx:for="{{deliverdata}}">
+        <view class="receive_blcok_1">
+            <view class="receive_blcok_1_left">
+                <view class="user_img_box"><image class="user_img" src="{{item.img}}"></image></view>
+                <text class="user_name">{{item.name}}</text>
+            </view>
+            <!--<view class="receive_blcok_1_right">07-09</view>-->
+            <view class="receive_blcok_1_right">{{item.time}}</view>
+        </view>
+        <view class="receive_blcok_3" catchtap="click_pl" data-id="{{item.artid}}" >
+            <text class="art_start">评论: </text>
+            <text class="art_content">{{item.com}}</text>
+        </view>
+        <view class="receive_blcok_2" bindtap="click_skip" data-id="{{item.artid}}">
+            <text class="art_start" style="margin-left:24rpx">原文: </text>
+            <text class="art_content">{{item.mood}}</text>
+        </view>
+    </view>
+    <view class="no_info" wx:if="{{deliver.length==0}}">暂无更多内容</view>
+</view>
+<!--系统通知对应的内容-->
+<view class="{{ judge_nav_c == 1?'':'hide' }}">
+    <view class="no_info">欢迎使用心情语录小程序！</view>
+</view>

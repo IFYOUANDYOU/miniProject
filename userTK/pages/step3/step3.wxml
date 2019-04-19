@@ -1,0 +1,44 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view wx:if="{{statu}}" class="container" style="padding-bottom: {{step==3?0:'180rpx'}}">
+  <view class="steps">
+    <view class="step {{step>=1?'active':''}}">第一步</view>
+    <view class="line {{step>=2?'active':''}}"></view>
+    <view class="step {{step>=2?'active':''}}">第二步</view>
+    <view class="line {{step>=3?'active':''}}"></view>
+    <view class="step {{step>=3?'active':''}}">第三步</view>
+  </view>
+  <view class="inner" animation="{{animation}}">
+    <form class="step3" bindsubmit="submitCatch">
+      <block wx:for="{{survey}}" wx:for-index="{{father_item.qaid}}" wx:key="key" wx:for-item="father_item">
+        <view class="survey" data-id="{{father_item.qaid}}">
+          <view class="title">{{father_item.ask_answer}}</view>
+          <radio-group class="radio-group" data-fid="{{father_item.qaid}}" bindchange="surveyChange">
+            <block wx:for="{{father_item.daan}}" wx:key="key">
+              <label class="radio {{item.judge?'select':''}}" data-select="{{item.judge}}" data-id="{{item.qaid}}" data-value="{{item.ask_answer}}" data-fid="{{father_item.qaid}}">
+                <text>{{item.ask_answer}}</text>
+                <radio checked="{{item.judge}}" value="{{item.ask_answer}}" id="{{item.qaid}}" />
+              </label>
+            </block>
+          </radio-group>
+        </view>
+      </block>
+      <!--如有特殊反应请及时反馈-->
+      <view class="feedback">
+        <view class="title">如有特殊反应请及时反馈</view>
+        <view class="text">
+          <textarea placeholder="如有特殊反应请及时反馈" name="service" />
+        </view>
+      </view>
+      <view class="submit" style="position: static;padding-left: {{step==3?'12rpx':'42rpx'}};padding-right: {{step==3?'12rpx':'42rpx'}}">
+        <button class="btn" type="button" formType="submit">提交</button>
+      </view>
+    </form>
+  </view>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

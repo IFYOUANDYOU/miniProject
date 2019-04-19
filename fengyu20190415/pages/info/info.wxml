@@ -1,0 +1,89 @@
+<view class='info' wx:if="{{articleLength}}">
+    <view class="info-top">
+<!-- {{showFooter ? 'noBottom' : 'footer'}} -->
+        <form bindsubmit="formInSign" report-submit="true" class='info-top-box'>
+            <button class="shareBtn" hover-class="none" bindtap="goToIndex" formType="submit">
+                <view class='info-top-box-sub'>
+                    <image src='../img/new.png'></image>
+                    <view>最新</view>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="formInSign" report-submit="true" class='info-top-box'>
+            <button class="shareBtn" hover-class="none" bindtap="goToHot" formType="submit">
+                <view class='info-top-box-sub'>
+                    <image src='../img/hot.png'></image>
+                    <view>热门</view>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="formInSign" report-submit="true" class='info-top-box'>
+            <button  hover-class="none" open-type="share" formType="submit">
+                <view class='info-top-box-sub'>
+                    <image src='../img/share.png'></image>
+                    <view>分享</view>
+                </view>
+            </button>
+        </form>
+
+    </view>
+    <view class='info-title'>
+        {{tpArticle.title}}
+    </view>
+    <view class="content" style="background-image:url({{tpArticle.backimg}})">
+        <rich-text class="richText" nodes="{{tpArticle.content}}" bindtap="tap" />
+    </view>
+    <view class='info-share-list'>
+        <form bindsubmit="formInSign" report-submit="true">
+            <button class="share" hover-class='none' open-type="share" formType="submit">
+                <view class='info-share-box info-g'>
+                    <image src='../img/share_w.png'></image>
+                    <view>分享给好友</view>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="formInSign" report-submit="true">
+            <button class="share" hover-class='none' open-type="share" formType="submit">
+                <view class='info-share-box info-y'>
+                    <image src='../img/share_w.png'></image>
+                    <view>分享给好友</view>
+                </view>
+            </button>
+        </form>
+
+    </view>
+    <view class='info-man'>
+
+        <image src='http://img1.imgtn.bdimg.com/it/u=3523617831,1288544462&fm=26&gp=0.jpg'></image>
+        <view>大大</view>
+        <view class='info-man-time'>2019-9-8</view>
+
+    </view>
+
+    <image class='info-fgf' mode='widthFix' src="../img/fgf.png"></image>
+    <view class='info-line'>
+        <view class='info-xgtj'>相关推荐</view>
+    </view>
+    <block wx:for="{{articles}}" wx:for-item="item" wx:key="id" wx:for-index="idx">
+     
+        <view class='info-list' bindtap="goToArticle" id="{{item.id}}">
+            <view>{{item.title}}</view>
+            <!-- <image mode='center' src="{{item.thumb}}"></image> -->
+            <view class='info-list-right' style="background-image:url({{item.thumb}})"></view>
+        </view>
+    </block>
+    <image class='info-fgf' mode='widthFix' src="../img/fgf.png"></image>
+    <form bindsubmit="formInSign" report-submit="true">
+        <button bindtap="goToIndex" hover-class="none" formType="submit">
+            <view class='info-footer'>
+                <image src='../img/home.png'></image>
+                <view>返回首页</view>
+            </view>
+        </button>
+    </form>
+
+</view>
+
+<view class="music" bindtap="payMusic">
+    <image src='../img/music.png'></image>
+</view>

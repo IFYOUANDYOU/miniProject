@@ -1,0 +1,40 @@
+/* pages/index/index_3.wxss */
+
+.item{
+  width: 702rpx;
+  height: 396rpx;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 16rpx;
+}
+.bgImg{
+  width: 100%;
+  height: 100%;
+}
+.center_Box{
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-family: "FZCYSK--GBK1-0";
+  color: rgba(255,255,255,1);
+  font-size: 42rpx;
+  margin-bottom: 14rpx;
+  font-weight: bold;
+}
+.explain{
+  font-family: "FZCYSK--GBK1-0";
+  color: rgba(255,255,255,1);
+  font-size: 22rpx;
+}

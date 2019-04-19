@@ -1,0 +1,24 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container">
+  <form class="forms">
+    <view class="head">
+      <icon type="success" size="100" color="#2d7eef" />
+      <view class="prompt">{{acount.title}}</view>
+      <view class="tip">{{acount.timeCH}}</view>
+    </view>
+    <view class="dt">提现数量
+        <text class="pright acount">{{acount.tk_num}}积分</text>
+      </view>
+      <view class="dt">提现方式
+        <text class="pright type">微信钱包</text>
+      </view>
+    <navigator type="button" class="btn" url="/pages/index/index" open-type="reLaunch">完成</navigator>
+  </form>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

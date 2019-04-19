@@ -1,0 +1,41 @@
+<!--pages/video/video.wxml-->
+
+<view class='big_video_box'>
+  <video controls="{{true}}" poster="{{video_item.title_img}}" bindplay="play" enable-danmu="{{true}}" danmu-list="{{danmuList}}" objectFit="fill" src='{{video_item.image}}'></video>
+
+  <cover-view class='btn_box'>
+    <!-- <cover-view class='item_box' > -->
+      <cover-image style='width:53rpx;height:48rpx;' catchtap='go_home' src='/img/mjs/home.png'></cover-image>
+         <cover-view></cover-view>
+    <!-- </cover-view> -->
+    <!-- <cover-view class='item_box' > -->
+      <cover-image style="width:54rpx;height:48rpx;margin-top:30rpx;" catchtap='dianzan' src='{{video_item.isgood?"/img/mjs/like.png":"/img/mjs/nolike.png"}}'></cover-image>
+      <cover-view class='num' style='margin-top:10rpx;'>{{video_item.good_num}}</cover-view>
+        
+    <!-- </cover-view> -->
+    <!-- <cover-view class='item_box' > -->
+      <cover-image style='width:60rpx;height:52rpx;margin-top:30rpx;' catchtap='pinglun' src='/img/mjs/pinglun.png'></cover-image>
+      <cover-view class='num' style='margin-top:10rpx;'>{{video_item.review_num}}</cover-view>
+        
+    <!-- </cover-view> -->
+    <!-- <cover-view class='item_box'>
+      <button open-type='share' bindtap='share_img'>
+        <cover-image style='width:50rpx;height:42rpx;' src='/img/mjs/share.png'></cover-image>
+      </button>
+    </cover-view> -->
+  </cover-view>
+  <cover-view class='next' wx:if="{{show}}">
+    <cover-image class='next_img' src='/img/mjs/up.png'></cover-image>
+    <cover-view>向上翻页</cover-view>
+  </cover-view>
+
+  <cover-view class='banner' wx:if="{{banner[0].status==1?true:false}}">
+    <cover-image class='banner_img' catchtap='go_app' data-id="{{banner[0].appid}}" src='{{banner[0].img}}'></cover-image>
+    <!-- <cover-view>{{banner[0].title}}</cover-view> -->
+  </cover-view>
+  <cover-view class='banner_t'>
+    <cover-image class='in_top' src='/img/mjs/go_in.png'></cover-image>
+    <cover-view>分享</cover-view>
+  </cover-view> 
+</view>
+

@@ -1,0 +1,69 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view wx:if="{{statu}}" class="container">
+  <block wx:if="{{!drug.id}}">
+    <template is="empty" data="{{text:'暂无药品信息'}}" />
+  </block>
+  <block wx:else>
+    <view wx:if="{{drug.figure}}" class="figure">
+      <image src="{{drug.figure}}" mode="widthFix"></image>
+    </view>
+    <view class="h2">
+      {{drug.goods_name}}{{drug.goods_spec}}
+    </view>
+    <view class="intro introduce">
+      <text class="text">用法用量：</text>
+      <text class="con">{{drug.goods_usage?drug.goods_name:'暂无'
+    }}</text>
+      <text class="text">\n药物成分：</text>
+      <text class="con">{{drug.goods_constituent?drug.goods_name:'暂无'}}</text>
+      <text class="text">\n适用症状：</text>
+      <text class="con">{{drug.goods_symptom?drug.goods_name:'暂无'}}</text>
+    </view>
+    <view class="h3">【产品参数】</view>
+    <view class="intro param">
+      <view class="p">
+        <text class="text">药品名称</text>
+        <text class="con">{{drug.goods_name?drug.goods_name:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">英文名称</text>
+        <text class="con">{{drug.goods_eng?drug.goods_eng:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">汉语拼音</text>
+        <text class="con">{{drug.goods_ch_py?drug.goods_ch_py:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">成分</text>
+        <text class="con">{{drug.goods_constituent?drug.goods_constituent:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">性状</text>
+        <text class="con">{{drug.goods_property?drug.goods_property:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">作用类别</text>
+        <text class="con">{{drug.goods_effect?drug.goods_effect:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">不良反应</text>
+        <text class="con">{{drug.goods_reaction?drug.goods_reaction:'暂无'}}</text>
+      </view>
+      <view class="p">
+        <text class="text">禁忌</text>
+        <text class="con">{{drug.goods_taboo?drug.goods_taboo:'暂无'}}</text>
+      </view>
+    </view>
+    <view class="h3">【注意事项】</view>
+    <view class="intro param">
+      {{drug.goods_considerations?drug.goods_considerations:'暂无'}}
+    </view>
+  </block>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

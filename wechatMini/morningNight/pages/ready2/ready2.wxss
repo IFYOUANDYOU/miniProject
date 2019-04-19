@@ -1,0 +1,12 @@
+.ready2Text1{
+  text-align: center;font-size: 46rpx;color: #9a9a9a;margin-top: 25rpx;margin-bottom: 35rpx
+}
+.readtImg2{
+  width: 702rpx;height: 808rpx;margin: 0 auto;display: block
+}
+.readtInput{
+  width: 702rpx;background: #ebebeb;color: #000;border-radius: 20rpx;margin: 0 auto;margin-top: 15rpx;margin-bottom: 30rpx;padding-left: 10rpx;font-size: 30rpx;height: 90rpx;line-height: 90rpx
+}
+.playBtn{
+  width: 540rpx;height: 104rpx;border-radius: 52rpx;text-align: center;line-height: 104rpx;color: #fff;margin: 0 auto;font-size: 40rpx; background: linear-gradient(to bottom, rgba(253,255,244,1),20%, #ffb400);
+}

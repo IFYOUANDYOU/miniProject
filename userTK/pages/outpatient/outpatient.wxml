@@ -1,0 +1,39 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view wx:if="{{statu}}" class="container">
+  <form class="forms" bindsubmit="formSubmit">
+    <view class="message">
+      <text class="name icon">患者姓名：</text>
+      <view class="fill">
+        <input placeholder="请输入患者姓名" name="username"></input>
+      </view>
+    </view>
+    <view class="message">
+      <text class="dis icon">确诊疾病：</text>
+      <view class="fill arrow">
+        <picker class="" bindtap="bindDisBefore" bindchange="bindDisChange" value="{{disIndex}}" range="{{disease}}" range-key="{{'name'}}" disabled="{{disease.length!=0?false:true}}">
+          <view class="picker  ellipsis" style="color: {{disIndex!=''?'#333':'#777'}};">
+            {{disIndex!=""?disease[disIndex].name:'请选择确诊疾病'}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="line"></view>
+    <block wx:if="{{doctor}}">
+      <template is="doctorItem" data="{{...doctor}}" />
+    </block>
+    <button type="button" class="btn" formType="submit" disabled="{{dis!=''?false:true}}">提交</button>
+  </form>
+  <!--注意事项-->
+  <view class="notice">
+    <view class="tt">{{notice.title?notice.title:'注意事项'}}</view>
+    <text>{{notice.det?notice.det:'离院后请注意休息，严观症状\n饮食低盐低脂，规律作息，适当锻炼\n如有不适请及时就医'}}
+    </text>
+  </view>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

@@ -1,0 +1,111 @@
+<view class="index-top">
+	<image class="index-top-bg" src="../../images/index_top.jpg"></image>
+	<view class="inde-top-lab">
+		<view>当前星座：<text>狮子座</text></view>
+		<image src="../../images/change.png"></image>
+	</view>
+	<view class="inde-top-btn" bindtap="goInfo">立即分析狮子座运势</view>
+</view>
+<view class="index-life">
+	<image class="index-life-img" src="../../images/life.png"></image>
+</view>
+<view class="index-zx">
+	<image class="index-zx-img" src="../../images/zx.png"></image>
+</view>
+<view class="index-zx">
+	<image class="index-jx-img" src="../../images/jx.png"></image>
+</view>
+<view class="index-pl">
+	<view class="index-pl-box">
+		<view class="index-zy-top">已为超过12万人提供运势指引</view>
+		<view class="inde-zy-pl">
+			<view class="index-zy-pl-lab">
+				<image class="index-zy-tj" src="../../images/tj.png"></image>
+				<view>已测算人数：<text>123456</text></view>
+			</view>
+			<view class="index-zy-pl-lab">
+				<image class="index-zy-tj" src="../../images/heart.png"></image>
+				<view>好评率：<text>99%</text></view>
+			</view>
+		</view>
+		<view class="index-zy-item-box">
+			<text class="index-zy-item">专业精准(34567)</text>
+			<text class="index-zy-item">五星好评(34567)</text>
+			<text class="index-zy-item">超级准(34567)</text>
+			<text class="index-zy-item">符合现状(34567)</text>
+			<text class="index-zy-item">具体(34567)</text>
+		</view>
+		<view class="index-pl-item">
+			<view class="index-pl-item-box">
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆1**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆2**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆3**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆4**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆5**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆6**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆7**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆8**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆9**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆10**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆11**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+				<view class="index-pl-list">
+					<view class="index-pl-name">重庆12**</view>
+					<view class="index-pl-text">说的蛮准的，想找大师测算一下，忍不住好奇心测了一下。</view>
+					<view class="line"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="index-zx index-day">
+		<image class="index-day-img" src="../../images/day.png"></image>
+		<view class="index-zx-btn" bindtap="goInfo">立即分析狮子座运势</view>
+	</view>
+
+
+
+
+</view>

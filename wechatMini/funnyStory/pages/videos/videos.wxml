@@ -1,0 +1,18 @@
+<view class="images">
+ <block wx:for="{{video_list}}" wx:key="{{index}}">
+ <view class='image_box' data-id="{{item.id}}" catchtap='go_detail'>
+    <image src='{{item.title_img}}'></image>
+    <view class='name_num'>
+      <view class='name'>{{item.title}}</view>
+      <view class='num'>
+        <image style='width:40rpx;height:36rpx;margin-bottom: 0;' src='/img/mjs/like_bg.png'></image>
+        <text>{{item.good_num}}</text>
+      </view>
+    </view>
+ </view>
+ </block>
+
+    <button open-type='contact' hover-class='none' class='server'>
+      <image style='width:100%;height:100%' src='/img/mjs/server.png'></image>    
+    </button>
+</view>

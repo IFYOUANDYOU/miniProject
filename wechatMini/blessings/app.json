@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/zhufuhua/zhufuhua",
+    "pages/zhufuhua-share-txt/zhufuhua-share-txt",
+    "pages/zhufuhongbao-detial/zhufuhongbao-detial",
+    "pages/zhufuhongbao/zhufuhongbao",
+    "pages/zhufuhongbao-fa/zhufuhongbao-fa",
+    "pages/zhufuhua-ka/zhufuhua-ka",
+    "pages/zhufuhongbao-shou/zhufuhongbao-shou",
+    "pages/zhufuhua-txt/zhufuhua-txt",
+    "pages/zhufuhua-ku/zhufuhua-ku",
+    "pages/hongbao_img/hongbao_img",
+    "pages/tixian/tixian"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#db2727",
+    "navigationBarTitleText": "祝福语",
+    "navigationBarTextStyle": "white"
+  }
+}

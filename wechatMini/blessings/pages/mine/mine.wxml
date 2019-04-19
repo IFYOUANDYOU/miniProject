@@ -1,0 +1,107 @@
+<!--pages/mine/mine.wxml-->
+<view class='bg'>
+  <image class='page-bg' src='../image/zhufuhua-bg.png'></image>
+  <view class='nr'>
+    <view class='mine'>
+      <view class='head-img'>
+        <image class='head-bg' src='../image/mine-head-bg.png'></image>
+        <image class='user-img' src='{{user.avatar}}'></image>
+      </view>
+      <view class='mine-ctener'>
+        <view class='user-name'>{{user.nickName}}</view>
+        <view class='user-money'>余额:￥
+          <text>{{user.money}}</text>
+        </view>
+      </view>
+      <navigator url='/pages/tixian/tixian?money={{user.money}}' class='tixian'>
+        <image src='../image/mine-tixian.png'></image>
+      </navigator>
+    </view>
+    <view class='btn'>
+      <view bindtap='active' data-num='1' class='{{active==1? "btn-cur":"cl-btn"}}'>发出</view>
+      <view bindtap='active' data-num='2' class='{{active==2? "btn-cur":"cl-btn"}}'>收到</view>
+    </view>
+    <!--发出  -->
+    <scroll-view wx:if="{{show1==true}}" class='detail' scroll-y>
+      <view class='add'>
+        <view class='ad-mon'>
+          <view class='name'>总赏金（元）</view>
+          <view class='num'>{{my_list.sum_money}}</view>
+        </view>
+        <view class='line'></view>
+        <view class='ad-num'>
+          <view class='name'>总数量（个）</view>
+          <view class='num'>{{my_list.sum_num}}</view>
+        </view>
+      </view>
+      <view class='list'>
+        <block wx:for="{{my_list.list}}" wx:key="{{index}}">
+          <navigator wx:if="{{item.type==0}}" url='{{"../zhufuhongbao-detial/zhufuhongbao-detial?order_id="+item.id}}' class='list-one'>
+            <view class='conten'>
+              <view class='text'>{{item.content}}</view>
+              <view class='mon'>￥{{item.money}}</view>
+            </view>
+            <view class='mess'>
+              <view class='time'>{{item.time}}</view>
+              <view class='num'>{{item.get_num}}/{{item.sum_num}}</view>
+            </view>
+          </navigator>
+          <navigator wx:else url='{{"../zhufuhongbao-detial/zhufuhongbao-detial?order_id="+item.id}}' class='list-one'>
+            <view class='conten1'>
+              <image src='../image/mine-yuyin.png'></image>
+              <view class='mon'>￥{{item.money}}</view>
+            </view>
+            <view class='mess'>
+              <view class='time'>{{item.time}}</view>
+              <view class='num'>{{item.get_num}}/{{item.sum_num}}</view>
+            </view>
+          </navigator>
+        </block>
+
+      </view>
+    </scroll-view>
+    <!--收到  -->
+    <scroll-view wx:if="{{show1==false}}" class='detail2' scroll-y>
+      <view class='add'>
+        <view class='ad-mon'>
+          <view class='name'>总赏金（元）</view>
+          <view class='num'>{{other_list.sum_money}}</view>
+        </view>
+        <view class='line'></view>
+        <view class='ad-num'>
+          <view class='name'>总数量（个）</view>
+          <view class='num'>{{other_list.sum_num}}</view>
+        </view>
+      </view>
+      <view class='list'>
+        <block wx:for="{{other_list.list}}" wx:key="{index}">
+          <view class='list-one'>
+            <view class='other-head'>
+              <image src='{{item.avatar}}'></image>
+            </view>
+            <view class='mess'>
+              <view class='name'>{{item.nickname}}</view>
+              <view class='time'>{{item.time}}</view>
+            </view>
+            <view class='mon'>￥{{item.money}}</view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='nav'>
+    <image class='nav-img' src='../image/zhufuhua-bg.png'></image>
+    <view class='fox-box'>
+      <navigator open-type='reLaunch' url="../zhufuhongbao/zhufuhongbao" class='nav-list'>
+        <view class='text'>红包祝福</view>
+      </navigator>
+      <navigator open-type='reLaunch' url="../zhufuhua/zhufuhua" class='nav-list'>
+        <view class='text'>卡片祝福</view>
+      </navigator>
+      <navigator open-type='reLaunch' class='nav-list'>
+        <view class='text text-cur'>我的</view>
+        <view class='line'></view>
+      </navigator>
+    </view>
+  </view>
+</view>

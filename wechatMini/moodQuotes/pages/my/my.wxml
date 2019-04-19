@@ -1,0 +1,52 @@
+<view class="my_pages_top">
+    <view class="my_pages_top_circle">
+        <view class="my_pages_top_circle_min">
+            <view class="my_pages_top_circle_uesr_pic"><image style="width:100%;height:100%;display: inline-block" src="{{userInfo.avatarUrl}}"></image></view>    
+        </view>
+        <view class="my_pages_top_circle_uesr_name">Hello {{userInfo.nickName}}</view>
+    </view>   
+</view>
+
+<view class="my_pages_mid_box">
+    <view class="my_pages_mid">
+        <view class="my_pages_mid_section" bindtap='tz_project'>
+            <view class="my_pages_mid_section_top">{{msg.mood_count}}</view>
+            <view class="my_pages_mid_section_bottom">作品</view>
+        </view>
+        <view class="my_pages_mid_section">
+            <view class="my_pages_mid_section_top">0.00</view>
+            <view class="my_pages_mid_section_bottom">收益</view>
+        </view>
+        <view class="my_pages_mid_section" bindtap='tz_collect'>
+            <view class="my_pages_mid_section_top">{{msg.collect_count}}</view>
+            <view class="my_pages_mid_section_bottom">收藏</view>
+        </view>
+        <view class="my_pages_mid_section" bindtap="tz_inform">
+            <view class="my_pages_mid_section_top">{{msg.msg}}</view>
+            <view class="my_pages_mid_section_bottom">通知</view>
+        </view>
+    </view>
+</view>
+
+<view class="my_pages_top2">
+    <view class="my_pages_top_circle2">
+        <view class="my_pages_top_circle_min2">
+            <view class="my_pages_top_circle_min2_text" bindtap="tz_detail">上传作品</view>
+        </view>
+    </view>   
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<!-- <view>
+
+  <view >发布段子</view>
+  <view >发布视频</view>
+  <view >发布图片</view>
+</view> -->
+
+
+<view class='mjs_layer'>
+    <view class='mjs_choose_box'>
+        <view animation="{{animation1}}" class='img_box'>
+          <image catchtap='go_send_forge' class='img' src='/img/mjs/forge.png'></image>
+          <text>段子</text>
+        </view>
+        <view catchtap='go_send_video'  animation="{{animation2}}" class='img_box mar'>
+          <image  class='img' src='/img/mjs/video.png'></image>
+          <text>视频</text>
+        </view>
+        <view catchtap='go_send_pic' animation="{{animation3}}" class='img_box'>
+          <image class='img' src='/img/mjs/pic.png'></image>
+          <text>图片</text>
+        </view>
+    </view>
+</view>

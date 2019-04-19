@@ -1,0 +1,122 @@
+<view class="conlist-bg">
+	<view class="conlist-top">
+		<view class="conlist-top-right" bindtap="showCon">
+			<image src="../../images/change.png"></image>
+			<view>切换星座</view>
+		</view>
+	</view>
+	<view class="conlist-box">
+		<view class="conlist-box-top">
+			<view class="conlist-box-left">
+				<image class="conlist-box-logo" src="../../images/xingzuo{{xingzuo}}.png"></image>
+				<view class="conlist-box-name">{{obj.astroname}}</view>
+			</view>
+			<view class="conlist-box-right">
+				<view class="conlist-box-right-name">今日运势（{{objMsg.date}}）</view>
+				<view class="conlist-box-right-star">
+					<image s-for="obj,index in star" src="../../images/{{index>objMsg.love-1?'star':'staring'}}.png"></image>
+				</view>
+				<view class="conlist-box-right-disc">保持理智不争吵</view>
+			</view>
+		</view>
+		<view class="today-lucky">
+			<view class="conlist-footer-content-title">今日运势</view>
+			<view class="conlist-footer-content-disc">
+				{{objMsg.presummary}}
+			</view>
+		</view>
+		<view class="conlist-center-box">
+			
+			<view class="conlist-center-list">
+				<view>爱情运势</view>
+				<view class="conlist-center-list-right">
+					<image s-for="obj,index in star" src="../../images/{{index>objMsg.love-1?'star':'staring'}}.png"></image> 
+				</view>
+			</view>
+			<view class="conlist-center-list">
+				<view>事业学业</view>
+				<view class="conlist-center-list-right">
+					<image s-for="obj,index in star" src="../../images/{{index>objMsg.career-1?'star':'staring'}}.png"></image> 
+				</view>
+			</view>
+			<view class="conlist-center-list">
+				<view>财富运势</view>
+				<view class="conlist-center-list-right">
+					<image s-for="obj,index in star" src="../../images/{{index>objMsg.money-1?'star':'staring'}}.png"></image> 
+				</view>
+			</view>
+			<view class="conlist-center-list">
+				<view>健康指数</view>
+				<view class="conlist-center-list-right">
+					<image s-for="obj,index in star" src="../../images/{{index>objMsg.health-1?'star':'staring'}}.png"></image> 
+				</view>
+			</view>
+			<!-- <view class="conlist-center-list">
+				<view>商谈指数</view>
+				<view class="conlist-center-list-right">
+					72%
+				</view>
+			</view> -->
+			<view class="conlist-center-list">
+				<view>幸运颜色</view>
+				<view class="conlist-center-list-right">
+					{{objMsg.color}}
+				</view>
+			</view>
+			<view class="conlist-center-list">
+				<view>幸运数字</view>
+				<view class="conlist-center-list-right">
+					50
+				</view>
+			</view>
+			<view class="conlist-center-list">
+				<view>速配星座</view>
+				<view class="conlist-center-list-right">
+					{{objMsg.star}}
+				</view>
+			</view>
+		</view>
+		<view class="conlist-footer-content">
+			<view class="conlist-title">{{dataName}}</view>
+			<view class="conlist-footer-content-title">爱情运势</view>
+			<view class="conlist-footer-content-disc">
+				{{bojdis.love}}
+			</view>
+			<view class="conlist-footer-content-title">事业学业</view>
+			<view class="conlist-footer-content-disc">
+				{{bojdis.career}}
+			</view>
+			<view class="conlist-footer-content-title">财富运势</view>
+			<view class="conlist-footer-content-disc">
+				{{bojdis.money}}
+			</view>
+		</view>
+	</view>
+	<view class="footer">
+		<view class="footer-box" bindtap="showMsg">
+			<image src="../../images/down.png"></image>
+			<view>今日运势</view>
+		</view>
+		<view>
+			<view class="footer-lab" s-if="{{setDay}}">
+				<view class="footer-lab-list footer-lab-1 {{showBtn?'labOut1':'labIn1'}}" data-id='0' bindtap="setDay">今日</view>
+				<view class="footer-lab-list footer-lab-2 {{showBtn?'labOut2':'labIn2'}}" data-id='1' bindtap="setDay">本周</view>
+				<view class="footer-lab-list footer-lab-3 {{showBtn?'labOut3':'labIn3'}}" data-id='2' bindtap="setDay">本月</view>
+				<view class="footer-lab-list footer-lab-4 {{showBtn?'labOut4':'labIn4'}}" data-id='3' bindtap="setDay">今年</view>
+				<view class="footer-lab-list footer-lab-5 {{showBtn?'labOut5':'labIn5'}}" data-id='4' bindtap="setDay">明日</view>
+			</view>
+		</view>
+	</view>
+	<view class="showMore" s-if="{{showCon}}">
+		<view class="bg" data-state="0" bindtap="showCon"></view>
+		<view class="showMore-box {{showCon?'showBottom':'noBottom'}}">
+			<view class="showMore-list" s-for="item in list" data-id="{{item.astroid}}" bindtap="goInfo">
+				<view class="showMore-list-box">
+					<image src="{{item.pic}}"></image>
+				</view>
+				<view class="showMore-list-name">{{item.astroname}}</view>
+			</view>
+			 
+		</view>
+	</view>
+</view>

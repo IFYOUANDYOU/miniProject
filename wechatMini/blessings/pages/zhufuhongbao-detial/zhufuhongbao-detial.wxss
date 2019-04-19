@@ -1,0 +1,424 @@
+/* pages/zhufuhongbao-detial/zhfuhongbao-detial.wxss */
+page{
+	background: #f7f4ed;
+  overflow-x: hidden;
+}
+.top{
+	width: 750rpx;
+	height: 655rpx;
+	position: relative;
+}
+.top .top-bg{
+	width: 750rpx;
+	height: 655rpx;
+}
+.top .top-content{
+	width: 750rpx;
+	height: 655rpx;
+	position: absolute;
+	left: 0;top: 0;
+}
+.top .top-content .detail{
+	width: 743rpx;
+	height: 175rpx;
+	margin: 0 auto;
+	margin-top: 55rpx;
+	position: relative;
+}
+.top .top-content .detail .de-bg{
+	width: 743rpx;
+	height: 175rpx;
+}
+.top .top-content .detail .text{
+	width: 470rpx;
+	height: 135rpx;
+	position: absolute;
+	left: 122rpx;top: 20rpx;
+
+}
+.top .top-content .detail .text .txt{
+	font-size: 30rpx;
+	color: #db2727;
+}
+.top .top-content .detail .audio{
+	position: absolute;
+	left: 213rpx;top: 60rpx;
+}
+.top .top-content .detail .audio image{
+	width: 53rpx;
+	height: 52rpx;
+	float: left;
+	margin-top: 3rpx;
+}
+.top .top-content .detail .audio .txt{
+	float: left;
+	margin-left: 10rpx;
+	font-size: 50rpx;
+	color: #db2727;
+}
+
+.top .top-content .mess{
+	margin-top: 90rpx;
+	margin-left: 155rpx;
+	overflow: hidden;
+}
+.top .top-content .mess .head-img{
+	width: 140rpx;
+	height: 140rpx;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: #000;
+	overflow: hidden;
+	float: left;
+}
+.top .top-content .mess .head-img image{
+	width: 120rpx;
+	height: 120rpx;
+	margin: 0 auto;
+	margin-top: 10rpx;
+	border-radius: 50%;
+	display: block;
+}
+
+.top .top-content .mess .text{
+	float: left;
+	margin-left: 15rpx;
+	margin-top: 10rpx;
+}
+.top .top-content .mess .text .user-name{
+	width: 350rpx;
+	font-size: 32rpx;
+	color: #eab11f;
+	margin-bottom: 10rpx;
+}
+.top .top-content .mess .text .txt-name{
+	width: 350rpx;
+	font-size: 32rpx;
+	color: #eab11f;
+}
+
+.cl-btn{
+	width: 225rpx;
+	height: 225rpx;
+	margin: 0 auto;
+	margin-top: 50rpx;
+}
+.cl-btn .cl-btn1{
+	width: 225rpx;
+	height: 225rpx;
+
+}
+.cl-btn .cl-btn1 image{
+	width: 225rpx;
+	height: 225rpx;
+}
+.cl-btn .cl-btn2{
+	width: 225rpx;
+	height: 225rpx;
+  position: relative;
+  text-align: center;
+}
+.cl-btn .cl-btn2 image{
+	width: 225rpx;
+	height: 225rpx;
+}
+.my_money{
+  width: 225rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  right: 0rpx;
+  left: 0rpx;
+  margin:auto;
+  font-size: 60rpx;
+  line-height: 60rpx;
+  font-weight: bolder;
+  color: #000000;
+}
+.btn{
+	width: 565rpx;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 100rpx;
+}
+.btn .fa-btn{
+	float: left;
+}
+.btn .fa-btn image{
+	display: block;
+	width: 48rpx;
+	height: 48rpx;
+	float: left;
+}
+.btn .fa-btn .btn-name{
+	float: left;
+	font-size: 34rpx;
+	color: #d29659;
+	margin-left: 10rpx;
+	line-height: 48rpx;
+}
+.btn .fen-btn{
+	float: left;
+	margin-left: 50rpx;
+}
+.btn .fen-btn image{
+	display: block;
+	width: 48rpx;
+	height: 48rpx;
+	float: left;
+}
+.btn .fen-btn .btn-name{
+	float: left;
+	font-size: 34rpx;
+	color: #d29659;
+	margin-left: 10rpx;
+	line-height: 48rpx;
+}
+.btn .liu-btn{
+	float: right;
+}
+.btn .liu-btn image{
+	display: block;
+	width: 48rpx;
+	height: 48rpx;
+	float: left;
+}
+.btn .liu-btn .btn-name{
+	float: left;
+	font-size: 34rpx;
+	color: #d29659;
+	margin-left: 10rpx;
+	line-height: 48rpx;
+}
+
+.detial{
+	width: 750rpx;
+	border-top: 1px solid #dcdcdc;
+	margin-top: 20rpx;
+}
+.detial .de-co{
+	width: 700rpx;
+	height: auto;
+	margin: 0 auto;
+}
+.detial .de-co .text{
+	font-size: 32rpx;
+	color: #9c9c9c;
+	width: 700rpx;
+	margin-top: 25rpx;
+}
+.detial .list{
+	width: 700rpx;
+	margin: 0 auto;
+}
+.detial .list .list-one{
+	width: 700rpx;
+	margin: 0 auto;
+	height: 140rpx;
+	overflow: hidden;
+	border-bottom: 1px solid #dcdcdc;
+}
+.detial .list .list-one .other-head{
+	float: left;
+	width: 100rpx;
+	height: 100rpx;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-top: 20rpx;
+}
+.detial .list .list-one .other-head image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+}
+.detial .list .list-one .mess{
+	float: left;
+	margin-left:20rpx ;
+	margin-top: 35rpx;
+}
+.detial .list .list-one .mess .name{
+	font-size: 32rpx;
+	color: #4f4d4d;
+	
+}
+.detial .list .list-one .mess .time{
+	font-size: 30rpx;
+	color: #c3c1c1;
+	margin-top: 2rpx;
+}
+.detial .list .list-one .mon{
+	font-size: 32rpx;
+	color: #4f4d4d;
+	float: right;
+	margin-right: 15rpx;
+	margin-top: 55rpx;
+}
+
+.ly-window{
+ 
+}
+.ly-window .ly-shade{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	position: fixed;
+	left: 0;top: 0;
+	z-index: 9999;
+}
+.ly-window .ly-con{
+	width: 580rpx;
+	height: 512rpx;
+	position: fixed;
+	left: 50%;top: 50%;
+	margin-left: -290rpx;
+	margin-top: -256rpx;
+	z-index: 999999999;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 12rpx;
+}
+.ly-window .ly-con .win-top{
+	width: 580rpx;
+	height: 148rpx;
+	position: relative;
+}
+.ly-window .ly-con .win-top image{
+	width: 580rpx;
+	height: 148rpx;
+}
+.ly-window .ly-con .win-top .title{
+	width: 580rpx;
+	height: 148rpx;position: absolute;
+	left: 0;top: 0;
+	text-align: center;
+	line-height: 148rpx;
+	font-size: 64rpx;
+	color: #fff;
+}
+.ly-window .ly-con .inp-txt{
+	width: 500rpx;
+	height: 184rpx;
+	border: 1px solid #e7e7e7;
+	margin: 0 auto;
+	margin-top: 27rpx;
+	position: relative;
+}
+.ly-window .ly-con .inp-txt .texta{
+	width: 480rpx;
+	height: 164rpx;
+	padding: 10rpx;
+}
+.ly-window .ly-con .inp-ti{
+	position: absolute;
+	right: 10rpx;bottom: 10rpx;
+	font-size: 36rpx;
+	color: #7d7c7c;
+}
+.ly-window .ly-con .btm-line{
+	width: 502rpx;
+	height: 2rpx;
+	background: #d1d1d1;
+	margin: 0 auto;
+	margin-top: 29rpx;
+}
+.ly-window .ly-con  .sure-btn{
+	width: 500rpx;
+	height: 90rpx;
+	margin: 0 auto;
+	background: none;
+	text-align: center;
+	line-height: 90rpx;
+	font-size: 50rpx;
+	color: #db2727;
+}
+.danmuBox{
+  position: absolute;
+  top: 220rpx;left: 0;
+  z-index: 999;
+  height: 300rpx;
+}
+.danmu1{
+	min-width: 200rpx;
+   height: 50rpx;
+   overflow: hidden;
+   border-radius: 100rpx;
+   background: rgba(0,0,0,.8);
+   padding-right: 10rpx;
+   margin-bottom: 15rpx;
+   float: left;
+   margin-right: 10rpx;
+
+}
+.danmu1 .user-img{
+	width: 50rpx;
+	height: 50rpx;
+	border-radius: 50%;
+	float: left;
+}
+.danmu1 .text{
+	line-height: 50rpx;
+	float: left;
+	color: #fff;
+	font-size: 24rpx;
+	margin-left: 10rpx;
+
+}
+.animation1{
+  animation: danmuAnimation 13s infinite; 
+}
+@keyframes danmuAnimation{  
+  0%{
+    transform: translateX(900rpx)
+    
+  }
+  100%{
+    transform: translateX(-500rpx)
+  }
+}
+.animation2{
+	animation-delay: 2s;
+  animation: danmuAnimation 11s infinite; 
+}
+.animation3{
+  animation-delay: 3s;
+  animation: danmuAnimation 16s infinite; 
+}
+.animation4{
+  animation: danmuAnimation 20s infinite; 
+}
+.animation5{
+  animation-delay: 3s;
+  animation: danmuAnimation 13s infinite; 
+}
+.animation6{
+	animation-delay: 3s;
+  animation: danmuAnimation 32s infinite; 
+}
+.animation7{
+	animation-delay: 4s;
+  animation: danmuAnimation 27s infinite; 
+}
+.animation8{
+  animation-delay: 4s;
+  animation: danmuAnimation 29s infinite; 
+}
+.animation9{
+  animation-delay: 1s;
+  animation: danmuAnimation 10s infinite; 
+}
+.animation9{
+  animation-delay: 5s;
+  animation: danmuAnimation 10s infinite; 
+}
+
+
+
+
+
+button{
+  background: none;
+}
+button::after{
+  border: none
+}

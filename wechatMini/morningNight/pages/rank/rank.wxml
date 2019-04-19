@@ -1,0 +1,29 @@
+
+<view class="container">
+
+
+  <view class='top'>
+    <view catchtap='change' data-index = "1" class='{{select==1?"box select":"box"}}'>早安排行</view>
+    <view catchtap='change' data-index = "2" class='{{select==2?"box select":"box"}}'>晚安排行</view>    
+  </view>
+
+
+  <view class='list'>
+      <block wx:for="{{select==1?morning_list:night_list}}" wx:key="{{index}}">
+        <view class='item'>
+          <view class='user'>
+          <view wx:if="{{index==0?true:false}}" class='mingci' style='background:{{index==0?"#F8D548":""}}'>{{index+1}}</view>
+          <view wx:elif="{{index==1?true:false}}" class='mingci' style='background:{{index==1?"#FFB2A5":""}}'>{{index+1}}</view>
+          <view wx:elif="{{index==2?true:false}}" class='mingci' style='background:{{index==2?"#88AAD4":""}}'>{{index+1}}</view>
+          <view wx:else class='mingci'>{{index+1}}</view>
+            <image class='user_head' src='{{item.avatarUrl}}'></image>
+            <view class='user_name'>{{item.nickName}}</view>
+          </view>
+
+          <view wx:if="{{select==1?true:false}}" class='day'>连续早起<text style='font-size:48rpx;color:#7FCFA1'>{{item.morning_continuity_days}}</text>天</view>
+          <view wx:else class='day'>连续早睡<text style='font-size:48rpx;color:#7FCFA1'>{{item.night_continuity_days}}</text>天</view>
+        </view>
+
+      </block>
+  </view>
+</view>

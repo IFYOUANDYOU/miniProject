@@ -1,0 +1,80 @@
+<view class='index'>
+  <view class='index-content'>
+    <!--写死的
+    -------------------------------------------------------------------------------------
+    <form report-submit bindsubmit="formInSign">
+      <button class='index-list' style="background: none" formType="submit" data-islink="{{datas[0].is_link}}" id="{{datas[0].id}}" class="indexImg" bindtap="goToPage" data-thumb="{{datas[0].link_url}}">
+        <view class='index-list' style="background-image:url({{datas[0].thumb}})">
+          <view class='index-list-text'>{{datas[0].title}}
+          </view>
+        </view>
+      </button>
+    </form>
+    <form report-submit bindsubmit="formInSign">
+      <button class='index-list' style="background: none" formType="submit" data-islink="{{datas[1].is_link}}" id="{{datas[1].id}}" class="indexImg" bindtap="goToPage" data-thumb="{{datas[1].link_url}}">
+        <view class='index-list' style="background-image:url({{datas[1].thumb}})">
+
+          <view class='index-list-text'>{{datas[1].title}}
+          </view>
+        </view>
+      </button>
+    </form>
+    <form report-submit bindsubmit="formInSign">
+      <button class='index-list' style="background: none" formType="submit" data-islink="{{datas[2].is_link}}" id="{{datas[2].id}}" class="indexImg" bindtap="goToPage" data-thumb="{{datas[2].link_url}}">
+        <view class='index-list' style="background-image:url({{datas[2].thumb}})">
+
+          <view class='index-list-text'>{{datas[2].title}}
+          </view>
+        </view>
+      </button>
+    </form>
+    <form report-submit bindsubmit="formInSign">
+      <button class='index-list' style="background: none" formType="submit" data-islink="{{datas[3].is_link}}" id="{{datas[3].id}}" class="indexImg" bindtap="goToPage" data-thumb="{{datas[3].link_url}}">
+        <view class='index-list' style="background-image:url({{datas[3].thumb}})">
+
+          <view class='index-list-text'>{{datas[3].title}}
+          </view>
+        </view>
+      </button>
+    </form>
+    <form report-submit bindsubmit="formInSign">
+      <button class='index-list' style="background: none" formType="submit" data-islink="{{datas[4].is_link}}" id="{{datas[4].id}}" class="indexImg" bindtap="goToPage" data-thumb="{{datas[4].link_url}}">
+        <view class='index-list' style="background-image:url({{datas[4].thumb}})">
+
+          <view class='index-list-text'>{{datas[4].title}}
+          </view>
+        </view>
+      </button>
+    </form>
+    ----------- -->
+    <!--循环遍历------------------------------------------------------------------------------------------------ -->
+    <block wx:for="{{datas}}" data-item="item" wx:for-index="idx" wx:key="id">
+      <form report-submit bindsubmit="formInSign">
+        <button class='index-list' style="background: none" formType="submit" id="{{item.id}}" class="indexImg" bindtap="goToPage">
+          <view class='index-list' style="background-image:url({{item.thumb}})">
+            <view class='index-list-text'>{{item.title}}
+            </view>
+          </view>
+        </button>
+      </form>
+    </block>
+    <block wx:if="{{datas.length == 0}}">
+      <text>暂无内容</text>
+    </block>
+  </view>
+</view>
+<!--底部------------------------------------------------------------------------------------------------ -->
+<view class='index-footer'>
+  <view class='index-footer-btn' bindtap="getMsg" data-id='0'>
+    <image src="../img/{{hot==0?'new':'new_no'}}.png"></image>
+    <view class="{{hot==0?'red':''}}'">首页</view>
+  </view>
+  <text></text>
+  <view class='index-footer-btn' bindtap="getMsg" data-id='2'>
+    <image src="../img/{{hot==2?'hot':'hot_no'}}.png"></image>
+    <view class="{{hot==2?'red':''}}'">最热</view>
+  </view>
+</view>
+<view class='back-top' bindtap='goTop'>
+  <image src='../img/backtop.png'></image>
+</view>

@@ -1,0 +1,9 @@
+.container{margin: 0 30rpx;}
+.bills{padding: 20rpx 0;line-height: 44rpx;}
+.total{text-align: center;line-height: 72rpx;}
+.total text{font-size: 32rpx;}
+.total .number{font-size: 68rpx;}
+.bills .bill{margin: 12rpx 0;color: #8f8f8f;}
+.bills text{color: #333;}
+
+.contact{position: absolute;left: 0;right: 0;bottom: 60rpx;width: 280rpx;font-size: 28rpx;color: #999;background: #f0f0f0}

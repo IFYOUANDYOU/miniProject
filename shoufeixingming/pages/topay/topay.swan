@@ -1,0 +1,181 @@
+<view class="topay">
+
+	<image class="topay-banner" mode="widthFix" src="../../images/banner3.jpg"></image>
+	<view class="topay-order">订单号:32019041215155</view>
+	<view class="topay-content">
+
+		<view class="topay-list">
+			<view class="topay-title">姓名相合测算部分预告</view>
+			<view class="topay-list-top">
+				<view class="topay-box">
+					<image class="topay-sex" src="../../images/man.png"></image>
+					<view>张三</view>
+					<view>男主角</view>
+				</view>
+				<view class="topay-box">
+					<view class="topay-vs">VS</view>
+					<view>配对</view>
+				</view>
+				<view class="topay-box">
+					<image class="topay-sex" src="../../images/woman.png"></image>
+					<view>张三</view>
+					<view>男主角</view>
+				</view>
+			</view>
+			<view class="topay-qhd">
+				<view class="topay-qhd-title">匹配契合度</view>
+				<image class="topay-star" src="../../images/star.png"></image>
+			</view>
+			<view class="topay-bd">
+
+				<image src="../../images/bd.png"></image>
+				<view class="topay-yd">你们是天生一对，还是有缘无分 </view>
+			</view>
+		</view>
+		<view class="topay-item-list">
+
+			<view class="topay-item">
+				<view class="topay-item-title">
+					男女双方性格
+				</view>
+				<view class="topay-item-lab">
+					<view class="topay-item-suoLeft">
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>男方的性格解析</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>女方的性格解析</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>追求对方会被拒绝吗？</view>
+						</view>
+					</view>
+					<image class="topay-item-suo" src="../../images/suo.png"></image>
+				</view>
+			</view>
+			<view class="topay-item">
+				<view class="topay-item-title">
+					你们的爱情宿命
+				</view>
+				<view class="topay-item-lab">
+					<view class="topay-item-suoLeft">
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>是不是命中注定的一对？</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>双方对待爱情的态度如何？
+							</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>哪些因素会干扰你们的爱情
+							</view>
+						</view>
+					</view>
+					<image class="topay-item-suo" src="../../images/suo.png"></image>
+				</view>
+			</view>
+			<view class="topay-item">
+				<view class="topay-item-title">
+					你们的爱情危机
+				</view>
+				<view class="topay-item-lab">
+					<view class="topay-item-suoLeft">
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>两人相处时会出现哪些危机？</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>引发危机的原因都有什么</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>如何破除危机，守护爱情</view>
+						</view>
+					</view>
+					<image class="topay-item-suo" src="../../images/suo.png"></image>
+				</view>
+			</view>
+			<view class="topay-item">
+				<view class="topay-item-title">
+					姓名姻缘五格
+				</view>
+				<view class="topay-item-lab">
+					<view class="topay-item-suoLeft">
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>双方的姓名五格是怎样的</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>双方的五格是否有利配对</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>双方五格如何影响你们的姻缘</view>
+						</view>
+					</view>
+					<image class="topay-item-suo" src="../../images/suo.png"></image>
+				</view>
+			</view>
+			<view class="topay-item">
+				<view class="topay-item-title">
+					姓名相合卦象
+				</view>
+				<view class="topay-item-lab">
+					<view class="topay-item-suoLeft">
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>双方姓名卦象是什么</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>卦象相合等级是高是低</view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>准确卦象解析解密双方姻缘</view>
+						</view>
+					</view>
+					<image class="topay-item-suo" src="../../images/suo.png"></image>
+				</view>
+			</view>
+			<view class="topay-item">
+				<view class="topay-item-title">
+					给你们的爱情建议
+				</view>
+				<view class="topay-item-lab">
+					<view class="topay-item-suoLeft">
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>未来双方的感情运势纵览 </view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>针对你们的配对提供爱情赠言 </view>
+						</view>
+						<view class="topay-item-name">
+							<view class="topay-dian"></view>
+							<view>推荐方法助力双方姻缘 </view>
+						</view>
+					</view>
+					<image class="topay-item-suo" src="../../images/suo.png"></image>
+				</view>
+			</view>
+		</view>
+		<view class="topay-peo-man">
+			<view class="topay-peo">已有1597324人进行了测算，测算结果帮助他们掌握了正确的求爱方式，找到了自己的真爱，96.7%的客户对测算结果表示满意。</view>
+		</view>
+	</view>
+
+
+</view>
+<view class="index-footer" s-if="{{showBtn}}">
+		<view class="index-footer-go" bindtap="goToPay">立即测算</view>
+	</view>

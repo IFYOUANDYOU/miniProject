@@ -1,0 +1,19 @@
+.fd{background: #fff;box-shadow: 0 4rpx 12rpx 3rpx rgba(0, 0, 0, 0.15);padding: 24rpx;margin: 28rpx;border-radius: 12rpx;}
+.detail{padding-top: 12rpx;padding-bottom: 12rpx;line-height: 40rpx;}
+.detail textarea{width: 100%;height: 280rpx;}
+
+.prescrip{display: flex;flex-wrap: wrap;}
+.prescrip .item{width: 33.33333333333333%;text-align: center;background-color: #f9f9f9;}
+.prescrip image{border: 2rpx solid #fff;}
+.prescrip .upimg{position: relative;background-image: url(http://ys9958.com/public/upload/public/loading.gif);background-repeat: no-repeat;background-position: center center;background-size: 40rpx auto;}
+.prescrip .del{display: block;position: absolute;top: 2rpx;right: 2rpx;background: #4c4c4c;color: #fff;width: 45rpx;height: 45rpx;line-height: 45rpx;text-align: center;font-size: 36rpx;}
+.prescrip .del::after{font-family: "iconfont";content: "\e646";}
+
+.up::before,.upload::before{display: block;font-family: "iconfont";}
+.up{text-align: center;font-size: 24rpx;background: #f9f9f9;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.up::before{content: "\e6d9";font-size: 46rpx;color: #a1a5a5;}
+.upload{text-align: center;padding-bottom: 40rpx;padding-top: 20rpx;line-height: auto;}
+.upload::before{content: "\e77f";font-size: 92rpx;}
+
+.authorize{margin: 28rpx;line-height: 68rpx;}
+.getPhone{width: 208rpx;height: 68rpx;line-height: 68rpx;color: #3081f2;background: #f0f0f0;border-color: #e1e1e1;font-size: 28rpx;}

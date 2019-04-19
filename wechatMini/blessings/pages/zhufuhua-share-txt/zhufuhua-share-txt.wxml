@@ -1,0 +1,32 @@
+<!--pages/zhufuhua-txt/zhufuhua-txt.wxml-->
+<view class='content' catchtap='hide_bottom'>
+  <image class='con-bg' src='../image/zhufuhua-txt.png'></image>
+  <view class='detail'>
+    <view class='user-img'>
+      <image src='{{user.avatarUrl}}'></image>
+    </view>
+    <view class='to'>
+      <view class='todo'>TO</view>
+      <view class='to-in'>{{name}}</view>
+    </view>
+    <view class='do-txt'>{{content}}</view>
+    <view class='mess'>
+      <view class='name'>
+        <view>{{signature}}</view>
+      </view>  
+      <view class='time'>{{time}}</view>
+    </view>
+  </view>
+</view>
+
+<navigator  class='my_share' url='../zhufuhua/zhufuhua'>我也发一个</navigator>
+
+
+
+
+
+
+
+
+
+

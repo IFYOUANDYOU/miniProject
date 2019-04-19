@@ -1,0 +1,80 @@
+<template name="Oscroll">
+        <view class='mjs_contentBox' >
+            
+            <view class='mjs_usermsg' catchtap='godetail' data-id="{{item.id}}">
+              <image class='userhead' catchtap='go_other_detail' data-userid = "{{item.user_id}}" src='{{item.user_msg.avatar}}'></image>
+              <view class='mjs_username_time' >
+                <view class='mjs_username'>{{item.user_msg.username}}</view>
+                <view class='mjs_time'>{{item.created_time}}</view>
+              </view>
+            </view>
+          <!--内容  -->
+          <view atchtap='godetail' data-id="{{item.id}}" class='mjs_contentTxt' catchtap='godetail'>
+           {{item.content}}
+          </view>
+          <!--图片  -->
+          <view catchtap='godetail' data-id="{{item.id}}" wx:if="{{item.type==2?true:false}}" class='mjs_contentImg'>
+            <image class='contentImg' src='{{item.image}}' mode='widthFix' bindload='getheight' ></image>
+          </view>
+          <!--视频  -->
+          <!-- bindtap='myplay' -->
+          <view wx:if="{{item.type==4?true:false}}"  data-id="{{'video'+item.id}}"  class='videoBox'>
+            <video  id="{{'video'+item.id}}"  bindplay="use" objectFit="contain" src='{{item.image}}'></video>
+          </view>
+          <!--标签  -->
+          <view class='mjs_label' wx:if="{{item.tags_list.length>0}}">
+            <block wx:for="{{item.tags_list}}" wx:key="{{index}}">
+              <view class='item_label'>{{item.name}}</view>
+            </block>
+          </view>
+          <!--底部图标  -->
+          <view class='mjs_bottomIcon'>
+          <!--点赞  -->
+            <view class='mjs_icon_num'>
+              <image 
+               class='iconImg' 
+               catchtap='click_thumbs'
+               data-id="{{item.id}}"
+               data-type="{{item.isgood?'cancel':'good'}}"
+               src="{{item.isgood?'/img/mjs/icon/my-zanup.png':'/img/mjs/icon/zanup.png'}}"></image>
+              <text
+                catchtap='click_thumbs'
+               data-id="{{item.id}}"
+               data-type="{{item.isgood?'cancel':'good'}}"
+               style='color:{{item.isgood?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'
+               class='otxt'
+               >{{item.good_num}}</text>
+            </view>
+            <!--点踩 -->
+            <view class='mjs_icon_num'>
+              <image 
+              class='iconImg' 
+              catchtap='click_zandown' 
+              data-id="{{item.id}}"
+              data-type="{{item.isbad?'cancel':'good'}}"
+              src="{{item.isbad?'/img/mjs/icon/my-zandown.png':'/img/mjs/icon/zandown.png'}}"></image>
+              <text
+              catchtap='click_zandown' 
+              data-type="{{item.isbad?'cancel':'good'}}"
+              data-id="{{item.id}}"
+               style='color:{{item.isbad?"rgba(255,168,0,1)":"rgba(195,195,195,1)"}}'
+               class='otxt'>{{item.bad_num}}</text>
+            </view>
+            <!--评论  -->
+            <view class='mjs_icon_num' catchtap='godetail' data-id="{{item.id}}">
+              <image class='iconImg' src='/img/mjs/icon/comment.png'></image>
+              <text 
+              style='color:rgba(195,195,195,1)'
+              class='otxt'>{{item.review_num}}</text>
+            </view>
+            <!--分享  -->
+            <view class='mjs_icon_num'>
+              <button class='obtn' data-id="{{item.id}}" open-type='share'>
+                <image class='iconImg' src='/img/mjs/icon/share.png'></image>
+              </button>
+              
+              <text style='color:rgba(195,195,195,1)'>{{item.share_num}}</text>
+            </view>
+          </view>
+        </view>
+</template>

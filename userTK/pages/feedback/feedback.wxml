@@ -1,0 +1,31 @@
+<import src="../template/commonlist.wxml" />
+<view class="container">
+  <form class="forms" bindsubmit="fbSubmit">
+    <view class="detail fd">
+      <textarea placeholder="请填写意见和建议" name="detail"></textarea>
+    </view>
+    <!-- <view class="fd">
+      <view wx:if="{{prescrip.length!=0}}" class="prescrip" id="prescrip">
+        <block wx:for="{{prescrip}}" wx:key="key">
+          <view style="height: {{vh}}px" class="item upimg" data-index="{{index}}">
+            <image wx:if="{{item.url}}" src="{{item.url}}" style="height: {{vh}}px;width: {{vh}}px;" mode="aspectFill"></image>
+            <text class="del" catchtap="delimg" data-index="{{index}}"></text>
+          </view>
+        </block>
+        <view wx:if="{{prescrip.length<3}}" style="height: {{vh}}px" class="up item" catchtap="upload">添加</view>
+      </view>
+      <view wx:else class="upload" catchtap="upload">上传截图</view>
+    </view> -->
+    <view class="authorize">
+      手机号码授权：{{phoneNumber}}<text wx:if="{{inputPhone}}" style="color: red;">获取失败</text>
+      <button wx:if="{{phoneNumber==''}}" class="getPhone pright" open-type="getPhoneNumber" bindgetphonenumber="getSessionKey">确认授权</button>
+    </view>
+    <view class="submit">
+      <button class="send btn" type="button" formType="submit">提交</button>
+    </view>
+  </form>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

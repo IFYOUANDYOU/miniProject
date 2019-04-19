@@ -1,0 +1,29 @@
+/* pages/search/search.wxss */
+
+
+
+.hot_txt{
+  width: 100%;
+  font-size: 30rpx;
+  color: #BEBEBE;
+  margin-top: 38rpx;
+}
+
+.txt_box{
+  margin-top: 24rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.txt{
+  height: 66rpx;
+  background:rgba(245,245,245,1);
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  padding: 16rpx 30rpx;
+  font-size: 32rpx;
+  color: #454545;
+  margin-right:50rpx; 
+  margin-top: 20rpx;
+}

@@ -1,0 +1,46 @@
+.nav{
+	width: 750rpx;
+	height: 98rpx;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	left: 0;bottom: 0;
+}
+.nav .nav-img{
+	width: 750rpx;
+	height: 1206rpx;
+	position: absolute;
+	left: 0;bottom: 0;
+}
+.nav .fox-box{
+	position: absolute;
+	left: 0;top: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-list{
+	width: 250rpx;
+	height: 98rpx;
+	float: left;
+	overflow: hidden;
+}
+
+.nav .nav-list .text{
+	text-align: center;
+	margin-top: 18rpx;
+	font-size: 38rpx;
+	color: #c1c1c1;
+}
+.nav .nav-list .text-cur{
+	color: #eab11f;
+}
+.nav .nav-list .line{
+	width: 144rpx;
+	height: 4rpx;
+	margin: 0 auto;
+	margin-top: 12rpx;
+	background: #eab11f;
+}

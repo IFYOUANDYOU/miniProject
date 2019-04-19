@@ -1,0 +1,130 @@
+<view class="userInfo">
+  <view class='infoTop'>
+    <view class='head_name'>
+      <image class='headImg' src='{{item.avatar}}'></image>
+      <view class='allnum'>
+        <text class='username'>{{item.username}}</text>
+        <view class='address'>
+          <image class='addressImg' src='/img/mjs/icon/address.png'></image>
+          <text class='addresstxt'>{{item.city}}</text>
+          <text class='fans_num'>{{item.fans_num}}</text>
+          <text class='fans_txt'>粉丝</text>
+          <view wx:if="{{write_name}}" catchtap='writeName' class='add_name'>段友名：{{item.nickname?item.nickname:"添加段友名"}}</view>
+          <view wx:else class='write_box'>
+            
+            <input class='write' bindblur="send_name" bindinput='get_input' style='display:inline-block' value='{{item.nickname}}' placeholder='请输入'></input>
+            <!-- <text class='amend' catchtap='send_name'>确认修改</text>
+            <text class='cancel' catchtap='cancel'>取消</text> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class='infoBottom'>
+    <view class='botoom_dot'></view>
+    个性签名：{{item.signature}}
+  </view> -->
+</view>
+
+
+<!--引入公共模版  -->
+<import src="/template/home.wxml"/>
+<view class='mjs_my_content'>
+  <!--顶部导航  -->
+  <view class='mjs_topbar' >
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <view 
+      id="item{{index}}"
+      class='{{current_index==index?"mjs_toplist topborder":"mjs_toplist"}}' 
+      data-index="{{index}}" catchtap='click_index'>{{item.name}}</view>
+    </block>
+  </view>  
+
+
+   <!--我的帖子  -->
+    <view wx:if="{{current_index==0?true:false}}" class='my_invitation'>
+             <block wx:for="{{recomment_list}}" wx:key="{{index}}"> 
+              <view class='mjs_contentBox' style='background:#fff'>
+                  <view class='mjs_usermsg' catchtap='godetail' data-id='{{item.id}}' data-status='{{item.status}}'>
+                    <image class='userhead' src='{{avatar}}'></image>
+                    <view class='mjs_username_time'>
+                      <view class='mjs_username'>{{username}}</view>
+                      <view class='mjs_time'>{{item.time}}</view>
+                    </view>
+
+                    <view class='status' style='color:RGB(193, 192, 192)' wx:if="{{item.status==1}}">
+                      未审核
+                    </view>
+                    <view class='status' style='color:RGB(79, 152, 39)' wx:elif="{{item.status==2}}">
+                      审核通过
+                    </view>
+                    <view style='color:RGB(221, 43, 35)' class='status' wx:else>
+                      审核拒绝
+                    </view>
+                  </view>
+                  <!--文字  -->
+                <view class='mjs_contentTxt' catchtap='godetail' data-id='{{item.id}}' data-status='{{item.status}}'>
+                {{item.content}}
+                </view>
+                <!--图片  -->
+                <view wx:if="{{item.type==2?true:false}}" class='mjs_contentImg' catchtap='godetail' data-id='{{item.id}}' data-status='{{item.status}}'>
+                  <image class='contentImg' src='{{item.image}}' bindload='getheight' style='height:{{height}}rpx'></image>
+                </view>
+
+                <!--视频  -->
+                <view wx:if="{{item.type==4?true:false}}" class='videoBox'>
+                  <video catchtap='myplay' id="{{'video'+item.id}}" objectFit="fill" src='{{item.image}}'></video>
+                </view>
+                <!--底部图标  -->
+                <view class='mjs_bottomIcon'>
+                  <!--评论  -->
+                  <view class='mjs_icon_num mjs'>
+                    <image class='iconImg' catchtap='godetail' data-status='{{item.status}}' data-id="{{item.id}}" src='/img/mjs/icon/comment.png'></image>
+                    <text 
+                    catchtap='godetail' data-status='{{item.status}}' data-id="{{item.id}}" 
+                    class='otxt' style='color:rgba(195,195,195,1)'>{{item.review_num}}</text>
+                  </view>
+                  <!--删除  -->
+                  <view class='mjs_icon_num mjs'>
+                    <image class='iconImg' catchtap='delete_tiezi' data-id='{{item.id}}' src='/img/mjs/icon/delete.png'></image>
+                  </view>
+                </view>
+              </view>
+           </block> 
+
+    </view>
+    <!--我的收藏  -->
+    <view wx:if="{{current_index==1?true:false}}" class='my_collection'>
+        <block wx:for="{{care_list}}" wx:key="{{index}}">
+          <template is="Oscroll" data="{{item}}"></template>
+        </block>
+    </view>
+    <!--我的关注  -->
+    <view wx:if="{{current_index==2?true:false}}" class='my_care'>
+        <block wx:for="{{item_care}}" wx:key="{{index}}">
+          <view class='care_one'>
+              <image catchtap='go_other_detail' data-userid="{{item.id}}" src='{{item.avatar}}' class='care_user_head'></image>
+              <view class='care_detail'>
+                <view class='care_user'>
+                  <view class='care_username'>{{item.username}}</view>
+                  <view class='care_fans_invitation'>
+                    <text class='care_fans_num'>{{item.fans_num}}</text>
+                    <text>粉丝</text>
+                    <text class='dot'></text>
+                    <text class='care_invitation_num'>{{item.jokes_num}}</text>
+                    <text>帖子</text>
+                  </view>
+                </view>
+                <view wx:if="{{item.isfollow}}" data-id="{{item.id}}" catchtap='do_care' class='care_operate care_yes'>已关注</view>
+                <view wx:else  data-id="{{item.id}}" catchtap='do_care' class='care_operate care_no'>已取消关注</view>
+              </view>
+          </view>
+        </block>
+      
+    </view>
+    <!-- 我的评论  
+    <view wx:if="{{current_index==3?true:false}}" class='my_comment'>
+          <template is="Oscroll" data="{{itemlist}}"></template>
+    </view> -->
+</view>

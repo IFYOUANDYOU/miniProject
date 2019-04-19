@@ -1,0 +1,41 @@
+<import src="a.wxml"/>
+<view class="container">
+    <view class="content">
+        <view class="title">帮助</view>
+        <view class="cont">
+            <view class="cont-detail">
+                <view class="top"  bindtap="clickshow"><view class="left">Q1:</view><view class="right">如何搜索我们</view></view>
+                <view class="bottom bot {{ view_state }}">反馈联系微信号：duohaomai</view>
+            </view>
+            <view class="cont-detail">
+                <view class="top" bindtap="clickshow1"><view class="left">Q2:</view><view class="right">如何清楚我们的合作伙</view></view>
+                <view class="bottom {{ view_states }}">反馈联系微信号：duohaomai</view>
+            </view>
+             <view class="cont-detail">
+                <view class="top"  bindtap="clickshow2"><view class="left">Q3:</view><view class="right">如何联系相关的版权？</view></view>
+                <view class="bottom {{ view_state1 }}">反馈联系微信号：duohaomai</view>
+            </view>
+             <view class="cont-detail">
+                <view class="top"  bindtap="clickshow3"><view class="left">Q4:</view><view class="right">如何与我们取得联系？</view></view>
+                <view class="bottom {{ view_state2 }}">反馈联系微信号：duohaomai</view>
+            </view>
+             <view class="cont-detail">
+                <view class="top"  bindtap="clickshow4"><view class="left">Q5:</view><view class="right">如何给我们提修改意见？</view></view>
+                <view class="bottom {{ view_state3 }}">反馈联系微信号：duohaomai</view>
+            </view>
+             <view class="cont-detail">
+                <view class="top"  bindtap="clickshow5"><view class="left">Q6:</view><view class="right">如何获得最新资讯？</view></view>
+                <view class="bottom {{ view_state4 }}">反馈联系微信号：duohaomai</view>
+            </view>
+             <view class="cont-detail">
+                <view class="top"  bindtap="clickshow6"><view class="left">Q7:</view><view class="right">如何清楚我们的平台性质？</view></view>
+                <view class="bottom {{ view_state5 }}">反馈联系微信号：duohaomai</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!--<view class="footer">
+  <navigator class="li" url="" hover-class="navigator-hover"><view></view>首页</navigator>
+  <navigator class="li" url="" open-type="redirect" hover-class="other-navigator-hover"><view></view>分类</navigator>
+  <navigator class="li" url="" open-type="switchTab" hover-class="other-navigator-hover"><view></view>帮助</navigator>
+</view>-->

@@ -1,0 +1,76 @@
+<view class="index">
+	<view class="index-top">
+		<image class="index-top-img" src="../../images/banner.png"></image>
+	</view>
+	<view class="index-content">
+		<view class="index-form">
+			<view class="index-form-lab">
+				<view class="index-form-left">您的姓名</view>
+				<input class="index-form-right" placeholder="请输入姓名（必须为汉字）" />
+			</view>
+			<view class="index-form-lab">
+				<view class="index-form-left">您的性别</view>
+				<view class="index-form-right">
+					<radio-group bindchange="radioChange">
+						<label s-for="item in items">
+							<radio value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" color="#ff0000" /> {{item.value}}
+						</label>
+					</radio-group>
+				</view>
+			</view>
+			<view class="index-form-lab">
+				<view class="index-form-left">出生日期</view>
+				<view class="index-form-right" bindtap="showPicker" data-id="1">
+					<view class="index-form-right" class="index-right-time">{{timeMan}}</view>
+					<image class="index-form-date" src="../../images/date.png"></image>
+				</view>
+			</view>
+
+		</view>
+		<view class="index-center-title">
+			<image src="../../images/left.png"></image>
+			<view class="index-cs-text">立即测算</view>
+			<image src="../../images/right.png"></image>
+		</view>
+		<view class="index-personal">已有<text>{{number}}</text>人测算</view>
+		<view class="index-img-list">
+			<image class="index-img-1" mode="widthFix" src="../../images/icon1.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon2.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon3.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon4.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon5.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon6.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon7.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon8.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon9.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon10.png"></image>
+			<image class="index-img-1 top-5" mode="widthFix" src="../../images/icon11.png"></image>
+		</view>
+	</view>
+</view>
+<view class="index-footer" s-if="{{showBtn}}">
+	<view class="index-footer-go" bindtap="goToPay">立即测算</view>
+</view>
+<view class="picker" s-if="{{showPicker}}">
+	<view class="index-picker-box">
+		<view class="index-picker">
+			<view class="index-picker-class {{showClass?'index-picker-on':''}}" data-id="{{showClass}}" bindtap="picker">公历</view>
+			<view class="index-picker-class {{showClass?'':'index-picker-on'}}" data-id="{{showClass}}" bindtap="picker">农历</view>
+		</view>
+		<picker-view indicator-style="height:50px;" style="width: 100%; height: 60vh;" value="{{value}}" bindchange="bindChange">
+			<picker-view-column class="pickers">
+				<view s-for="item in years" style="line-height: 50px">{{item}}年</view>
+			</picker-view-column>
+			<picker-view-column class="pickers">
+				<view s-for="item in month" style="line-height: 50px">{{item}}月</view>
+			</picker-view-column>
+			<picker-view-column class="pickers">
+				<view s-for="item in day" style="line-height: 50px">{{item}}日</view>
+			</picker-view-column>
+			<picker-view-column class="pickers">
+				<view s-for="item in time" style="line-height: 50px">{{item}}</view>
+			</picker-view-column>
+		</picker-view>
+	</view>
+	<view class="picker-btn" bindtap="closePicker">确定</view>
+</view>

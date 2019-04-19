@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "navigat-bar": "/components/navigat/navigat"
+    }
+}

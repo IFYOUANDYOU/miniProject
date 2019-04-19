@@ -1,0 +1,23 @@
+<view class="readyMengban"></view>
+<image src='https://za.jiqixing.com/static/images/readtImg1.png' class="readyImg1"></image>
+<view class="toTest" bindtap='tz_test'>去测试</view> 
+<view class='danmuBox'>
+  <view class='danmu1 animation1'>亮剑吧畜生 <text class="danmuText">的前任正在 “搞基”</text></view>
+  <view class='danmu1 animation6'>深情不及久伴i <text class="danmuText">的前任正在 “打飞机”</text></view>
+  <view class='danmu1 animation5'>爷丶独自一人 <text class="danmuText">的前任正在 “长江上裸泳”</text></view>
+  <view class='danmu1 animation4'>Amethyst後知后觉 <text class="danmuText">的前任正在 “扣鼻屎”</text></view>
+  <view class='danmu1 animation5'>Sky<text class="danmuText">的前任正在 “喂猪”</text></view>
+  <view class='danmu1 animation3'>师太放开那秃驴<text class="danmuText">的前任正在 “吃鸡”</text></view>
+  <view class='danmu1 animation1'>一人饮酒醉<text class="danmuText">的前任正在 “粪坑打滚”</text></view>
+  <view class='danmu1 animation9'>巫山刘德华<text class="danmuText">的前任正在 “看喜羊羊与灰太狼”</text></view>
+  <view class='danmu1 animation4'>believeMe <text class="danmuText">的前任正在 “生吃象拔蚌”</text></view>
+  <view class='danmu1 animation7'>Shirley Wang <text class="danmuText">的前任正在 “喂猪”</text></view>
+  <view class='danmu1 animation3'>史迪奇stitch <text class="danmuText">没有前任</text></view>
+  <view class='danmu1 animation9'>晚安天使 <text class="danmuText">的前任正在 “抠脚丫子”</text></view>
+  <view class='danmu1 animation8'>速度与激情<text class="danmuText">的前任正在 “吃鸡”</text></view>
+  <view class='danmu1 animation1'>之恋 i<text class="danmuText">的前任正在 “粪坑打滚”</text></view>
+  <view class='danmu1 animation8'>去年买个表<text class="danmuText">的前任正在 “看喜羊羊与灰太狼”</text></view>
+</view>
+<view class="flex_">
+ <view class="stopTest" bindtap='stopTest'>不想测试</view> 
+</view>

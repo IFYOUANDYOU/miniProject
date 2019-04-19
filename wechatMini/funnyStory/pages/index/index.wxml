@@ -1,0 +1,66 @@
+<!--引入公共模版  -->
+<import src="/template/home.wxml"/>
+
+<!--顶部导航  -->
+
+<view class='mjs_topbar'>
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view 
+    id="item{{index}}"
+    class='{{current_index==index?"mjs_toplist topborder":"mjs_toplist"}}' 
+     data-index="{{index}}" catchtap='click_index'>{{item.name}}</view> 
+  </block>
+</view>  
+
+<!--关注  -->
+  <view wx:if="{{current_index==0?true:false}}" class='care_box'>
+        <block wx:for="{{care_list}}" wx:key="{{index}}">
+          <template is="Oscroll" data="{{item}}"></template>
+        </block>
+  </view>
+  <!--推荐  -->
+  <view wx:if="{{current_index==1?true:false}}" class='recomment_box'>
+      <block wx:for="{{recomment_list}}" wx:key="{{index}}">
+        <template is="Oscroll" data="{{item}}"></template>
+      </block>
+  </view>
+  <!-- 视频  
+  <view wx:if="{{current_index==2?true:false}}" class='video_box'>
+
+       <block wx:for="{{video_list}}" wx:key="{{index}}">
+        <template is="Oscroll" data="{{item}}"></template>
+      </block>
+
+  </view> -->
+  <!--图片  -->
+  <view wx:if="{{current_index==2?true:false}}" class='img_box'>
+
+        <block wx:for="{{pic_list}}" wx:key="{{index}}">
+        <template is="Oscroll" data="{{item}}"></template>
+      </block>
+
+  </view>
+  <!--段子  -->
+  <view wx:if="{{current_index==3?true:false}}" class='forge_box'>
+
+        <block wx:for="{{forge_list}}" wx:key="{{index}}">
+        <template is="Oscroll" data="{{item}}"></template>
+      </block>
+
+  </view>
+  <!--排行  -->
+  <view wx:if="{{current_index==4?true:false}}" class='rank_box'>
+       <block wx:for="{{rank_list}}" wx:key="{{index}}">
+        <template is="Oscroll" data="{{item}}"></template>
+      </block>
+  </view>
+
+
+    <button open-type='contact' hover-class='none' class='server'>
+      <image style='width:100%;height:100%' src='/img/mjs/server.png'></image>    
+    </button>
+
+
+
+
+

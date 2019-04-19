@@ -1,0 +1,340 @@
+<view class="order">
+	<view class="order-top">
+		<image class="order-top-bg" src="../../images/order_bg.png"></image>
+		<view class="order-top-content">
+			<view class="order-top-title">金牛座</view>
+			<image class="order-top-year" src="../../images/2019.png"></image>
+			<view class="order-bg">
+				<image class="order-title" src="../../images/zu1.png"></image>
+				<view class="order-content">
+					<view class="order-null">
+						<text class="order-content-title-1">基础信息</text>
+					</view>
+					<view class="order-content-lab">
+						<view class="order-content-lab-list">
+							<view>个人特点：</view>
+							<text>稳健固执</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>四象属性：</view>
+							<text>土</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>掌管宫位：</view>
+							<text>第二宫</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>阴阳属性：</view>
+							<text>阴</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>最强特征：</view>
+							<text>财富</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>守护星：</view>
+							<text>金星</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>吉祥饰物：</view>
+							<text>翡翠，玉</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>开云金属：</view>
+							<text>木</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>幸运数字：</view>
+							<text>6</text>
+						</view>
+						<view class="order-content-lab-list">
+							<view>幸运颜色：</view>
+							<text>粉色</text>
+						</view>
+					</view>
+					<view class="order-null">
+						<text class="order-content-title-1">性格分析</text>
+					</view>
+					<view class="order-subhead">
+						性格关键字：
+					</view>
+					<view class="order-sub-content">
+						财迷，保守，理性思考
+					</view>
+					<view class="order-subhead">
+						基础性格：
+					</view>
+					<view class="order-sub-content">
+						你属于保守稳重一派，生活中不喜欢经常变动，因为这会让你感到不安，你在性格上也属于慢热型。
+					</view>
+					<view class="order-subhead">
+						优点缺点：
+					</view>
+					<view class="order-sub-content">
+						牛座的人比较保守，属于慢热型的性格，不会急躁鲁莽，总是一步步稳健地进取，墨守成规，不喜欢变动，比较固执，一旦认定一件事，十头牛都拉不回来。同时他们也是务实的，对于物质世界的美好例如金钱和美食有追求。但他们天生就有忧郁和压力，又是情绪压力的囤积者，所以爆发的威力就像火山喷发。金牛座是十二星座中最勤勉、坚韧不拔的。
+					</view>
+					<view class="order-null">
+						<text class="order-content-title-1">重要星象</text>
+					</view>
+					<view class="order-sub-content">
+						天王星3月进入金牛座星图并停留整整7年，金星进入金牛座星图1次持续25天土星冥王星相遇，形成土冥现象
+					</view>
+				</view>
+				<view class="content-list">
+					<image class="order-title" src="../../images/zu2.png"></image>
+					<view class="order-content">
+						<view class="order-null">
+							<text class="order-content-title-2">运势综述</text>
+						</view>
+
+						<view class="order-ys">
+							<view class="left">综合评分：</view>
+							<view class="order-ys-list right">
+								<image class="star" src="../../images/star.png"></image>
+								<image class="star" src="../../images/star.png"></image>
+								<image class="star" src="../../images/star.png"></image>
+								<image class="star" src="../../images/staring.png"></image>
+								<image class="star" src="../../images/staring.png"></image>
+							</view>
+						</view>
+						<view class="order-ys">
+							<view class="left">星座匹配：</view>
+							<view class="right white">金牛座配处女座</view>
+						</view>
+						<view class="order-ys">
+							<view class="left">主动被动：</view>
+							<view class="right white">你仅有36%的主动权</view>
+						</view>
+						<view class="order-ys">
+							<view class="left">简短总评：</view>
+							<view class="right white">细水长流，平淡是福，你们的感情如同 涓涓流淌的小溪，平稳而坚定。</view>
+						</view>
+
+						<view class="order-null">
+							<text class="order-content-title-2">运势综述</text>
+						</view>
+						<view class="order-ys-more">
+							进入2019年，由于天王星对冲你的对宫星座，因此你整年的感情核心词都围绕着天王星的特质“变革”与“加速”，整体看来感情运势十分良好，年中时有小波折。 2018年5月到11月的这段时间，天王星进入到你的星图，人生突然被加速推进了，你会觉得，我还没有准备好啊，怎么说开始就开始，说结束就结束了呢。天王星就是这么出其不意，但2018年它停留在你星座的那半年，你似乎适应了它的力量。
+							2019年的3月份，它将再次来到你的星座，并且停留整整7年，是的，你没看错，未来7年天王星都会驻扎在你的星图之中，首当其冲影响的就是你的感情态度和人际关系，因为天王星恰好对冲着你的对宫星座，你会在2019年中对感情的看法发生与之前正好相反的变化，例如由谨慎变得奔放，由害羞变得大胆，由古板变得圆滑等。
+						</view>
+
+
+						<view class="order-null">
+							<text class="order-content-title-2">单身桃花运</text>
+						</view>
+						<view class="order-ys-more">
+							单身的你在今年桃花蛮多，这是因为木星进入到了你的星图，为你带来源源不绝的新“人”，值得一提的是，这些“新关系”中，烂桃花的概率比较高，因此会在某种程度上带来感情挫折，相对而言，今年4月份以及下半年的9月到12月期间，你在感情上不会太闹心。 木星也会让你在今年慎重思考你究竟是要物质还是要爱情，会有很大概率出现一个人，TA的物质实力没有那么好，不符合你心中的标准，甚至收入不及你，但你偏偏喜欢TA，此时，就要你来决定到底是要爱情还是要物质。
+						</view>
+						<view class="order-null">
+							<text class="order-content-title-2">情侣感情运势</text>
+						</view>
+						<view class="order-ys-more">
+							天王星来到你的星座之后，会直接对冲你的情感、人际关系宫位，感情态度中已经提及到了这一点，所以今年在处理感情和婚姻问题的时候要小心。 你们两个人都会发生很大的变化，一个是你接触的人越来越多，价值观在改变，又或者你的另一半现在因为工作的原因，常常忙碌或出差，你们聚少离多，你们之间沟通的机会也慢慢变少，在这样的背景下由于你的敏感和没有安全感导致引发信任危机，从星象上看今年是你们情感比较容易发生动荡的一年，需要小心呵护感情，毕竟感情是脆弱的，需要两个人共同维护才能好好发展。
+							这一年也许你自己会在某个时刻经历金钱压力带来的困窘时刻，此时你的另一半会给你带来帮助。天王星“变革”的特质会大概率让你面临一次爱情的选择题，即便你恋爱了或者已婚了，某个过去爱的轰轰烈烈死去活来的人大概率出现并且声称想要和你重新开始。
+							这个时候你的选择尤为重要，人总是喜欢挑战未知或者喜欢刺激的事物，但这种感觉并不持久，那些细水长流踏踏实实的日子，才是你想要的。
+						</view>
+					</view>
+				</view>
+				<view class="content-list">
+					<image class="order-title" src="../../images/zu3.png"></image>
+					<view class="order-content">
+						<view class="order-null">
+							<text class="order-content-title-3">运势综述</text>
+						</view>
+						<view class="order-ys yellow">
+							<view>综合评分：</view>
+							<view class="order-ys-list">
+								<image class="star" src="../../images/star2.png"></image>
+								<image class="star" src="../../images/star2.png"></image>
+								<image class="star" src="../../images/star2.png"></image>
+								<image class="star" src="../../images/staring.png"></image>
+								<image class="star" src="../../images/staring.png"></image>
+							</view>
+						</view>
+						<view class="order-ys yellow">
+							<view class="left">财运高点：</view>
+							<view class="right white">至10月财运持续走高</view>
+						</view>
+						<view class="order-ys yellow">
+							<view class="left">低谷时期：</view>
+							<view class="right white">11月财运达到本年低谷</view>
+
+						</view>
+						<view class="order-ys yellow">
+							<view class="left">简短总评：</view>
+							<view class="right white">整年财运十分良好，金星带来的偏财 运尤为突出</view>
+
+						</view>
+						<view class="order-ys-3-text">专业星盘计算每月运势</view>
+						<view>
+							<image class="order-yes-zxt" src="../../images/zxt.png"></image>
+						</view>
+						<view class="order-null">
+							<text class="order-content-title-3">财富运势总评</text>
+						</view>
+						<view class="order-ys-more">
+							进入2019年，你在财富运势方面还是能够延续去年的良好态势，金星会在你的偏财宫停留整整一年的时间，持续发挥作用，令你在2019年的投资理财方面能够有所建树，其中4月至10月整整6个月的时间，都是你财富运势的高原时期，此时需要你多方打探，伺机而动，配合十分良好的偏财运是，很容易收获一笔丰厚的回报，为你一整年的财运锦上添花。
+							正财运与事业运势息息相关，你今年事业上的旺运会影响到你的正财收入，涨幅可观，不用太过担心收入的问题。 需要注意的一点是，2019年你赚的多花的也多，旺盛的购物欲望让你有点不懂得节制和精打细算，会有很多不必要的开销产生。
+						</view>
+						<view class="order-null">
+							<text class="order-content-title-3">投资状况</text>
+						</view>
+						<view class="order-ys-more">
+							土星跟冥王星逐渐靠近，这一星象着重表达了“田宅”方面的“变迁”和“改善”，你需要在今年多留意房产方面的事宜，有房一族大概率会面临重新装修或拆迁，租房一族大概率会面临换房子，主要原因是因为租赁的房子房东要售卖或涨价，使你不得不临时寻找新的房源，在此过程中由于冥王星的“强制”和“反复”的特质，你大概率会碰到他人言而无信，主动违约的事情，或者是你自己的房子出于不可抗力因素面临翻新和装修。
+						</view>
+						<view class="order-null">
+							<text class="order-content-title-3">支出详解</text>
+						</view>
+						<view class="order-ys-more">
+							土星跟冥王星逐渐靠近，这一星象着重表达了“田宅”方面的“变迁”和“改善”，你需要在今年多留意房产方面的事宜，有房一族大概率会面临重新装修或拆迁，租房一族大概率会面临换房子，主要原因是因为租赁的房子房东要售卖或涨价，使你不得不临时寻找新的房源，在此过程中由于冥王星的“强制”和“反复”的特质，你大概率会碰到他人言而无信，主动违约的事情，或者是你自己的房子出于不可抗力因素面临翻新和装修。
+						</view>
+					</view>
+				</view>
+				<view class="content-list" style="padding-bottom:200rpx;">
+					<image class="order-title" src="../../images/zu4.png"></image>
+					<view class="order-content">
+
+						<view class="order-null">
+							<text class="order-content-title-4">运势综述</text>
+						</view>
+						<view class="order-ys-4">
+							<view>综合评分：</view>
+							<view class="order-ys-list">
+								<image class="star" src="../../images/star3.png"></image>
+								<image class="star" src="../../images/star3.png"></image>
+								<image class="star" src="../../images/star3.png"></image>
+								<image class="star" src="../../images/staring.png"></image>
+								<image class="star" src="../../images/staring.png"></image>
+							</view>
+						</view>
+
+						<view class="order-ys blue">
+							<view class="left">财运高点：</view>
+							<view class="right white">4月至10月财运持续走高</view>
+
+						</view>
+						<view class="order-ys blue">
+							<view class="left">低谷时期：</view>
+							<view class="right white">11月财运达到本年低谷</view>
+
+						</view>
+						<view class="order-ys blue">
+							<view class="left">简短总评：</view>
+							<view class="right white">整年财运十分良好，金星带来的偏财 运尤为突出</view>
+
+						</view>
+						<view class="order-ys-4-text">2019事业运势曲线图</view>
+						<view>
+							<image class="order-yes-zxt" src="../../images/zxt2.png"></image>
+						</view>
+						<view class="order-null">
+							<text class="order-content-title-4">财富运势总评</text>
+						</view>
+						<view class="order-ys-more">
+							进入2019年，你在财富运势方面还是能够延续去年的良好态势，金星会在你的偏财宫停留整整一年的时间，持续发挥作用，令你在2019年的投资理财方面能够有所建树，其中4月至10月整整6个月的时间，都是你财富运势的高原时期，此时需要你多方打探，伺机而动，配合十分良好的偏财运是，很容易收获一笔丰厚的回报，为你一整年的财运锦上添花。
+							正财运与事业运势息息相关，你今年事业上的旺运会影响到你的正财收入，涨幅可观，不用太过担心收入的问题。 需要注意的一点是，2019年你赚的多花的也多，旺盛的购物欲望让你有点不懂得节制和精打细算，会有很多不必要的开销产生。
+						</view>
+
+						<view class="order-null">
+							<text class="order-content-title-4">工作学习情况</text>
+						</view>
+						<view class="order-ys-more">
+							2019年，不建议你去树敌，因为你的良好运势主要建立在金星进入你的人际宫，这个星象带来的良好事业运势主要体现在你新扩展的人脉和你的贵人身上，当然，你身为土象星座在大多时候都很温和，并不想主动与其他人产生激烈的冲突。 在2019年你的人际关系上扬后，你会有两种明显的感受，一是你认为有些人跟你针锋相对，另一种是你自己树立了一个强大的假想敌，这两种情况会导致完全不同的后果，需要你清楚甄别。
+							另一则关于金星入位的星象解读十分有意思，星象显示你有很大概率会被第三方信息误导，也就是说你也不要太听信他人的一面之词，因为第三方信息的传达，很可能会制造误会，如果遇到成心挑拨离间，会让你跟原本和平共处的人关系变得紧张，甚至决裂，你是聪明人，需要好好思考他人传达给你的信息背后蕴含的意义。
+							土星与冥王星相遇形成土冥星象，带给你的社交、人际关系网一个全新的转变，这份转变的“强制”性很强，例如你因为换工作，换房子或者进入全新的城市开始生活一样，人际圈子会有一些自然而然的全新转变。
+						</view>
+						<view class="order-null">
+							<text class="order-content-title-4">工作学习情况</text>
+						</view>
+						<view class="order-ys-more">
+							今年7月到12月这段时间，你会遇到一个很特殊的人，这个人会给你带来很多帮助，你会觉得跟这个人十分合拍，可是我觉的你不要过早的投入进去，或者太早的把自己心里的真实想法，你的隐私，你的过去告诉对方，请注意此处说的这个人并不是跟感情有关系的人，可能是朋友，或者是一个新的同事、伙伴这类型的人。
+							土星跟冥王星会在你的第九宫逐渐接近从而形成土冥星象，土冥星象出现在第九宫代表着“来自远方的人”和“洗牌”。因此今年你某个外地的好友或者亲戚，甚至异地恋的恋人都可能会给你制造麻烦，时间点有2个，一个是3月到6月，一个是11月到12月期间。
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="order-footer" s-if="{{showBtn}}" bindtap="showMoreList">
+		<view style="height:116rpx">
+			<image class="order-footer-bg" src="../../images/btn.png"></image>
+			<view class="order-footer-box">查看其他星座运势</view>
+		</view>
+
+	</view>
+</view>
+<view class="otherStar" s-if="{{showMoreList}}">
+	<view class="otherBox">
+		<view class="otherBox-top">
+			<image class="otherBox-top-img" src="../../images/top.png"></image>
+			<view class="otherBox-content">
+				<view class="otherBoxName">选择星座</view>
+				<view class="otherBox-title">查看对应星座的2019运势</view>
+			</view>
+			<image class="closebox" bindtap="closeList" src="../../images/close.png"></image>
+		</view>
+		<view class="otherBox-box">
+			<view class="otherBox-list" data-id="0" bindtap="goToStar">
+				<image class="icon" src="../../images/icon1.png"></image>
+				<view class="icon-name">白羊座</view>
+				<view>3.21-4.19</view>
+			</view>
+			<view class="otherBox-list" data-id="1" bindtap="goToStar">
+				<image class="icon" src="../../images/icon2.png"></image>
+				<view class="icon-name">金牛座</view>
+				<view>4.20-5.20</view>
+			</view>
+			<view class="otherBox-list" data-id="2" bindtap="goToStar">
+				<image class="icon" src="../../images/icon3.png"></image>
+				<view class="icon-name">双子座</view>
+				<view>5.21-6.21</view>
+			</view>
+			<view class="otherBox-list" data-id="3" bindtap="goToStar">
+				<image class="icon" src="../../images/icon4.png"></image>
+				<view class="icon-name">巨蟹座</view>
+				<view>6.22-7.22</view>
+			</view>
+			<view class="otherBox-list" data-id="4" bindtap="goToStar">
+				<image class="icon" src="../../images/icon5.png"></image>
+				<view class="icon-name">狮子座</view>
+				<view>7.23-8.22</view>
+			</view>
+			<view class="otherBox-list" data-id="5" bindtap="goToStar">
+				<image class="icon" src="../../images/icon6.png"></image>
+				<view class="icon-name">处女座</view>
+				<view>8.23-9.22</view>
+			</view>
+			<view class="otherBox-list" data-id="6" bindtap="goToStar">
+				<image class="icon" src="../../images/icon7.png"></image>
+				<view class="icon-name">天秤座</view>
+				<view>9.23-10.23</view>
+			</view>
+			<view class="otherBox-list" data-id="7" bindtap="goToStar">
+				<image class="icon" src="../../images/icon8.png"></image>
+				<view class="icon-name">天蝎座</view>
+				<view>10.24-11.22</view>
+			</view>
+			<view class="otherBox-list" data-id="8" bindtap="goToStar">
+				<image class="icon" src="../../images/icon9.png"></image>
+				<view class="icon-name">射手座</view>
+				<view>11.23-12.21</view>
+			</view>
+			<view class="otherBox-list" data-id="9" bindtap="goToStar">
+				<image class="icon" src="../../images/icon10.png"></image>
+				<view class="icon-name">魔羯座</view>
+				<view>12.22-1.19</view>
+			</view>
+			<view class="otherBox-list" data-id="10" bindtap="goToStar">
+				<image class="icon" src="../../images/icon11.png"></image>
+				<view class="icon-name">水瓶座</view>
+				<view>1.20-2.18</view>
+			</view>
+			<view class="otherBox-list" data-id="11" bindtap="goToStar">
+				<image class="icon" src="../../images/icon12.png"></image>
+				<view class="icon-name">双鱼座</view>
+				<view>2.19-3.20</view>
+			</view>
+
+		</view>
+	</view>
+</view>

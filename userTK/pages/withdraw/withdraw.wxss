@@ -1,0 +1,12 @@
+/* pages/withdraw/withdraw.wxss */
+.forms{display: block;margin: 30rpx;padding: 50rpx 60rpx;background: #fff;box-shadow: 0 5rpx 12rpx 3rpx rgba(0, 0, 0, 0.15);border-radius: 12rpx;}
+.forms .arrival{font-size: 32rpx;}
+.forms .WeChat::before{font-family: "iconfont";content: "\e611";color: #0db577;margin-right: 10rpx;font-size: 36rpx;}
+.forms .amount{height: 72rpx;line-height: 72rpx;min-height: 72rpx;padding-right: 12rpx;}
+.forms .input{margin: 50rpx 0;font-size: 68rpx;display: flex;align-items: center;justify-content: space-between;text-align: right;border-top: 2rpx solid #e1e1e1;border-bottom: 2rpx solid #e1e1e1;padding: 30rpx 0;}
+.forms .input-placeholder{font-size: 32rpx;}
+.forms .total{color: #999;}
+.forms .selAll{color: #3081f2;}
+.forms .tip{color: #f2af3d;border: none;font-size: 26rpx;padding: 0;background: transparent;text-align: left}
+.forms .tip::before,.forms .tip::after{display: none;}
+.forms .btn{margin: 24rpx 0;}

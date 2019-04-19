@@ -1,0 +1,21 @@
+<view class="navbar {{isx?'isx':''}}" data-cur='{{curPage}}'>
+  <view class="nav {{curPage=='home'?'cur':''}}" catchtap="_homeEvent">
+    <view class="home bar">
+      <image class="icon" src="/img/home{{curPage=='home'?'.active':''}}.png" mode="widthFix"></image>
+      <view class="text">首页</view>
+    </view>
+  </view>
+  <view class="nav" catchtap="_scanEvent">
+    <view class="scan bar">
+      <image class="icon" src="/img/scan.png" mode="aspectFill"></image>
+      <view class="text">扫一扫</view>
+    </view>
+  </view>
+  <view class="nav {{curPage=='user'?'cur':''}}" data-hasUserInfo="{{hasUserInfo}}" catchtap="_userEvent">
+    <view class="user bar">
+      <image class="icon" src="/img/user{{curPage=='user'?'.active':''}}.png" mode="aspectFill"></image>
+      <view class="text">我的</view>
+      <text wx:if="{{hasread}}" class="dot"></text>
+    </view>
+  </view>
+</view>

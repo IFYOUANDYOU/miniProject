@@ -1,0 +1,25 @@
+/*用户基本信息*/
+.infomation{background-color: #378eeb;color: #fff;padding: 40rpx;text-align: center;line-height: 44rpx;}
+.infomation .avatar{display: block;width: 148rpx;height: 148rpx;border: 4rpx solid #fff;border-radius: 148rpx;background: #fff;margin: 0 auto;}
+.infomation .username{font-size: 36rpx;padding: 30rpx 0;}
+.infomation .income text{background: rgba(0, 0, 0, 0.2);padding: 6rpx 30rpx;border-radius: 50rpx;}
+.infomation .reload{width: 280rpx;background: #fff;color: #378eeb;line-height: 68rpx;border-radius: 12rpx;margin: 42rpx auto;}
+/*功能菜单*/
+.menus{margin: 30rpx;font-size: 30rpx;}
+.menu{box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.1);padding: 26rpx;margin: 15rpx 0;border-radius: 10rpx;line-height: 44rpx;position: relative;}
+.menu:hover{opacity: 0.7;}
+.menu::before,.menu::after{display: block;font-family: 'iconfont';}
+.menu::before{float: left;font-size: 44rpx;margin-right: 20rpx;}
+.menu::after{content: "\e6a3";color: #3081f2;position: absolute;top: 50%;right: 20rpx;margin-top: -20rpx;}
+.news::before{content: "\e731";color: #3081f2;}
+.record::before{content: "\e7d1";color: #ff8e4c;}
+.focus::before{content: "\e736";color: #ff4c61;}
+.withdraw::before{content: "\ef05";color: #ffc24c;}
+.feedback::before{content: "\e649";color: #4cdfff;}
+.menu .num{display: block;background: #e61717;color: #fff;border-radius: 100rpx;font-size: 24rpx;margin-right: 30rpx;line-height: 36rpx;animation: shock 0.5s linear;-webkit-animation: shock 0.5s linear;height: 36rpx;margin-top: 5rpx;min-width: 40rpx;text-align: center;}
+.menu .num.no{background: transparent;color: #999;animation: none;}
+@keyframes shock{
+  0%{transform: rotate(0);}
+  50%{transform: rotate(-5deg);}
+  100%{transform: rotate(5deg);}
+}

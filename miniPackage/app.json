@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/calender/calender",
+    "pages/index/index",
+    "pages/meiwen/meiwen",
+    "pages/article/article",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white",
+
+    "enablePullDownRefresh": true
+  }
+}

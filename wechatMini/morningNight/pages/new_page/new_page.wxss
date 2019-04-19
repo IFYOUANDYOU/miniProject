@@ -1,0 +1,95 @@
+page{
+  position: relative;z-index: 0
+}
+.hide{ display: none}
+.first-view{
+  position: absolute;top: 0;z-index: 999;background: #fff
+}
+/*detail_pic*/
+.new_page_pic{margin: 0 auto;display: block}
+/*text*/
+.text{font-size: 30rpx;color: #000;width: 655rpx;line-height: 50rpx;margin: 0 auto;padding-top: 30rpx}
+/*function_area*/
+.function_area_box{width: 610rpx;display: flex;align-items: center;justify-content: space-around;margin: 0 auto;padding-top: 46rpx}
+.function_area_min1{display: flex;align-items: center}
+.function_area_text{font-size: 28rpx;color: rgb(86, 207, 150);margin-left: 8rpx}
+.function_area_icon1{width: 31rpx;height: 27rpx;display: block}
+.function_area_icon2{width: 28rpx;height: 28rpx;display: block}
+/*button*/
+.button_box{width: 100%;height: 60rpx;display: flex;align-items: center;margin-top: 100rpx;justify-content: center;padding-bottom: 70rpx}
+.button_btn{width: 240rpx;height: 60rpx;border-radius: 10rpx;color: rgb(255, 255, 255);font-size: 36rpx;text-align: center;line-height: 60rpx;background-color: rgb(86, 207, 150)}
+
+/* 底部弹出框 */
+.popUp{
+  width: 100%;height: 300rpx;box-sizing: border-box;position: fixed;bottom: 0;transition:height 0.5s;z-index: 9999
+}
+
+
+.hide_view{
+  width: 100%;height: 0;box-sizing: border-box;position: fixed;bottom: 0;transition:height 0.5s;z-index: 0
+}
+
+.popUp_top{
+  width: 100%;height: 200rpx;background: #eeeeee;display: flex;align-items: center;justify-content: flex-start
+}
+.popUp_top_a{
+  width: 100rpx;margin: 0 40rpx
+}
+.popUp_icon{
+  width: 100%;height: 120rpx;border-radius: 10rpx;background: #fff;
+}
+.popUp_icon_wx{
+  width: 64rpx;height: 64rpx;display: block
+}
+
+.popUp_icon{
+  width: 100%;height: 120rpx;border-radius: 10rpx;background: #fff;
+}
+.popUp_icon_pyq{
+  width: 110rpx;height: 50rpx;display: block
+}
+
+
+
+.popUp_text{
+  width: 100%;text-align: center;font-size: 28rpx;color: #000;white-space: nowrap;margin-top: 5rpx
+}
+.popUp_icon_btn{
+  line-height: initial;margin: 0;padding: 0;display: flex;align-items: center;justify-content: center
+}
+
+.popUp_cancel{
+  width: 100%;height: 100rpx;background: #fff;color: #000;font-size: 32rpx;text-align: center;line-height: 100rpx
+}
+
+
+/* 分享到朋友圈名片 */
+
+.visited_card_box{
+  position: fixed;top: 0;z-index: 9999;display: flex;align-items: center;justify-content: center;background: rgba(0, 0, 0, .4)
+}
+.visited_card{
+  width: 600rpx;border-radius: 10rpx;border: 1rpx solid gainsboro;background: #fff
+}
+/* 遮罩层 */
+.visited_card_text1{
+  font-size: 38rpx;width: 100%;text-align: center;color: #000
+}
+.margin_1{
+  padding: 30rpx 0 10rpx 0;
+}
+.margin_2{
+  padding: 10rpx 0;
+}
+.margin_3{
+  padding: 10rpx 0 30rpx 0;
+}
+.visited_card_img{
+  width: 100%;height: 100%;display: block
+}
+.visited_card_imgBox{
+  width: 450rpx;height: 500rpx;border-radius: 10rpx;border: 1rpx solid groove;margin: 0 auto;margin-bottom: 20rpx
+}
+.visited_card_text2{
+  font-size: 38rpx;width: 100%;padding: 20rpx 0;text-align: center;color: skyblue;border-top: 2rpx solid gainsboro
+}

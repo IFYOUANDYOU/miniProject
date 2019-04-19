@@ -1,0 +1,222 @@
+/* pages/zhufuhongbao-fa/zhufuhongbao-fa.wxss */
+page{
+	background: #f7f4ed;
+	padding-bottom: 98rpx;
+}
+.top{
+	width: 750rpx;
+	height: 746rpx;
+	overflow: hidden;
+	position: relative;
+}
+.top .top-bg{
+	width: 750rpx;
+	height: 746rpx;
+}
+.top .top-content{width: 750rpx;
+	height: 746rpx;
+	position: absolute;
+	left: 0;top: 0;
+	overflow: hidden;
+}
+.top .top-content .mess{
+	width: 750rpx;
+	margin: 0 auto;
+	margin-top: 40rpx;
+}
+.top .top-content .mess .head-img{
+	width: 174rpx;
+	height: 174rpx;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: #000;
+	overflow: hidden;
+}
+.top .top-content .mess .head-img image{
+	width: 150rpx;
+	height: 150rpx;
+	margin: 0 auto;
+	margin-top: 12rpx;
+	border-radius: 50%;
+	display: block;
+}
+.top .top-content .mess .user-name{
+	font-size: 32rpx;
+	color: #eab11f;
+	text-align: center;
+	margin-top: 20rpx;
+}
+.top .top-content .detail{
+	width: 743rpx;
+	height: 175rpx;
+	margin: 0 auto;
+	margin-top: 40rpx;
+	position: relative;
+}
+.top .top-content .detail .de-bg{
+	width: 743rpx;
+	height: 175rpx;
+}
+.top .top-content .detail .text{
+	width: 470rpx;
+	height: 135rpx;
+	position: absolute;
+	left: 122rpx;top: 20rpx;
+  text-align: center;
+}
+.top .top-content .detail .text .txt{
+	font-size: 30rpx;
+	color: #db2727;
+}
+.top .top-content .detail .audio{
+	position: absolute;
+	left: 213rpx;top: 60rpx;
+}
+.top .top-content .detail .audio image{
+	width: 53rpx;
+	height: 52rpx;
+	float: left;
+	margin-top: 3rpx;
+}
+.top .top-content .detail .audio .txt{
+	float: left;
+	margin-left: 10rpx;
+	font-size: 50rpx;
+	color: #db2727;
+}
+.tishi{
+	overflow: hidden;
+	margin-top: 50rpx;
+}
+.tishi .txt{
+	font-size: 38rpx;
+	color: #eab11f;
+	text-align: center;
+}
+.tishi .txt1{
+	font-size: 28rpx;
+	color: #cfcfcf;
+	text-align: center;
+	margin-top: 10rpx;
+}
+
+
+.nav{
+	width: 750rpx;
+	height: 98rpx;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	left: 0;bottom: 0;
+}
+
+.nav .fox-box{
+	position: absolute;
+	left: 0;top: 0;
+}
+.nav .nav-list{
+	width: 250rpx;
+	height: 98rpx;
+	float: left;
+	overflow: hidden;
+}
+
+.nav .nav-list .text{
+	text-align: center;
+	margin-top: 18rpx;
+	font-size: 38rpx;
+	color: #c1c1c1;
+}
+.nav .nav-list .text-cur{
+	color: #eab11f;
+}
+.nav .nav-list .line{
+	width: 144rpx;
+	height: 4rpx;
+	margin: 0 auto;
+	margin-top: 12rpx;
+	background: #eab11f;
+}
+.btn{
+	width: 520rpx;
+	margin: 0 auto;
+	margin-top: 20rpx;
+	overflow: hidden;
+}
+.btn .btn1{
+	width: 520rpx;
+	height: 140rpx;
+	position: relative;
+	margin-top: 20rpx;
+}
+.btn .btn1 image{
+	width: 520rpx;
+	height: 140rpx;
+}
+.btn .btn1 .name{
+	width: 520rpx;
+	height: 140rpx;
+	position: absolute;
+	left: 0;top: 0;
+	text-align: center;
+	line-height: 140rpx;
+	font-size: 44rpx;
+	color: #fff;
+}
+
+
+
+button{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+button::after{
+  border: none;
+}
+
+
+
+canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+
+
+
+/*图片展示  */
+.show_img{
+  width: 100%;
+  height: 100%;
+  background: RGBA(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.img_center{
+  width: 70%;
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: white;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+.img{
+  width: 100%;
+  margin: 20rpx 0;
+}

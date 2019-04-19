@@ -1,0 +1,61 @@
+<!--pages/zhufuhua-txt/zhufuhua-txt.wxml-->
+<view class='content' catchtap='hide_bottom'>
+  <image class='con-bg' src='../image/zhufuhua-txt.png'></image>
+  <view class='detail'>
+    <view class='user-img'>
+      <image src='{{user.avatarUrl}}'></image>
+    </view>
+    <view class='to'>
+      <view class='todo'>TO</view>
+      <input class='to-in' maxlength='10' value='{{send_name}}' bindinput='get_name' placeholder='点击输入发送对象名称' placeholder-style='color:#d2d2d2;'></input>
+    </view>
+    <textarea wx:if="{{!show_img}}" class='do-txt' bindinput='get_content' value='{{content}}' maxlength='48'></textarea>
+    <view class='mess'>
+      <view class='name'>
+        <input maxlength='10' bindinput='get_signature' placeholder='点击输入落款' placeholder-style='color:#d2d2d2;'></input>
+      </view>  
+      <view class='time'>{{time}}</view>
+    </view>
+  </view>
+</view>
+<navigator url='../zhufuhua-ku/zhufuhua-ku' class='ku-url'>祝福语库</navigator>
+<view class='btn'>
+  <button class='h-btn' catchtap='change_content'>换句祝福</button>
+  <!-- <button class='f-btn' open-type='share'>
+  发送祝福
+  </button> -->
+   <view class='f-btn' catchtap='choose_send_type'>发送祝福</view> 
+</view>
+
+<view class='share_box' animation="{{bottom_animation}}" catchtap='hide_bottom'>
+  <view class='share margin'>
+    <button open-type='share'>
+      <image src='/pages/image/zhufuhua-txt1.png' class='share_img'></image>
+    </button>
+    <text class='txt'>微信好友</text>
+  </view>
+  <view class='share' catchtap='creat_img'>
+    <image src='/pages/image/zhufuhua-txt2.png' class='share_img'></image>
+    <text class='txt'>朋友圈</text>
+  </view>
+</view>
+
+
+<view hidden='{{false}}' class='mycanvas'>
+  <canvas canvas-id='mycanvas'>
+
+  </canvas>
+</view>
+
+
+<view catchtap='hide_img' class='show_img' wx:if="{{show_img}}">
+  <view class='img_center'>
+    <view>分享到朋友圈</view>
+     <image src='{{path}}' class='img' mode='widthFix'></image>
+     <view>图片已保存至相册，快去朋友圈分享吧！</view>
+  </view>
+</view>
+
+
+
+

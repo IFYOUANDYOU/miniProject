@@ -1,0 +1,58 @@
+<view class='page'>
+  <!--顶部搜索框  -->
+    <view class='top_search'>
+        <input catchtap='go_search' placeholder='请输入关键词，搜索头像或表情' placeholder-class='place'></input>
+        <image class='search_img' src='/img/icon/search.png'></image>
+    </view>
+
+
+    <!--热门搜索  -->
+    <view class='hot_search'>
+      <view class='hot_top'>
+        <image class='hot_img' src='/img/icon/hot_search.png'></image>
+        <text>热门搜索</text>
+      </view>
+
+      <view class='label'>
+        <block wx:for="{{label_list}}" wx:key="{{index}}">
+          <view catchtap='txt_search' data-name="{{item.name}}" class="label_txt margin">{{item.name}}</view>
+        </block>
+      </view>
+    </view>
+
+       <!-- 原创表情 -->
+    <view class='selection'>
+      <view class='selection_top'>
+          <image class='selection_top_img' src='/img/icon/selection.png'></image>
+          <text>原创表情</text>
+          <text class='more' catchtap='go_more' data-type="1">更多</text>
+      </view>
+
+      <view class='selection_box'>
+        <block wx:for="{{my_list}}" wx:key="{{index}}">
+        <view class= "{{(index+1)%3==0?'img_box':'img_box margin'}}">
+          <image wx:if="{{item.path}}" class= "selection_img" catchtap='go_detail' data-type="1" data-id="{{item.id}}" data-src="{{item.path}}"  src='{{item.path}}'></image>
+        </view>
+        </block>
+      </view>
+    </view>
+
+
+    <!-- 精选推荐 -->
+    <view class='selection'>
+      <view class='selection_top'>
+          <image class='selection_top_img' src='/img/icon/selection.png'></image>
+          <text>热门推荐</text>
+      </view>
+
+      <view class='selection_box'>
+        <block wx:for="{{selection_list}}" wx:key="{{index}}">
+        <view class= "{{(index+1)%3==0?'img_box':'img_box margin'}}">
+          <image class= "selection_img" catchtap='look_img' data-src="{{item.path}}"  src='{{item.path}}'></image>
+        </view>
+          
+        </block>
+      </view>
+    
+    </view>
+</view>

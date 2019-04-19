@@ -1,0 +1,6 @@
+.img_box{width: 100%;height: 100%}
+.hhx_img_box2{width: 40rpx;height: 40rpx;display: block}
+.hhx_img_box1{width: 44rpx;height: 44rpx;display: block}
+.hhx_img1{position: static;display: block}
+.hhx_img2{position: static;display: block}
+.hhx_mr{margin-left: 20rpx}

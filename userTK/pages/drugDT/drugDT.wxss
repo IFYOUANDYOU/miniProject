@@ -1,0 +1,11 @@
+.container{padding: 0 24rpx 24rpx;line-height: 40rpx;}
+.figure{box-shadow: 0 8rpx 12rpx rgba(0, 0, 0, 0.1);}
+.h2,.h3,.intro{margin-top: 24rpx;}
+.h2{font-size: 40rpx;}
+.intro{border-radius: 10rpx;background: #f0f0f0;padding: 12rpx 20rpx;color: #999;}
+.intro text{color: #666;}
+.h3{font-size: 32rpx;}
+.param .p{overflow: hidden;}
+.param text{display: block;}
+.param .con{margin-left: 140rpx;}
+.param .text{float: left;width: 140rpx;}

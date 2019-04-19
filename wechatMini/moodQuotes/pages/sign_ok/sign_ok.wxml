@@ -1,0 +1,10 @@
+<view class='sing_success'>
+
+  <image class='ok_img' src='{{sign_img}}'></image>
+  
+
+  <view class='btn'>
+    <view class='save' catchtap='save'>保存</view>
+    <button open-type='share'>分享</button>
+  </view>
+</view>

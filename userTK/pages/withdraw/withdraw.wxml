@@ -1,0 +1,21 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container">
+  <form class="forms" bindsubmit="formSubmit">
+    <view class="arrival">到账方式<text class="pright WeChat">微信支付</text></view>
+    <view class="input">
+      <text class="unit">￥</text>
+      <input class="pright amount" placeholder="请输入提现积分" maxlength="10" name="amount" type="number" value="{{amount}}" bindinput="bindAmount"></input>
+    </view>
+    <view class="total">可提现积分：{{total}}<text class="pright selAll" catchtap="selAll">全部提现</text></view>
+    <button class="tip" open-type="contact">有部分积分不可提现查看原因?</button>
+    <!-- <view class="tip" catchtap="reason">有部分积分不可提现查看原因</view> -->
+    <button type="button" class="btn" formType="submit" disabled="{{disabled}}">2小时到账，确认提现</button>
+  </form>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

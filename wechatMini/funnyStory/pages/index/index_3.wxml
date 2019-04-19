@@ -1,0 +1,10 @@
+
+<block wx:for="{{list}}" wx:key="{{index}}">
+  <view class='item' catchtap='go' data-index = "{{index}}">
+    <image class='bgImg' src='{{item.bgimg}}'></image>
+    <view class='center_Box' style='background:{{item.bgcolor}};'>
+      <text class='title'>{{item.title}}</text>
+      <text class='explain'>{{item.explain}}</text>
+    </view>
+  </view>
+</block>

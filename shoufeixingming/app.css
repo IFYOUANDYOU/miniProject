@@ -1,0 +1,20 @@
+page{
+  width: 100%;
+  overflow-x:hidden; 
+}
+.index-footer{
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  padding: 20rpx 0;
+  background: rgba(0, 0, 0, 0.2)
+} 
+.index-footer-go{
+  width:710rpx;
+  margin: 0 auto;
+  background: #d23037;
+  color:#fff;
+  text-align: center;
+  line-height: 70rpx;
+  height:70rpx;
+}

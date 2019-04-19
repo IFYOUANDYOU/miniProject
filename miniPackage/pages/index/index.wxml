@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator class="navigate" url="/pages/meiwen/meiwen" open-type="navigate">祝福美文</navigator>
+</view>
+

@@ -1,0 +1,25 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container" animation="{{animation}}">
+  <view class="total bills">
+    <text>充值数量</text>
+    <view class="number">{{bill.tk_num}}</view>
+    {{bill.typename}}
+  </view>
+  <view class="bills">  
+    <view class="bill">缴费类型：<text class="pright">{{bill.orderType}}</text></view>
+    <view class="bill">支付方式：<text class="pright">微信支付</text></view>
+  </view>  
+  <view class="line"></view>
+  <view class="bills">
+    <view class="bill">缴费时间：<text class="pright">{{bill.creation_time}}</text></view>
+    <view class="bill">订单编号：<text class="pright">{{bill.order_sn}}</text></view>
+  </view>  
+  <button class="contact" type="button" open-type="contact">对此账单有疑问？</button>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

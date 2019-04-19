@@ -1,0 +1,23 @@
+<form bindsubmit="formSubmit">
+<view class="my_detail">
+    <view class="my_detail_mid">
+        <view class="my_detail_section_1" bindtap="click_entry">
+            <textarea name="content" maxlength="100" id="textarea" class="hhx_changed_textarea" placeholder-class="placeholder_hhx"  bindfocus="b_confirm" /> 
+            <text class="{{ judge_text == 1?'my_detail_section_2_text':'hide'}}">请输入心情语录 100字内</text>  
+        </view>
+        <view class="my_detail_section_2" bindtap="choose_img">
+            <text class="{{ judge_hide == 0?'my_detail_section_2_text':'hide' }}">点击上传图片</text>
+            <image style="width:100%;height:100%;" src="{{src}}"></image> 
+        </view>
+        <view class="my_detail_section_3">       
+            <view class="picker">
+                <text style="color:#939293">选择上传类型：</text><picker range-key="cate_name" style="color:rgb(128, 186, 234)" bindchange="bindPickerChange" value="{{index}}" range="{{catlist}}">{{catlist[index].cate_name}}</picker>
+            </view>       
+        </view>
+    </view>
+</view>
+<view class="my_detail_btn_box">
+    <button class="my_detail_btn" formType="submit" disabled="{{disabled}}">上传审核</button>
+</view>
+<view class="my_detail_text">注：审核通过之后会自动展示在最新语录</view> 
+</form>

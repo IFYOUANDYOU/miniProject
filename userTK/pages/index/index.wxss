@@ -1,0 +1,7 @@
+/**首页 banner**/
+.index-banner{margin: 5rpx auto;border-radius: 12rpx;overflow: hidden;width: 690rpx;height: 270rpx;background-image: url(http://ys9958.com/public/upload/public/loading.gif);background-repeat: no-repeat;background-position: center center;background-color: #f0f0f0;}
+.index-banner image,.index-banner{width: 690rpx;height: 300rpx;border-radius: 12rpx;}
+/**首页 就诊记录**/
+.index-mrecord{width: 100%;}
+.index-mrecord .m-record{margin: 30rpx;border-radius: 10rpx;}
+.index-mrecord .empty{position: static;margin-top: 120rpx;}

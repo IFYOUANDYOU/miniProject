@@ -1,0 +1,153 @@
+.topay{
+    background: #a50028;
+    color: #333; 
+    font-size: 35rpx;
+    padding-bottom: 100rpx;
+}
+ 
+.topay-banner{
+    width:100%;
+}
+.topay-order{
+    background: #ffc505;
+    height:60rpx;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    margin: 20rpx 50rpx;
+    text-align: center;
+    color:#fff;
+}
+.topay-content{
+    padding: 20rpx;
+}
+.topay-list{
+    background: #fff;
+    margin: 20rpx auto;
+    border-radius: 10rpx;
+    padding-bottom: 20rpx;
+}
+.topay-title{
+    text-align: center;
+    padding: 20rpx;
+    border-bottom: 1px solid #d7d7d7;
+}
+.topay-sex{
+    width:100rpx;
+    height:100rpx;
+}
+.topay-list-top{
+    margin: 40rpx auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topay-box{
+    width:50%;
+    text-align: center;
+}
+.topay-vs{
+    font-size: 70rpx;
+}
+.topay-qhd{
+    border: 1px solid #f6bdc7;
+    text-align: center;
+    margin: 20rpx 40rpx;
+    border-radius: 20rpx;
+}
+.topay-qhd-title{
+    width:300rpx;
+    text-align: center;
+    margin:-30rpx auto 0 auto;
+    height:60rpx;
+    line-height: 60rpx;
+    background: #fff;
+
+}
+.topay-star{
+    width:332rpx;
+    height:72rpx;
+}
+.topay-bd{
+     border: 1px solid #f6bdc7; 
+    margin: 20rpx 40rpx;
+    padding: 10rpx;
+    border-radius: 20rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.topay-bd image{
+    width:150rpx;
+    height:150rpx;
+    border-radius: 20rpx;
+}
+.topay-yd{
+    font-size: 40rpx;
+    color:#e9193c;
+    font-weight: bold;
+    text-align: justify;
+    text-align-last: left; 
+    width:410rpx;
+}
+.topay-item-title{
+    width:400rpx;
+    text-align: center;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin:-30rpx auto 0 auto;
+    background: #ec3a58;
+    padding: 10rpx;
+    color: #fff; 
+    border-radius: 10rpx;
+}
+.topay-item{
+    border:1px solid #ec3a58;
+    background: #fff6f8;
+    border-radius: 10rpx;
+    margin: 60rpx 0;
+}
+.topay-item:first-child{
+    margin: 20rpx 0 60rpx 0;
+}
+.topay-item:last-child{
+    margin: 60rpx 0 20rpx 0;
+}
+.topay-item-list{
+    background: #fff;
+    padding:60rpx 20rpx 5rpx 20rpx;
+   border-radius: 10rpx;
+}
+.topay-item-suo{
+    width:96rpx;
+    height:126rpx;
+}
+.topay-item-lab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx;
+}
+.topay-item-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10rpx 20rpx;
+} 
+.topay-dian{
+    width:20rpx;
+    height:20rpx;
+    border-radius: 10rpx;
+    margin-right:20rpx; 
+    background: #d10b3b;
+}
+.topay-peo-man{
+    padding: 20rpx;
+    background: #fff;
+    margin: 20rpx 0;
+    border-radius: 10rpx;
+}
+.topay-peo{
+    background: #fff6f8;
+    padding: 20rpx;
+    border:1px solid #ec3a58;
+    border-radius: 20rpx;
+}

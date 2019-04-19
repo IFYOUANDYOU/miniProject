@@ -1,0 +1,70 @@
+.topay{
+    width:100%;
+    box-sizing: border-box;
+    padding: 20rpx;
+    font-size: 35rpx;
+    background: #e8e2d3;
+}
+.topay-top{
+    display: flex;
+    justify-content: space-between;
+    padding:20rpx;
+    background: #fff;
+    align-items: center;
+    border:1px solid #333;
+    border-radius: 10rpx;
+}
+.topay-info{
+    width:540rpx;
+    box-sizing: border-box;
+    padding-left:40rpx; 
+}
+.topay-top image{
+    width:130rpx;
+    height:164rpx;
+}
+.topay-discript{
+    padding: 20rpx;
+    text-align: justify;
+    text-align-last: left;
+}
+.topay-row{
+    text-align: center;
+    margin: 10rpx;
+    font-size: 30rpx;
+}
+.red{
+    color:#f00;
+}
+ .topay-row-content{
+     background: #fff;
+     margin-top:-20rpx;  
+     background-size:100%; 
+     width:300px; 
+     text-align: center;    
+ }
+ .row-title{
+     width:577rpx;
+     height:70rpx;
+     margin-top:60rpx; 
+ }
+ .topay-row-box{
+     border:1px solid #000;
+     margin:80rpx 40rpx 0rpx 40rpx;
+     text-align: left;
+     padding: 20rpx;
+     border-radius: 10rpx;
+ }
+ .topay-row-box view{
+     margin-top:20rpx; 
+ }
+ .topay-row-btn{
+     margin: 40rpx 40rpx 0 40rpx;
+     background: #c00101;
+     padding: 10rpx;
+     color:#fff;
+     border-radius:10rpx;
+ }
+ .topay-row-end{
+     margin-bottom: 100rpx;
+ }

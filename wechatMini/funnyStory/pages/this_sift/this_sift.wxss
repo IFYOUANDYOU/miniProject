@@ -1,0 +1,3 @@
+/* pages/this_sift/this_sift.wxss */
+/*引入模版样式  */
+@import"/template/home.wxss"

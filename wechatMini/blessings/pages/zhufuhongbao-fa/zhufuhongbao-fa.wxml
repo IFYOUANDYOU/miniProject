@@ -1,0 +1,66 @@
+<!--pages/zhufuhongbao-fa/zhufuhongbao-fa.wxml-->
+<view class='top'>
+  <image class='top-bg' src='../image/zhufuhongbao-fbg.png'></image>
+  <view class='top-content'>
+    <view class='mess'>
+      <view class='head-img'>
+        <image src='{{data.avatar}}'></image>
+      </view>
+      <view class='user-name'>{{data.nickName}}</view>
+    </view>
+    <view class='detail'>
+      <image class='de-bg' src='../image/zhufuhongbao-fa-de.png'></image>
+      <view class='text' wx:if="{{data.type==0?true:false}}">
+        <view class='txt'>{{data.content}}</view>
+      </view>
+      <view class='audio' wx:else catchtap='listen' data-src="{{data.content}}">
+        <image class='icon' src='../image/audio.png'></image>
+        <view class='txt'>收听祝福</view>
+      </view>
+    </view>
+    <view class='tishi'>
+      <view class='txt'>金额共{{data.money}}元，共{{data.sum_num}}个</view>
+      <view class='txt1'>未领取的金额，将于24小时后退至余额</view>
+    </view>
+  </view>
+</view>
+<view class='btn'>
+  <button open-type='share' class='btn1'>
+    <image src='../image/zhufuhongbao-fa1.png'></image>
+    <view class='name'>发给好友</view>
+  </button>
+  <view class='btn1' catchtap='creat_img'>
+    <image src='../image/zhufuhongbao-fa2.png'></image>
+    <view class='name'>生成图片</view>
+  </view>
+</view>
+
+
+<view class='nav'>
+  <view class='fox-box'>
+    <navigator url="../zhufuhongbao/zhufuhongbao" class='nav-list'>
+      <view class='text'>红包祝福</view>
+    </navigator>
+    <navigator url="../zhufuhua/zhufuhua" class='nav-list'>
+      <view class='text'>卡片祝福</view>
+    </navigator>
+    <navigator url='../mine/mine' class='nav-list'>
+      <view class='text'>我的</view>
+    </navigator>
+  </view>
+</view>
+
+
+
+<view catchtap='hide_img' class='show_img' wx:if="{{show_img}}">
+  <view class='img_center'>
+    <view>分享到朋友圈</view>
+     <image src='{{path}}' class='img' mode='widthFix'></image>
+     <view>图片已保存至相册，快去朋友圈分享吧！</view>
+  </view>
+</view>
+
+
+<canvas canvas-id='mycanvas'>
+
+</canvas>

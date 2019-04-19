@@ -1,0 +1,12 @@
+ 
+<view class="index-content" style="background-image:url(../../images/backg.png)">
+	<view> 
+		<view class="index-content-box">
+			<view class="index-content-list" s-for="obj,idx in list" bindtap="goInfo" data-index="{{obj.astroid}}">
+				<image src="{{obj.pic}}"></image>
+				<view class="index-content-list-name">{{obj.astroname}}</view>
+				<view class="index-content-list-day">{{obj.date}}</view>
+			</view>
+		</view>
+	</view>
+</view>

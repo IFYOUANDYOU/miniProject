@@ -1,0 +1,28 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.recomment_box{
+  margin-top: 70rpx;
+}
+.care_box{
+  margin-top: 70rpx;
+}
+.video_box{
+  margin-top: 70rpx;
+}
+.img_box{
+  margin-top: 70rpx;
+}
+.forge_box{
+  margin-top: 70rpx;
+}
+.rank_box{
+  margin-top:70rpx; 
+}

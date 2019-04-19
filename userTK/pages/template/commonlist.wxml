@@ -1,0 +1,107 @@
+<!--轮播图-->
+<template name="swipers">
+  <swiper-item>
+    <image data-id="{{id}}" src="{{src}}" class="slide-image" />
+  </swiper-item>
+</template>
+<!--用户端首页 就诊记录卡片-->
+<template name="mrecord">
+  <view class="m-record" data-id="{{id}}">
+    <view class="nav" data-step="{{step_type}}" data-id="{{id}}" bindtap="navto">
+      <view class="hospital">
+        {{hospital_name}}{{kname}}
+        <text wx:if="{{step_type>3}}" class="more fonticon pright"></text>
+      </view>
+      <view class="result" data-diseaseId="{{did?did:''}}">
+        诊断结果：{{did_name?did_name:did}}
+        <text wx:if="{{step_type>3}}" class="doctor pright">{{doctor_name}}</text>
+      </view>
+      <view class="date">
+        就诊时间：{{creation_time}}
+        <text wx:if="{{step_type>3}}" class="status pright">{{step_type>3?'已完成':'未完成'}}</text>
+      </view>
+      <view wx:if="{{step_type<4}}" class="complete">完善卡片></view>
+    </view>
+    <view class="minfo {{judge?'toggle':''}}" data-id="{{id}}" data-toggle="{{judge}}" data-isspot="{{step_type>3}}" catchtap="toggle">
+      <view class="tt">用药信息</view>
+      <block wx:if="{{judge}}">
+        <view wx:for="{{goodsname}}" wx:key="key" data-id="{{item.id?item.id:''}}" class="item">{{item.goods_name}}|{{item.goods_spec}}
+          <text class="mnum pright">x{{item.goods_num?item.goods_num:1}}/{{item.goods_unit}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>
+<!--用户端 医生卡片信息-->
+<template name="doctorItem">
+  <view class="doctor-item">
+    <view class="doctor" data-id="{{id?id:doctor_id}}" catchtap="toggleDoctor" data-tp="1">
+      <image class="avatar" mode="aspectFill" src="{{user_img?user_img:'http://ys9958.com/public/upload/public/default.png'}}"></image>
+      <view class="msg">
+        <view class="basis">{{name}} {{kname}} {{titles}}</view>
+        <view class="effort">{{hospital_name}}</view>
+        <view class="date">{{creation_time}}</view>
+      </view>
+    </view>
+    <view wx:if="{{ischat}}" class="chat" data-did="{{doctor_id}}" url="/pages/news/news" catchtap="sendMsg"></view>
+  </view>
+</template>
+<!--用户端 药品基本信息列表-->
+<template name="drug">
+  <view class="drug-item" data-id="{{id}}">
+    <view class="msg">
+      <view class="basis">{{goods_name}}</view>
+      <view class="effort">{{goods_spec?goods_spec:'暂无'}}<text class="pright num">{{goods_symptom}}</text></view>
+    </view>
+  </view>
+</template>
+<!--医生端和用户端 消息列表-->
+<template name="news">
+  <navigator class="news-item" data-id="{{id}}" open-type="redirect" url="/pages/chatroom/chatroom?id={{id}}&doctorid={{user_id}}">
+    <image class="thumbnail" src="{{user_img?user_img:'http://ys9958.com/public/upload/public/default.png'}}" mode="widthFix"></image>
+    <view class="msg">
+      <view class="basis">{{name}}
+        <text wx:if="{{is_read}}" class="dot"></text>
+        <text class="pright date">{{creation_time}}</text>
+      </view>
+      <view class="brief">{{news_text?news_text:"点击查看详情"}}</view>
+    </view>
+    {{text}}
+  </navigator>
+</template>
+<!--医生端和用户端 账户交易记录列表-->
+<template name="arecord">
+  <navigator class="arecord-item" url="/pages/billDt/billDt?billId={{id}}">
+    <view class="msg">
+      <view class="type">{{typename?typename:'收入/消费'}}
+        <text wx:if="{{name}}" class="state">({{name}})</text>
+      </view>
+      <view class="time">{{creation_time}}</view>
+    </view>
+    <view class="sum" style="color: {{type==0?'#f2af3d':'#333'}}">{{type==0?'+':'-'}}{{tk_num}}</view>
+  </navigator>
+</template>
+<!--正在加载-->
+<template name="loading">
+  <view id="loading">
+    <view id="loading-main">
+      <view class="object" id="object_one"></view>
+      <view class="object" id="object_two"></view>
+      <view class="object" id="object_three"></view>
+      <view class="object" id="object_four"></view>
+      <view class="object" id="object_five"></view>
+      <view class="object" id="object_six"></view>
+      <view class="object" id="object_seven"></view>
+      <view class="object" id="object_eight"></view>
+      <view class="object" id="object_big"></view>
+    </view>
+  </view>
+</template>
+<!--空-->
+<template name="empty">
+  <view class="empty">
+    <image class="icon" src="http://ys9958.com/public/upload/dt/empty.png" mode="widthFix"></image>
+    {{text}}
+    <view wx:if="{{reload}}" class="reload" catchtap="reload">点击重新加载</view>
+  </view>
+</template>

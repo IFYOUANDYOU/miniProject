@@ -1,0 +1,28 @@
+<!--pages/zhufuhongbao-shou/zhufuhongbao-shou.wxml-->
+<view class='top'>
+  <image class='top-bg' src='../image/zhufuhongbao-sbg.png'></image>
+  <view class='top-content'>
+    <view class='mess'>
+      <view class='head-img'>
+        <image src='../image/zhufuhongbao-fbg.png'></image>
+      </view>
+      <view class='user-name'>Amethyst後知后觉~
+        <text>发起了一条语音祝福</text>
+      </view>
+    </view>
+    <view class='detail'>
+      <image class='de-bg' src='../image/zhufuhongbao-fa-de.png'></image>
+      <view class='text'>
+        <view class='txt'>新年好运到，好事来得早!朋友微微笑，喜庆围你绕!花儿对你开，鸟儿向你叫。 </view>
+      </view>
+      <view class='audio'>
+        <image class='icon' src='../image/audio.png'></image>
+        <view class='txt'>收听祝福</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='ma'>
+  <image src='../image/zhufuhua-txt1.png'></image>
+  <view class='ti-txt'>长按领取祝福红包</view>
+</view>

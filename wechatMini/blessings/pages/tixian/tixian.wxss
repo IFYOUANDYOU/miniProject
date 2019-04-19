@@ -1,0 +1,153 @@
+/* pages/tixian/tixian.wxss */
+page{
+	background: #f7f4ed;
+}
+.content{
+	width: 692rpx;
+	height: 748rpx;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 40rpx;
+	overflow: hidden;
+}
+.mess{
+	font-size: 34rpx;
+	color: #091010;
+	margin-left: 30rpx;
+	margin-top: 35rpx;
+}
+.mon{
+	margin-top: 100rpx;
+	margin-left: 30rpx;
+	overflow: hidden;
+}
+.mon .mon-icon{
+	font-size: 78rpx;
+	float: left;
+	color: #091010;
+}
+.mon .mon-num{
+	width: 520rpx;
+	height: 130rpx;
+	font-size: 135rpx;
+	color: #091010;
+	float: left;
+	margin-left: 10rpx;
+}
+.line{
+	width: 624rpx;
+	height: 2rpx;
+	background: #efefef;
+	margin: 0 auto;
+	margin-top: 40rpx;
+}
+.text{
+	font-size: 32rpx;
+	color: #091010;
+	margin-top: 50rpx;
+	margin-left: 30rpx;
+}
+.text text{
+	font-size: 32rpx;
+	color: #091010;
+	margin-left: 40rpx;
+	text-decoration: underline;
+}
+.txt{
+	font-size: 32rpx;
+	color: #b6b6b6;
+	margin-left: 30rpx;
+	margin-top: 15rpx;
+}
+.tx-btn{
+	width: 502rpx;
+	height: 118rpx;
+	font-size: 46rpx;
+	color: #fff;
+	border-radius: 8rpx;
+	background: #eab11f;
+	margin-top: 78rpx;
+}
+.window-sucss{
+	overflow: hidden;
+	display: none;
+}
+.window-sucss .shade{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;top: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 99999;
+}
+.window-sucss .win-con{
+	width: 560rpx;
+	height: 360rpx;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -280rpx;
+	margin-top: -180rpx;
+	background: #fff;
+	z-index: 9999999;
+	border-radius: 12rpx;
+	overflow: hidden;
+}
+.window-sucss .win-con .icon{
+	width: 160rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	margin-top: 70rpx;
+}
+.window-sucss .win-con image{
+	width: 160rpx;
+	height: 160rpx;
+}
+.window-sucss .win-con .name{
+	text-align: center;
+	font-size: 40rpx;
+	color: #101010;
+	margin-top: 40rpx;
+}
+.window-fil{
+	overflow: hidden;
+
+}
+.window-fil .shade{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;top: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 99999;
+}
+.window-fil .win-con{
+	width: 560rpx;
+	height: 360rpx;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -280rpx;
+	margin-top: -180rpx;
+	background: #fff;
+	z-index: 9999999;
+	border-radius: 12rpx;
+	overflow: hidden;
+}
+.window-fil .win-con .icon{
+	width: 160rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	margin-top: 70rpx;
+}
+.window-fil .win-con image{
+	width: 160rpx;
+	height: 160rpx;
+}
+.window-fil .win-con .name{
+	text-align: center;
+	font-size: 40rpx;
+	color: #101010;
+	margin-top: 40rpx;
+}
+

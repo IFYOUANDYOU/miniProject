@@ -1,0 +1,29 @@
+
+<view class="page">
+  <image src='{{img}}' class='big_img' mode='widthFix'></image>
+  <view wx:if="{{type!=2?true:false}}" class='share_add'>原创头像仅限个人使用，请勿商用</view>
+  <view class='btn'>
+    <button open-type='share'>分享到微信</button>
+     <view class='friends' catchtap='shar_frinds'>分享到朋友圈</view> 
+  </view>
+</view>
+
+<view class='should_share' wx:if="{{share}}">
+    <view class='my_center'>
+      <view class='add_txt'>分享到群获得原创头像下载机会+1！</view>
+      <button style="margin-right:0;" open-type='share'>去分享</button>
+    </view>
+</view>
+
+<view class='share_friends' catchtap='no_show' wx:if="{{show}}">
+  <view class='obox'>
+    <text>分享到朋友圈</text>
+    <image src='{{img}}' class='share_img' mode='widthFix'></image>
+    <view class='share_txt'>图片已保存至相册,快去微信朋友圈分享吧！</view>
+  </view>
+</view>
+
+
+
+
+

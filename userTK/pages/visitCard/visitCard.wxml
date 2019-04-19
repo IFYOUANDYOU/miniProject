@@ -1,0 +1,101 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container">
+  <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateX(-{{scrollindex*100}}%);">
+    <view class="section {{scrollindex==0?'active':''}}">
+      <view class="h2">以下是本次就诊卡的详情</view>
+      <view class="stp">
+        <text>1</text>
+      </view>
+      <view class="cards">
+        <view class="tp">
+          <view class="username">{{card.visit_name}}</view>
+          就诊医院：{{card.hospital_name?card.hospital_name:'未知'}}
+        </view>
+        <view class="tp">
+          诊断结果：{{card.disease?card.disease:'未知'}}
+          <view class="date">诊断时间：{{card.time}}</view>
+        </view>
+        <view class="drugtt">用药详情</view>
+        <scroll-view class="drugs" scroll-y>
+          <block wx:if="{{!card.goods}}">
+            <view class="none">暂无用药记录</view>
+          </block>
+          <block wx:for="{{card.goods}}" wx:key="key">
+            <view class="drug">{{item.goods_name}}|{{item.goods_spec}}
+              <text class="pright">X{{item.goods_num?item.goods_num:1}}/{{item.goods_unit}}</text>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+      <view class="arrows">
+        <view class="arrow left"></view>
+        <view class="arrow right active" catchtap="arrowBind"></view>
+      </view>
+    </view>
+    <view class="section {{scrollindex==1?'active':''}}">
+      <view class="h2">本次就诊服务评价</view>
+      <view class="stp">
+        <text>2</text>
+      </view>
+      <scroll-view class="cards" scroll-y>
+        <block wx:if="{{hospital.num}}">
+          <view class="service">
+            <view class="t">您对{{hospital.hospital_name}}本次服务评价</view>
+            <image class="score" src="http://ys9958.com/public/upload/dt/score-{{hospital.num?hospital.num:5}}.png" mode="widthFix"></image>
+            <view class="tags sel">
+              <block wx:for="{{hospital.terns}}" wx:key="key">
+                <button class="tag select">{{item}}</button>
+              </block>
+            </view>
+          </view>
+          <view class="line"></view>
+          <view class="service" wx:if="{{doctor.name}}">
+            <view class="t">您对{{doctor.name}}医生本次服务评价</view>
+            <image class="score" src="http://ys9958.com/public/upload/dt/score-{{doctor.num?doctor.num:5}}.png" mode="widthFix"></image>
+            <view class="tags sel">
+              <block wx:for="{{doctor.terms}}" wx:key="key">
+                <button class="tag select">{{item}}</button>
+              </block>
+            </view>
+          </view>
+        </block>
+        <block wx:else>
+          <template is="empty" data="{{text:'暂无服务评价'}}" />
+        </block>
+      </scroll-view>
+      <view class="arrows">
+        <view class="arrow left active" catchtap="arrowBind"></view>
+        <view class="arrow right active" catchtap="arrowBind"></view>
+      </view>
+    </view>
+    <view class="section {{scrollindex==2?'active':''}}">
+      <view class="h2">本次就诊用药反馈</view>
+      <view class="stp">
+        <text>3</text>
+      </view>
+      <scroll-view class="cards" scroll-y>
+        <block wx:for="{{questions}}" wx:key="key">
+          <view class="subject">
+            <view class="tt">{{index+1}}、{{item.wenti}}？</view>
+            <view class="dt">{{item.daan}}</view>
+          </view>
+        </block>
+        <block wx:if="{{questions.length==0}}">
+          <template is="empty" data="{{text:'暂无反馈记录'}}" />
+        </block>
+        <view class="remark">{{remark}}</view>
+      </scroll-view>
+      <view class="arrows">
+        <view class="arrow left active" catchtap="arrowBind"></view>
+        <view class="arrow right" catchtap="arrowBind"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

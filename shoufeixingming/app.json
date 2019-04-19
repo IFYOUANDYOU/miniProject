@@ -1,0 +1,14 @@
+{
+    "pages": [
+        
+        "pages/index/index",
+        "pages/topay/topay",
+        "pages/topay/topay"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "智能小程序",
+        "backgroundTextStyle": "light"
+    }
+}

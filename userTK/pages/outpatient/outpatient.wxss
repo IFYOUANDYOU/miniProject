@@ -1,0 +1,10 @@
+@import "/pages/followup/followup.wxss";
+.forms{display: block;margin: 24rpx;padding: 40rpx;position: fixed;top: 0;left: 0;right: 0;bottom: 300rpx;background: #fff;border-radius: 12rpx;}
+.forms .btn{position: absolute;bottom: 40rpx;left: 40rpx;right: 40rpx;}
+.message{display: flex;align-items: center;padding-bottom: 42rpx;line-height: 50rpx;}
+.message input{height: 50rpx;width: 100%;min-height: 50rpx;}
+.message .icon::before{font-family: "iconfont";margin-right: 5rpx;font-weight: bold;font-size: 30rpx;}
+.message .name::before{content: "\e78b";}
+.message .dis::before{content: "\e629";}
+.message .fill{border-radius: 100rpx;background: #f4f4f4;text-align: center;width: 280rpx;margin-left: 12rpx;padding: 0 30rpx;position: relative;}
+.message .fill.arrow::after{position: absolute;top: 0;right: 18rpx;}

@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<view class='bg'>
+  <image src='../image/home-bg.png'></image>
+  <view class='nav'>
+    <navigator wx:if="{{show}}" class="nav-list" url="../zhufuhongbao/zhufuhongbao"> 红包祝福语</navigator>
+    <navigator class="nav-list" url="../zhufuhua/zhufuhua">卡片祝福语</navigator>
+  </view>
+</view>

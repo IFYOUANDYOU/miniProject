@@ -1,0 +1,208 @@
+@import"/template/home.wxss";
+page{
+  width: 100%;
+  height: 100%;
+  background:rgba(243,243,243,1); 
+}
+.userInfo{
+  width: 750rpx;
+  /* height: 360rpx; */
+  
+}
+.infoTop{
+  background: rgba(255,168,0,1);
+  width: 100%;
+  height: 210rpx;
+  box-sizing: border-box;
+  padding: 24rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.head_name{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headImg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.allnum{
+  height: 100%;
+  margin-left: 36rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.username{
+  font-family: "SimHei";
+  color: rgba(255,255,255,1);
+  font-size: 40rpx;
+  /* margin-bottom: 9rpx; */
+}
+.addressImg{
+  width: 20rpx;
+  height: 24rpx;
+  margin-right: 15rpx;
+}
+.addresstxt{
+  font-family: SimHei;
+  color: rgba(241,241,241,1);
+  font-size: 24rpx;
+}
+.fans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    color: rgba(255,255,255,1);
+}
+
+.dot{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: rgba(255,255,255,1);
+  margin: 0 15rpx;
+}
+
+
+.infoBottom{
+  background: rgba(255,255,255,1);
+  width: 100%;
+  /* height: 150rpx; */
+  box-sizing: border-box;
+  padding: 24rpx 40rpx;
+  font-family: SimHei;
+  color: rgba(132,132,132,1);
+  font-size: 34rpx;
+  line-height: 50rpx;
+
+}
+.botoom_dot{
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 50%;
+    background: rgba(255,168,0,1);
+    display: inline-block;
+}
+
+.godetail{
+  width: 20rpx;
+  height: 34rpx;
+}
+
+
+
+
+
+
+
+
+.mjs_my_content{
+  width: 100%;
+
+  background: #fff;
+}
+.mjs_topbar{
+
+  height: 80rpx;
+  border-bottom:1rpx solid rgba(243,243,243,1);
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 60rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.mjs_toplist{
+  height: 76rpx;
+  line-height: 78rpx;
+  font-size:  34rpx;
+  color: rgba(180,180,180,1);
+  font-family: SimHei;
+}
+.topborder{
+  border-bottom: 2rpx solid rgba(255,168,0,1);
+  color: rgba(19,19,19,1);
+}
+
+
+
+scroll-view{
+  height: 100%;
+}
+.mjs_bottomIcon{
+  justify-content: space-between;
+}
+
+
+
+
+.head_name{
+  position: relative;
+}
+
+.care_img{
+  position: absolute;
+  top: 92rpx;
+  left: 92rpx;
+  width: 66rpx;
+  height: 66rpx;
+
+}
+
+
+.fans_num{
+  margin-right:10rpx;
+  font-size: 28rpx;
+  color:rgba(255,255,255,1);
+  margin-left: 10rpx;
+}
+.fans_txt{
+  font-size: 28rpx;
+  color:rgba(255,255,255,1);
+}
+
+.add_name{
+  font-family: SimHei;
+  font-size: 28rpx;
+  color: rgba(224,224,224,1)
+}
+
+.write_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.write{
+  width: 200rpx;
+  height: 20rpx;
+  font-size: 28rpx;
+  /* border: 1rpx solid #ccc; */
+}
+.amend{
+  color: white;
+  font-size: 28rpx;
+  background: #ccc;
+  border-radius:6rpx; 
+  margin-left: 10rpx;
+}
+
+.cancel{
+   color: white;
+  font-size: 28rpx;
+  background: #ccc;
+  border-radius:6rpx; 
+  margin-left: 10rpx;
+}

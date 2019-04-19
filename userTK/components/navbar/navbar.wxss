@@ -1,0 +1,10 @@
+.navbar{position: fixed;bottom: 0;left: 0;right: 0;display: flex;box-shadow: 0 -2rpx 12rpx 3rpx rgba(0, 0, 0, 0.12);background: #fff;justify-content: space-between;z-index: 6;}
+.navbar.isx{padding-bottom: 20rpx;}
+.navbar .nav{text-align: center;font-size: 24rpx;flex: 1;}
+.navbar .icon{display: block;margin: 14rpx auto 8rpx;width: 50rpx;height: 50rpx;}
+.navbar .bar{display: inline-block;position: relative;padding: 0 8rpx;}
+.navbar .scan{position: absolute;bottom: 0;padding: 12rpx 12rpx 0;background: #fff;width: 86rpx;left: 50%;margin-left: -52rpx;box-shadow: 0 -3rpx 10rpx 3rpx rgba(0, 0, 0, 0.15);border-radius: 104rpx 104rpx 0 0;}
+.navbar.isx .scan{bottom: 20rpx;}
+.navbar .scan .icon{width: 42rpx;height: 42rpx;border-radius: 84rpx;box-shadow: 0 0 10rpx 5rpx rgba(48, 129, 242, 0.4);padding: 21rpx;margin: 0 auto 10rpx;background: linear-gradient(to bottom, #3097f2, #3081f2);}
+.navbar .text{margin-bottom: 4rpx;}
+.navbar .dot{display: block;width: 14rpx;height: 14rpx;background: #f00;border-radius: 14rpx;position: absolute;top: 12rpx;right: 0;}

@@ -1,0 +1,78 @@
+/* pages/meiwen/meiwen.wxss */
+
+.article-item {
+  margin: 20rpx;
+  background: #f0f0f0;
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.article-thumb {
+  display: block;
+  width: 100%;
+  height: 400rpx;
+  transition: all .3s ease;
+  opacity: 0;
+}
+.article-thumb.active{
+  opacity: 1;
+}
+.article-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 128rpx;
+  padding: 10rpx;
+  line-height: 64rpx;
+  background: linear-gradient(rgba(255, 255, 255, 0.09), rgb(51, 51, 51));
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.returnTop {
+  display: block;
+  position: fixed;
+  bottom: 125rpx;
+  right: 25rpx;
+  padding: 15rpx;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.footer-bar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  padding: 20rpx 0;
+}
+.bar-item{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bar-item:nth-child(1){
+  border-right: 1px solid #c1adaa;
+}
+.bar-item.active{
+  color: #ff2d06;
+}
+.bar-item image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 12rpx;
+}

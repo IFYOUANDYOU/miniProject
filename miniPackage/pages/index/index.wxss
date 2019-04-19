@@ -1,0 +1,10 @@
+/**index.wxss**/
+.navigate{
+  height: 88rpx;
+  line-height: 88rpx;
+  margin: 24rpx;
+  text-align: center;
+  background: #409EFF;
+  color: #fff;
+  border-radius: 10rpx;
+}

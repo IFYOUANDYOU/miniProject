@@ -1,0 +1,7 @@
+.forms{display: block;margin: 32rpx;background: #fff;padding: 30rpx;background: #fff;box-shadow: 0 5rpx 12rpx 3rpx rgba(0, 0, 0, 0.15);border-radius: 12rpx;line-height: 40rpx;}
+.head{text-align: center;padding: 12rpx 0 42rpx;border-bottom: 2rpx solid #e1e1e1;margin-bottom: 40rpx;}
+.prompt{font-size: 40rpx;margin: 24rpx 0;font-weight: 600;}
+.tip{color: #999;}
+.dt{margin: 24rpx 0;color: #999;}
+.dt text{color: #333;font-weight: 600;}
+.btn{margin: 60rpx 42rpx 42rpx;}

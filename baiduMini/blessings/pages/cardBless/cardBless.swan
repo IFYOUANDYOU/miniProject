@@ -1,0 +1,40 @@
+<view class='bg'>
+	<image class='page-bg' src='/images/zhufuhua-bg.png'></image>
+	<view class='nr'>
+		<input class='input' maxlength='10' bindinput='get_name' placeholder='怎么称呼TA？（不超过10个字）' placeholder-class="input-pl" />
+		<view class='your'>
+			<view class='name'>TA是你的</view>
+			<view class='content'>
+				<view class='box'>
+					<block s-for="{{head_list}}" s-key="{{index}}">
+						<view class='your-list'>
+							<view bindtap='adtive' data-num="{{item.id}}" class='{{adtive==item.id? "heade-cur":"heade-img"}}'>
+								<image src='{{item.img}}'></image>
+							</view>
+							<view class='tittle'>{{item.name}}</view>
+						</view>
+					</block>
+				</view>
+			</view>
+		</view>
+		<view class='sex'>
+			<view class='name'>TA的性别</view>
+			<view class='content'>
+				<view class='sex-list'>
+					<view bindtap='adtive1' data-num="1" class='{{adtive1==1? "heade-cur":"heade-img"}}'>
+						<image src='/images/zhufuhua9.png'></image>
+					</view>
+					<view class='tittle'>男</view>
+				</view>
+				<view class='sex-list'>
+					<view bindtap='adtive1' data-num="2" class='{{adtive1==2? "heade-cur":"heade-img"}}'>
+						<image src='/images/zhufuhua10.png'></image>
+					</view>
+					<view class='tittle'>女</view>
+				</view>
+			</view>
+		</view>
+		<view class='btn' catchtap='go_send'>捎句祝福语</view>
+	</view>
+</view>
+<navigat-bar curName="{{curName}}" />

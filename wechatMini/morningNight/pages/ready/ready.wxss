@@ -1,0 +1,68 @@
+/* pages/ready/ready.wxss */
+page{
+  width: 100%;height: 100%;position: relative;z-index: 0;background: url('https://za.jiqixing.com/static/images/qidongye.png');background-repeat: no-repeat;overflow: hidden
+}
+.stopTest{
+ color: #9d5639;font-size: 24rpx;text-align: center;position: absolute;bottom: 5%;z-index: 99;border-bottom: 1rpx solid #9d5639;padding: 0;margin: 0 auto
+}
+.flex_{
+  display: flex;align-items: center;justify-content: space-around
+}
+.readyMengban{
+  position: absolute;z-index: 66;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.8);top: 0
+}
+.readyImg1{
+  width: 100%;height: 778rpx;position: absolute;top: 5%;left: 0;z-index: 99
+}
+.toTest{
+  width: 470rpx;height: 124rpx;border-radius: 99rpx;color: #000;font-size: 54rpx;position: absolute;z-index: 99;bottom: 10%;left: 50%;margin-left: -235rpx;  background: linear-gradient(to bottom, rgba(253,255,244,1),20%, rgba(254,208,0,1));text-align: center;line-height: 124rpx
+}
+.danmuBox{
+  position: absolute;top: 0;z-index: 999
+}
+.danmu1{
+    font-size: 28rpx;color: #ffb400
+}
+.danmuText{
+  color: #fff;font-size: 26rpx;margin: 20rpx 0 20rpx 0
+}
+.animation1{
+  animation: danmuAnimation 13s infinite; 
+}
+@keyframes danmuAnimation{  
+  0%{
+    transform: translateX(900rpx)
+    
+  }
+  100%{
+    transform: translateX(-500rpx)
+  }
+}
+.animation2{
+  animation: danmuAnimation 11s infinite; 
+}
+.animation3{
+  animation-delay: 3s;
+  animation: danmuAnimation 16s infinite; 
+}
+.animation4{
+  animation: danmuAnimation 20s infinite; 
+}
+.animation5{
+  animation-delay: 2s;
+  animation: danmuAnimation 16s infinite; 
+}
+.animation6{
+  animation: danmuAnimation 35s infinite; 
+}
+.animation7{
+  animation: danmuAnimation 35s infinite; 
+}
+.animation8{
+  animation-delay: 3s;
+  animation: danmuAnimation 29s infinite; 
+}
+.animation9{
+  animation-delay: 5s;
+  animation: danmuAnimation 29s infinite; 
+}

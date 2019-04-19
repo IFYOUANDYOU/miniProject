@@ -1,0 +1,23 @@
+<!--pages/meiwen/meiwen.wxml-->
+<view class="container">
+  <!-- 文章列表 -->
+  <view class="lists">
+    <block wx:for="{{lists}}" wx:key="item.data">
+      <view class="article-item {{'item-'+index}}" data-id="{{item.id}}" catchtap="bindArticle">
+        <image class="article-thumb {{item.show ? 'active' : ''}}" mode="aspectFill" data-src="{{item.thumb}}" src="{{item.show ? item.thumb : '/img/timg.gif'}}"></image>
+        <view class="article-title">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 返回顶部 -->
+  <image class="returnTop" bindtap="returnTop" src="/img/backtop.png" mode="aspectFit"></image>
+
+  <!-- 分类筛选 -->
+  <view class="footer-bar">
+    <view wx:for="{{bar}}" class="bar-item {{barActive == item.id ? 'active' : ''}}" data-id="{{item.id}}" wx:key="{{item.id}}" catchtap="bingBarChange">
+      <image src="/img/{{barActive == item.id ? item.icon + '_active' : item.icon}}.png"></image>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+</view>

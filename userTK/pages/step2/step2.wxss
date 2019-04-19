@@ -1,0 +1,19 @@
+@import "/pages/step1/step1.wxss";
+.container{transform: translateX(200%);}
+.inner{display: block;}
+.appraise{margin: 24rpx 12rpx;text-align: center;line-height: 44rpx;padding: 24rpx;background: #fff;box-shadow: 0 5rpx 12rpx 3rpx rgba(0, 0, 0, 0.15);border-radius: 12rpx;}
+.appraise .tt{font-size: 32rpx;}
+.appraise .scores{margin: 30rpx auto 28rpx;position: relative;width: 360rpx;height: 50rpx;}
+.appraise .star,.appraise .perch{width: 52rpx;height: 50rpx;position: absolute;top: 0;}
+.appraise .star{margin: 0 12rpx;}
+.appraise .perch{left: 0;}
+.appraise .fd{background: #f0f0f0;padding: 12rpx 24rpx;text-align: left;border-radius: 12rpx;}
+.appraise .tags{display: flex;flex-wrap: wrap;margin: 0 -8rpx;}
+.appraise .sel{padding-bottom: 12rpx;}
+.appraise .tag{border: 2rpx dotted #c8c8c8;padding: 0 12rpx;background: #e8e8e8;border-radius: 8rpx;font-size: 24rpx;color: #999;margin: 8rpx;line-height: 48rpx;}
+.appraise .tag::before,.appraise .tag::after{display: none;}
+.appraise .select{color: #fff;background: #3081f2;border: none;}
+.appraise .del{display: block;width: 48rpx;height: 48rpx;margin-right: -12rpx;float: right;border-radius: 8rpx;background: #2667c2;margin-left: 12rpx;}
+.appraise .del::after{font-family: "iconfont";content: "\e646";}
+
+.empty{background: #fff;}

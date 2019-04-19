@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/puzzle/puzzle",
+    
+    "pages/index/head",    
+     
+    "pages/puzzle_detail/puzzle_detail",    
+    "pages/search/search",
+    "pages/big_img/big_img",
+    "pages/index/expression",
+    "pages/index/gif",
+    "pages/search_detail/search_detail",
+    "pages/classify/classify",
+    "pages/head_more/head_more"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "情侣头像",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#383838",
+    "selectedColor": "#FFABABAB",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/puzzle/puzzle",
+        "text": "拼图",
+        "iconPath": "img/icon/puzzle.png",
+        "selectedIconPath": "img/icon/onpuzzle.png"
+      },
+      {
+        "pagePath": "pages/index/head",
+        "text": "头像",
+        "iconPath": "img/icon/head.png",
+        "selectedIconPath": "img/icon/onhead.png"
+      },
+      {
+        "pagePath": "pages/index/gif",
+        "text": "GIF斗图",
+        "iconPath": "img/icon/gif.png",
+        "selectedIconPath": "img/icon/ongif.png"
+      },
+      {
+        "pagePath": "pages/index/expression",
+        "text": "表情",
+        "iconPath": "img/icon/expression.png",
+        "selectedIconPath": "img/icon/onexpression.png"
+      }
+    ]
+  }
+}

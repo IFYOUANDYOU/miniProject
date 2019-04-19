@@ -1,0 +1,70 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container" animation="{{animation}}">
+  <view class="steps">
+    <view class="step {{step>=1?'active':''}}">第一步</view>
+    <view class="line {{step>=2?'active':''}}"></view>
+    <view class="step {{step>=2?'active':''}}">第二步</view>
+    <view class="line {{step>=3?'active':''}}"></view>
+    <view class="step {{step>=3?'active':''}}">第三步</view>
+  </view>
+  <form class="inner" bindsubmit="evalCatch" report-submit="true">
+    <view class="appraise">
+      <view class="tt">您对{{hospital.name}}本次服务评价</view>
+      <view class="scores">
+        <block wx:for="{{scores}}" wx:key="key">
+          <image class="star" style="left: {{item*70}}rpx" src="{{hospital.index > item ? selectedStar : normalStar}}">
+            <view class="perch" style="left: 0" data-types="hos" data-key="{{item+1}}" bindtap="evalStar"></view>
+          </image>
+        </block>
+      </view>
+      <view class="fd">
+        <view class="tags sel">
+          <block wx:for="{{hospital.sel}}" wx:key="key">
+            <button class="tag select">{{item.det}}
+              <text class="del" data-cid="{{item.cid}}" data-value="{{item.det}}" data-tp="hos" data-isadd="0" catchtap="selectTag"></text>
+            </button>
+          </block>
+        </view>
+        <view class="tags all">
+          <block wx:for="{{hospital.all}}" wx:key="key">
+            <button class="tag" data-isadd="1" data-tp="hos" data-cid="{{item.cid}}" data-value="{{item.det}}" catchtap="selectTag">{{item.det}}</button>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="appraise">
+      <view class="tt">您对{{doctor.name}}本次服务评价</view>
+      <view class="scores">
+        <block wx:for="{{scores}}" wx:key="key">
+          <image class="star" style="left: {{item*70}}rpx" src="{{doctor.index > item ? selectedStar : normalStar}}">
+            <view class="perch" style="left: 0" data-types="doc" data-key="{{item+1}}" bindtap="evalStar"></view>
+          </image>
+        </block>
+      </view>
+      <view class="fd">
+        <view class="tags sel">
+          <block wx:for="{{doctor.sel}}" wx:key="key">
+            <button class="tag select">{{item.det}}
+              <text class="del" data-cid="{{item.cid}}" data-value="{{item.det}}" data-tp="doc" data-isadd="0" catchtap="selectTag"></text>
+            </button>
+          </block>
+        </view>
+        <view class="tags all">
+          <block wx:for="{{doctor.all}}" wx:key="key">
+            <button class="tag" data-isadd="1" data-tp="doc" data-cid="{{item.cid}}" data-value="{{item.det}}" catchtap="selectTag">{{item.det}}</button>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="submit">
+      <button class="btn" formType="submit">下一步</button>
+    </view>
+  </form>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

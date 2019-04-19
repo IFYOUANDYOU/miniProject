@@ -1,0 +1,15 @@
+<image src='{{imgPath}}' class="ready3Img" bindtap='backHome'></image>
+<view class="flex_">
+  <form>
+    <button open-type='share' class="shareBtn">分享好友</button>
+  </form>
+  <view bindtap='prewImg' class="prewImg">分享到朋友圈</view>
+</view>
+<view class="tanchukuangBox" bindtap="cancel" hidden='{{tanchukuangBox}}'>
+  <view class='tanchukuang'>
+    <view class="tanchukuangTex1">分享到朋友圈</view>
+    <image class="tanchukuangimg" src='{{imgPath}}' ></image>
+    <view class="tanchukuangTex2">图片已保存到相册</view>
+    <view class="tanchukuangTex2">快去微信朋友圈分享吧~</view>
+  </view>
+</view>

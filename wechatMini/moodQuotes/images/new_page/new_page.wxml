@@ -1,0 +1,23 @@
+<!--detail_pic-->
+<image src="http://pic.58pic.com/58pic/13/70/90/29358PICQjG_1024.jpg" class="new_page_pic"></image>
+<!--text-->
+<view class="text">关注公众号:zhuyuxi360 说说经典语录 后台回复: 早安晚安给你一份心情，一份动力。那是的那是，阿萨德去。</view>
+<!--function_area-->
+<view class="function_area_box">
+    <view class="function_area_min1" bindtap="click_praise">
+        <image src="{{praise_change ==0?'/images/hhx_liked1.png':'/images/hhx_liked2.png'}}" class="function_area_icon1"></image>
+        <text class="function_area_text">点赞</text>
+    </view>
+    <view class="function_area_min1" bindtap="click_collect">
+        <image src="{{collect_change ==0? '/images/hhx_collect1.png':'/images/hhx_collect2.png'}}" class="function_area_icon2"></image>
+        <text class="function_area_text">收藏</text>
+    </view>
+    <view class="function_area_min1" bindtap="click_pay">
+        <image src="/images/hhx_pay.png" class="function_area_icon2"></image>
+        <text class="function_area_text">打赏</text>
+    </view>
+</view>
+<!--button-->
+<view class="button_box">
+    <view class="button_btn">生成海报</view>
+</view>

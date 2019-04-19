@@ -1,0 +1,68 @@
+<view class="userInfo">
+  <view class='infoTop'>
+    <view class='head_name'>
+      <image class='care_img' data-id="{{item.id}}" 
+      data-isfllow="{{item.isfollow?'cancel':'care'}}" catchtap='care_user' 
+      src='{{item.isfollow?"/img/mjs/icon/care.png":"/img/mjs/icon/nocare.png"}}'></image>
+      <image class='headImg' src='{{item.avatar}}'></image>
+      <view class='allnum'>
+        <text class='username'>{{item.username}}</text>
+        <view class='address'>
+          <!-- <image class='addressImg' src='/img/mjs/icon/address.png'></image>
+          <text class='addresstxt'>{{item.city}}</text> -->
+           <text class='fans_num'>{{item.fans_num}}</text>
+            <text class='fans_txt'>粉丝</text>
+            <view wx:if="{{write_name}}"  catchtap='writeName' class='add_name'>{{item.nickname?item.nickname:"添加段友名"}}</view>
+             <view wx:else class='write_box'>
+            <view class='write'>{{item.nickname}}</view>
+            <!-- <text class='amend' catchtap='send_name'>确认修改</text>
+            <text class='cancel' catchtap='cancel'>取消</text> -->
+          </view>
+        </view>
+         <!-- <view class='fans'>
+            <text style='margin-right:10rpx'>{{item.fans_num}}</text>
+            <text>粉丝</text>
+            <view class='dot'></view>
+             <text style='margin-right:10rpx'>{{item.follows_num}}</text>
+            <text>关注</text> 
+        </view>  -->
+      </view>
+    </view>
+    <!-- <image class='godetail' src='/img/mjs/icon/right.png'></image> -->
+  </view>
+
+  <!-- <view class='infoBottom'>
+    <view class='botoom_dot'></view>
+    个性签名：{{item.signature}}
+  </view> -->
+</view>
+
+
+<!--引入公共模版  -->
+<import src="/template/home.wxml"/>
+<view class='mjs_my_content'>
+  <!--顶部导航  -->
+  <view class='mjs_topbar'>
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <view 
+      id="item{{index}}"
+      class='{{current_index==index?"mjs_toplist topborder":"mjs_toplist"}}' 
+      data-index="{{index}}" catchtap='click_index'>{{item.name}}</view>
+    </block>
+  </view>  
+
+
+      <!--我的帖子  -->
+    <view wx:if="{{current_index==0?true:false}}">
+        <block wx:for="{{recomment_list}}" wx:key="{{index}}">
+          <template is="Oscroll" data="{{item}}"></template>
+        </block>
+    </view>
+    <!--我的收藏  -->
+    <view wx:if="{{current_index==1?true:false}}" class='my_collection'>
+        <block wx:for="{{care_list}}" wx:key="{{index}}">
+          <template is="Oscroll" data="{{itemlist}}"></template>
+        </block>
+    </view>
+
+</view>

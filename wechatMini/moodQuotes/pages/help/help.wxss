@@ -1,0 +1,70 @@
+.container{
+    padding: 0rpx;
+}
+.content{
+    width: 680rpx;
+    margin: 0 35rpx;
+}
+.title{
+    width: 680rpx;
+    text-align: center;
+    border-bottom: 2rpx solid gainsboro;
+    height: 95rpx;
+    line-height: 95rpx;
+    color: #323232;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.cont{
+    margin-top: 30rpx;
+}
+.cont-detail:first-of-type{
+    margin-top: 0;
+}
+.cont-detail{
+    width: 680rpx;
+    margin-top: 30rpx;
+    float: left;
+}
+.top{
+    width: 680rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.left{
+    width: 50rpx;
+    float: left;
+    color: #2fc2ff;
+}
+.right{
+    width: 620rpx;
+    float: left;
+    margin-left: 10rpx;
+    color: #666;
+    float: left
+}
+.bottom{
+    width: 680rpx;
+    float: left;
+    font-size: 24rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    overflow: hidden;
+    text-align: center;
+    background: #ededed;
+    color: #999;
+    margin-top: 10rpx;
+    /*display: none;*/
+}
+.bot{
+    display: block;
+}
+
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}

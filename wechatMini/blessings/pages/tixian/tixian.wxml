@@ -1,0 +1,30 @@
+<!--pages/tixian/tixian.wxml-->
+<view class='content'>
+  <view class='mess'>提现到“零钱”3个工作日到账</view>
+  <view class='mon'>
+    <view class='mon-icon'>￥</view>
+    <input class='mon-num' focus='{{fo}}' value='{{tixian_money}}' bindblur='set_money' bindinput='get_money' type='digit'></input>
+  </view>
+  <view class='line'></view>
+  <view class='text'>账户金额：￥{{money}}<text catchtap='all_tixian'>全部提现</text></view>
+  <view class='txt'>额外扣除手续费：￥{{shouxufei}}元（费率1%）</view>
+  <button class='tx-btn' catchtap='tixian'>提现</button>
+</view>
+<view class='window-sucss' catchtap='hide_success' wx:if="{{show_success}}">
+  <view class='shade'></view>
+  <view class='win-con'>
+    <view class='icon'>
+    <image src='../image/tixian-icon1.png'></image>
+    </view>
+    <view class='name'>提现成功</view>
+  </view>
+</view>
+<view class='window-fil' catchtap='hide_fail' wx:if="{{show_fail}}" >
+  <view class='shade'></view>
+  <view class='win-con'>
+    <view class='icon'>
+    <image src='../image/tixian-icon2.png'></image>
+    </view>
+    <view class='name'>余额不足</view>
+  </view>
+</view>

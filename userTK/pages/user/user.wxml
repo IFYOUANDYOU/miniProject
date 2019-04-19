@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view wx:if="{{statu==true}}" class="container">
+  <!--顶部  用户基本信息-->
+  <view class="infomation">
+    <block wx:if="{{name}}">
+      <image class="avatar" src="{{avatar?avatar:'http://ys9958.com/public/upload/public/default.png'}}"></image>
+      <view class="username">{{name}}</view>
+      <view class="income">
+        <text>持有积分：{{income?income:'暂无'}}积分</text>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="reload" catchtap="getPageData">重新用户获取数据</view>
+    </block>
+  </view>
+  <!--个人中心 功能菜单-->
+  <view class="menus">
+    <navigator url="/pages/news/news" open-type="navigate" class="menu news">
+      <text>聊天消息</text>
+      <text class="num pright {{news==''?'no':''}}">{{news?news:'暂无消息'}}</text>
+    </navigator>
+    <navigator url="/pages/arecord/arecord" open-type="navigate" class="menu record">
+      <text>账户记录</text>
+    </navigator>
+    <navigator url="/pages/attention/attention" open-type="navigate" class="menu focus">
+      <text>关注的医生</text>
+    </navigator>
+    <navigator url="/pages/withdraw/withdraw" open-type="navigate" class="menu withdraw">
+      <text>提现</text>
+    </navigator>
+    <navigator url="/pages/feedback/feedback" open-type="navigate" class="menu feedback">
+      <text>有奖反馈</text>
+    </navigator>
+  </view>
+  <block wx:if="{{loadcom}}">
+    <navbar id='navbar' curPage='{{curPage}}' hasUserInfo="{{hasUserInfo}}" bind:homeEvent="_homeEvent" bind:scanEvent="_scanEvent" bind:userEvent="_userEvent">
+</navbar>
+  </block>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试',reload: true}}" />
+</block>

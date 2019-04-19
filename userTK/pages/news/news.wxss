@@ -1,0 +1,2 @@
+.news-item{margin: 0 32rpx;border-bottom: 2rpx solid #e1e1e1;}
+.news-item:last-child{border-bottom: none;}

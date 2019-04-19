@@ -1,0 +1,23 @@
+page{width: 100%;height: auto;background-color: #f5f5f5}
+.hide{display: none}
+.user_img{width: 100%;height: 100%;display: block}
+/*nav*/
+.top_nav{display: flex;align-items: center;justify-content: space-around;border-top: 1rpx solid #ababab;border-bottom: 1rpx solid #ababab;height: 90rpx}
+.root_nav{font-size: 32rpx;color: #000000;width: 33.33%;height: 100%;text-align: center;line-height: 90rpx}
+.border_side{width: 2rpx;height: 35rpx;background-color: #cccccc}
+.change_bg{background-color:rgb(163, 215, 255);color: #ffffff}
+/*收到的评论对应的内容*/
+.receive_box{width: 95%;margin: 0 auto;margin-top: 15rpx;background-color: #ffffff;padding-bottom: 24rpx}
+.receive_blcok_1{width: 93%;margin: 0 auto;display: flex;align-items: center;justify-content: space-between;padding: 24rpx 0}
+.receive_blcok_2{width: 93%;margin: 0 auto;background-color: #f5f5f5;color: #333333;font-size: 28rpx;padding: 17rpx 0;margin-bottom: 24rpx;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.receive_blcok_3{width: 93%;margin: 0 auto;background-color: #f5f5f5;color: #333333;font-size: 28rpx;padding: 17rpx 24rpx;margin-bottom: 24rpx}
+.user_img_box{width: 66rpx;height: 66rpx;border-radius: 50%;overflow: hidden;margin-right: 24rpx}
+.receive_blcok_1_left{display: flex;align-items: center}
+.user_name{font-size: 28rpx;color: #333333;width: 250rpx;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.receive_blcok_1_right{font-size: 24rpx;color: #b4b4b4}
+/*系统通知对应的内容*/
+.system_info_box{width: 95.7%;margin: 0 auto;background-color: #ffffff;margin-top: 17rpx;padding-bottom: 75rpx}
+.system_time_box{display: flex;align-items: center;justify-content: space-between;width: 641rpx;margin: 0 auto;padding: 40rpx 0}
+.system_time{color: #b4b4b4;font-size: 24rpx}
+.system_content{width: 641rpx;margin: 0 auto;font-size: 28rpx;color: #000000}
+.no_info{font-size: 28rpx;color: #000000;width: 100%;text-align: center;margin-top: 47rpx}

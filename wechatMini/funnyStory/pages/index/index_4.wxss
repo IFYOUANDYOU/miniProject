@@ -1,0 +1,291 @@
+@import"/template/home.wxss";
+page{
+  width: 100%;
+  height: 100%;
+  /* background:rgba(243,243,243,1);  */
+}
+.userInfo{
+  width: 750rpx;
+  /* height: 360rpx; */
+  
+}
+.infoTop{
+  background: rgba(255,168,0,1);
+  width: 100%;
+  height: 210rpx;
+  box-sizing: border-box;
+  padding: 24rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.head_name{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headImg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.allnum{
+  height: 100%;
+  margin-left: 36rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.username{
+  font-family: "SimHei";
+  color: rgba(255,255,255,1);
+  font-size: 40rpx;
+  /* margin-bottom: 9rpx; */
+}
+.addressImg{
+  width: 20rpx;
+  height: 24rpx;
+  margin-right: 15rpx;
+}
+.addresstxt{
+  font-family: SimHei;
+  color: rgba(241,241,241,1);
+  font-size: 24rpx;
+}
+.fans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    color: rgba(255,255,255,1);
+}
+
+.dot{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: rgba(255,255,255,1);
+  margin: 0 15rpx;
+}
+
+
+.infoBottom{
+  background: rgba(255,255,255,1);
+  width: 100%;
+  /* height: 150rpx; */
+  box-sizing: border-box;
+  padding: 24rpx 40rpx;
+  font-family: SimHei;
+  color: rgba(132,132,132,1);
+  font-size: 34rpx;
+  line-height: 50rpx;
+
+}
+.botoom_dot{
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 50%;
+    background: rgba(255,168,0,1);
+    display: inline-block;
+}
+
+.godetail{
+  width: 20rpx;
+  height: 34rpx;
+}
+.mjs_my_content{
+  width: 100%;
+  background: #fff;
+}
+.mjs_topbar{
+
+  height: 80rpx;
+  border-bottom:1rpx solid rgba(243,243,243,1);
+  white-space: nowrap;
+
+  box-sizing: border-box;
+  padding: 0 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+
+}
+.mjs_toplist{
+  height: 76rpx;
+  line-height: 78rpx;
+  display: inline-block; 
+  /* margin-right:118rpx; */
+  font-size:  34rpx;
+  color: rgba(180,180,180,1);
+  font-family: SimHei;
+}
+.topborder{
+  border-bottom: 2rpx solid rgba(255,168,0,1);
+}
+
+scroll-view{
+  height: 100%;
+}
+.mjs_bottomIcon{
+  box-sizing: border-box;
+  padding-left:30rpx; 
+  justify-content: space-between;
+}
+
+
+
+
+/*关注样式  */
+.my_care{
+  width: 100%;
+
+  box-sizing: border-box;
+  padding:28rpx 0 0 28rpx; 
+  background: #fff;
+
+}
+.care_one{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.care_user_head{
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  
+}
+.care_detail{
+  height: 100%;
+  width: 580rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid rgba(238,238,238,1);
+}
+.care_user{
+  height: 100%;
+  
+  font-size: 28rpx;
+  font-family: SimHei;
+  color: rgba(191,191,191,1);
+  margin-bottom: 10rpx;
+}
+.care_username{
+  width: 200rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 38rpx;
+  color: rgba(77,77,77,1);
+  margin-bottom: 30rpx;
+}
+.care_fans_invitation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.care_fans_num{
+  margin-right: 10rpx;
+}
+.care_invitation_num{
+  margin-right: 10rpx;
+}
+.dot{
+  display: block;
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: rgba(191,191,191,1);
+}
+.care_operate{
+  width: 230rpx;
+  height: 100%;
+  text-align: center;
+  letter-spacing: 10rpx;
+  color: rgba(255,255,255,1);
+  font-size: 30rpx;
+  line-height: 146rpx;
+}
+
+
+.care_yes{
+  background: rgba(255,60,48,1);
+}
+.care_no{
+  background: rgba(0,128,0,1);
+}
+
+
+
+
+
+.fans_num{
+  margin-right:10rpx;
+  font-size: 28rpx;
+  color:rgba(255,255,255,1);
+  margin-left: 10rpx;
+}
+.fans_txt{
+  font-size: 28rpx;
+  color:rgba(255,255,255,1);
+}
+
+.add_name{
+  font-family: SimHei;
+  font-size: 28rpx;
+  color: rgba(224,224,224,1)
+}
+
+.write_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.write{
+  width: 200rpx;
+  height: 20rpx;
+  font-size: 28rpx;
+  /* border: 1rpx solid #ccc; */
+}
+.amend{
+  color: white;
+  font-size: 28rpx;
+  background: #ccc;
+  border-radius:6rpx; 
+  margin-left: 10rpx;
+}
+
+.cancel{
+   color: white;
+  font-size: 28rpx;
+  background: #ccc;
+  border-radius:6rpx; 
+  margin-left: 10rpx;
+}
+
+
+
+.status{
+  font-size: 28rpx;
+  font-family: SimHei;
+  margin-left: 160rpx;
+  margin-top: 20rpx;
+}
+.mjs_username{
+  width: 250rpx;
+}
+
+.mjs{
+  width: 100rpx;
+}

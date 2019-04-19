@@ -1,0 +1,88 @@
+<view class="index">
+	<view class="index-top-bg">
+		<view class="index-top-bg-1">
+			<image class="index-top-bg-img1" mode="widthFix" src="../../images/banner.jpg"></image>
+		</view>
+		<view class="index-top-bg-2">
+			<image class="index-top-bg-img2" mode="widthFix" src="../../images/banner_2.jpg"></image>
+			<view class="index-top-content">
+        <view class="index-top-name">
+          <view class="index-top-box">
+					<view class="index-box-name">
+						<image class="index-box-name-bg" src="../../images/name_bg.png"></image>
+						<view class="index-box-name-bg">男主</view>
+					</view>
+					<view class="clear"></view>
+					<view class="index-box-xing">
+						<view>姓氏</view> <input placeholder="输入姓" />
+					</view>
+					<view class="index-box-xing">
+						<view>名字</view> <input placeholder="输入名" />
+					</view>
+				</view>
+				<view class="index-top-box">
+					<view class="index-box-name">
+						<image class="index-box-name-bg" src="../../images/name_bg.png"></image>
+						<view class="index-box-name-bg">女主</view>
+					</view>
+					<view class="clear"></view>
+					<view class="index-box-xing">
+						<view>姓氏</view> <input placeholder="输入姓" />
+					</view>
+					<view class="index-box-xing">
+						<view>名字</view> <input placeholder="输入名" />
+					</view>
+				</view>
+        </view>
+				<view class="index-pd">开始配对</view>
+        <view class="index-number">已有<text>{{number}}</text>人测算</view>
+			</view>
+
+		</view>
+	</view>
+  <view class="index-content-title">测算后您将获得</view>
+  <view class="index-content-list">
+    <view class="index-content-subheading">❤❤❤<text>你俩的姓名姻缘五格</text>❤❤❤</view>
+    <view class="index-content-discript">测算结果根据五格剖象法及《易经》典籍中的“象”“数”理论，分析男女双方姓名数理配置。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-subheading">❤❤❤<text>男女双方的个性</text>❤❤❤</view>
+    <view class="index-content-discript">不同的个性对爱情的影响肯定不同，有人冷静，有人冲动，也有的顽固如石。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-subheading">❤❤❤<text>相合卦象的缘分</text>❤❤❤</view>
+    <view class="index-content-discript">根据卦象组合后的磁场反应，快速判断出你们的缘分指数，并加以分析。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-subheading">❤❤❤<text>爱情宿命</text>❤❤❤</view>
+    <view class="index-content-discript">这里介绍了你俩各自的爱情宿命，是“务实而内敛的情人”或是“对爱充满幻想的小女孩”。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-subheading">❤❤❤<text>爱情危机</text>❤❤❤</view>
+    <view class="index-content-discript">恋爱中往往会碰到这样那样的危机，犹如爱情道路上的地雷，一旦踩上多半受伤不轻。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-subheading">❤❤❤<text>爱情建议</text>❤❤❤</view>
+    <view class="index-content-discript">这里就根据你们恋爱中可能会碰到的危机，提出几点建议，防患于未然。</view>
+  </view>
+   <view class="index-content-title">命主反馈</view>
+   <view class="index-content-list">
+    <view class="index-content-user"><view>金** :</view><text> 暧昧中 </text></view>
+    <view class="index-content-discript">不错，老师建议很中肯，下个月打算去女朋友的家乡见她的父母，希望能得到女朋友父母的认同。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-user"><view>金** :</view><text> 暧昧中 </text></view>
+    <view class="index-content-discript">不错，老师建议很中肯，下个月打算去女朋友的家乡见她的父母，希望能得到女朋友父母的认同。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-user"><view>金** :</view><text> 暧昧中 </text></view>
+    <view class="index-content-discript">不错，老师建议很中肯，下个月打算去女朋友的家乡见她的父母，希望能得到女朋友父母的认同。</view>
+  </view>
+  <view class="index-content-list">
+    <view class="index-content-user"><view>金** :</view><text> 暧昧中 </text></view>
+    <view class="index-content-discript">不错，老师建议很中肯，下个月打算去女朋友的家乡见她的父母，希望能得到女朋友父母的认同。</view>
+  </view> 
+</view>
+<view class="index-footer" s-if="{{showBtn}}">
+		<view class="index-footer-go" bindtap="goToPay">立即测算</view>
+	</view>

@@ -1,0 +1,9 @@
+
+<view class="section">
+    <view class="section-title">地区选择器</view>
+    <picker mode="date" bindchange="regionChange" custom-item="{{customItem}}" title="省市区选择器">
+        <view class="picker">
+            当前选择：{{regionData[0]}} {{regionData[1]}} {{regionData[2]}}
+        </view>
+    </picker>
+</view>

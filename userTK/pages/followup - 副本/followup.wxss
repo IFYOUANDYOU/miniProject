@@ -1,0 +1,27 @@
+page{background: #f0f0f0;}
+.follow,.notice{background: #fff;margin: 24rpx;border-radius: 12rpx;}
+
+.follow{padding: 42rpx;position: fixed;top: 0;left: 0;right: 0;bottom: 300rpx;}
+
+.prescrip{border-bottom: 2rpx solid #f0f0f0;padding-bottom: 42rpx;display: flex;flex-wrap: wrap;}
+.prescrip .item{width: 33.333333333%;text-align: center;background-color: #f9f9f9;}
+.prescrip image{border: 2rpx solid #fff;}
+.prescrip .upimg{position: relative;background-image: url(http://ys9958.com/public/upload/public/loading.gif);background-repeat: no-repeat;background-position: center center;background-size: 40rpx auto;}
+.prescrip .del{display: block;position: absolute;top: 2rpx;right: 2rpx;background: #4c4c4c;color: #fff;width: 44rpx;height: 44rpx;line-height: 44rpx;text-align: center;font-size: 36rpx;}
+.prescrip .del::after{font-family: "iconfont";content: "\e646";}
+
+.up::before,.upload::before{display: block;font-family: "iconfont";}
+.up{text-align: center;font-size: 24rpx;background: #f9f9f9;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.up::before{content: "\e6d9";font-size: 46rpx;color: #a1a5a5;}
+.upload{text-align: center;border-bottom: 2rpx solid #f0f0f0;padding-bottom: 60rpx;padding-top: 20rpx;}
+.upload::before{content: "\e77f";font-size: 92rpx;}
+
+.doctor-item{margin-top: 42rpx;}
+
+.btn{position: absolute;bottom: 42rpx;left: 42rpx;right: 42rpx;}
+
+.notice{text-align: center;background: #fff;color: #666;line-height: 40rpx;padding: 24rpx 24rpx 44rpx;overflow: hidden;position: fixed;bottom: 0;left: 0;right: 0;}
+.notice .tt{position: relative;width: 480rpx;margin: 24rpx auto;font-size: 30rpx;color: #333;}
+.notice .tt::before,.notice .tt::after{display: block;content: '';height: 2rpx;width: 20%;background: #333;position: absolute;top: 50%;margin-top: -1rpx;left: 5%;}
+.notice .tt::after{right: 5%;left: auto;}
+.notice text{display: block;width: 480rpx;margin: 0 auto;}

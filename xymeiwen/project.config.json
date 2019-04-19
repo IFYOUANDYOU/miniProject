@@ -1,0 +1,69 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wxd132e533a7b03a1b",
+	"projectname": "%E9%80%8D%E9%81%A5%E7%BE%8E%E6%96%87",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "分享",
+					"pathName": "pages/info/info",
+					"query": "id=34&share=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "模板",
+					"pathName": "pages/info/info",
+					"query": "id=32",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "公众号",
+					"pathName": "pages/webview/webview",
+					"query": "url=www.baidu.com",
+					"scene": null
+				}
+			]
+		}
+	}
+}

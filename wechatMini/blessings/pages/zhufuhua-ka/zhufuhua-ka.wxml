@@ -1,0 +1,35 @@
+<!--pages/zhufuhua-ka/zhufuhua-ka.wxml-->
+<view class='content'>
+  <image class='con-bg' src='../image/zhufuhua-txt.png'></image>
+  <view class='detail'>
+    <view class='user-img'>
+      <image src='../image/mine-tixian.png'></image>
+    </view>
+    <view class='to'>
+      <view class='todo'>TO <text>YOU</text>:</view>
+    </view>
+    <view class='do-txt'>生命无须过百岁，健康就行。朋友无需有多少，有你就行。好朋友祝你新年快乐！</view>
+    <view class='mess'>
+      <view class='name'>MY NAME</view>  
+      <view class='time'>2018年1月16日</view>
+    </view>
+  </view>
+</view>
+<view class='btn'>
+  <navigator url='' class='f-btn'>发送祝福</navigator>
+</view>
+
+<view class='window'>
+    <image class='win-bg' src='../image/zhufuhua-tbg.png'></image>
+    <view class='win-con'>
+      <view class='win-top'>发给</view>
+      <view class='btn1'>
+        <image src='../image/zhufuhua-txt1.png'></image>
+        <view class='txt'>微信好友</view>
+      </view>
+       <view class='btn2'>
+        <image src='../image/zhufuhua-txt2.png'></image>
+        <view class='txt'>朋友圈</view>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/new_page/new_page",
+    "pages/home_swiper/home_swiper",
+    "pages/fl-say/fl-say",
+    "pages/slider/slider",
+    "pages/ready/ready",
+    "pages/sign_ok/sign_ok",
+    "pages/rank/rank",
+    "pages/select/select",
+    "pages/ready2/ready2",
+    "pages/ready3/ready3",
+    "pages/my_detail/my_detail",
+    "pages/my_inform/my_inform",
+    "pages/my/my",
+    "pages/a_new_haibao/a_new_haibao",
+    "pages/pinglun/pinglun",
+    "pages/slider_touch/slider_touch",
+    "pages/say/say",
+    "pages/logs/logs",
+    "pages/addsuiji/addsuiji",
+    "pages/my_project/my_project",
+    "pages/fl_swiper/fl_swiper",
+    "pages/my_collect/my_collect"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "心情语录",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#54CE95",
+    "borderStyle": "#b3b3b3",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "images/icon/icon_active.png",
+        "iconPath": "images/icon/icon_mr.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/icon/icon_suijiact.png",
+        "iconPath": "images/icon/icon_sjmr.png",
+        "pagePath": "pages/addsuiji/addsuiji",
+        "text": "随机"
+      },
+      {
+        "selectedIconPath": "images/add/on_rank.png",
+        "iconPath": "images/add/rank.png",
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜"
+      },
+      {
+        "selectedIconPath": "images/icon/icon_active2.png",
+        "iconPath": "images/icon/icon_mr2.png",
+        "pagePath": "pages/fl-say/fl-say",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/icon/icon_active1.png",
+        "iconPath": "images/icon/icon_mr1.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

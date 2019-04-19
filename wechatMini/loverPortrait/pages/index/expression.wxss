@@ -1,0 +1,95 @@
+/* pages/index/expression.wxss */
+
+.hot_search{
+  width: 100%;
+  margin-top: 24rpx;
+}
+
+.hot_top{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: RGBA(73, 73, 73, 1);
+  font-size: 39rpx;
+}
+.hot_img{
+  width: 58rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.label{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18rpx 0 18rpx 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.label_txt{
+  height: 40rpx;
+  box-sizing: border-box;
+  line-height: 30rpx;
+  padding: 6rpx 24rpx;
+  background: RGBA(245, 245, 245, 1);
+  color: RGBA(172, 172, 172, 1);
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.margin{
+  margin-right: 16rpx;
+}
+
+
+
+.selcetion{
+  width: 100%;
+  margin-top: 18rpx;
+}
+.selection_top{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: RGBA(73, 73, 73, 1);
+  font-size: 39rpx;
+}
+.selection_top_img{
+  width: 58rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.selection_box{
+  width: 100%;
+  margin-top: 26rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img_box{
+  width: 226rpx;
+  height: 226rpx;
+  text-align: center;
+  line-height: 226rpx;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12rpx;
+}
+.margin{
+  margin-right: 12rpx;
+}
+.selection_img{
+  width: 100%;
+  height: 100%;
+}
+.more{
+  margin-left: 400rpx;
+  font-size: 30rpx;
+}

@@ -1,0 +1,31 @@
+page{
+  position: relative;z-index: 0
+}
+.ready3Img{
+  display: block;width: 700rpx;height: 880rpx;margin: 0 auto;margin-top: 18rpx;margin-bottom: 18rpx
+}
+.flex_{
+  width: 700rpx;display: flex;align-items: center;justify-content: space-around;margin: 0 auto;
+}
+.shareBtn{
+  width: 280rpx;height: 86rpx;border-radius: 52rpx;text-align: center;line-height: 86rpx;background: #247974;color: #fff;font-size: 36rpx
+}
+.prewImg{
+  width: 280rpx;height: 86rpx;font-size: 36rpx;text-align: center;line-height: 86rpx;background: #ffb400;border-radius: 52rpx;color: #fff;
+}
+
+.tanchukuangBox{
+  position: absolute;z-index: 999;width: 100%;height: 100%;top: 0;background: rgba(0, 0, 0, .7);display: flex;align-items: center;justify-content: center
+}
+.tanchukuang{
+  width: 650rpx;height: 850rpx;background: #fff
+}
+.tanchukuangTex1{
+  color: #000;font-size: 34rpx;width: 100%;text-align: center;margin: 20rpx 0 10rpx 0;font-weight: bold
+}
+.tanchukuangTex2{
+  color: #000;font-size: 34rpx;width: 100%;text-align: center;font-weight: bold;margin-top: 10rpx
+}
+.tanchukuangimg{
+  width: 550rpx;display: inline-block;height: 600rpx;margin-left: 50rpx
+}

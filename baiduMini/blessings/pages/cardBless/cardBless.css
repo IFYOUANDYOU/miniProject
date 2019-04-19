@@ -1,0 +1,155 @@
+/* pages/zhufuhua/zhufuhua.wxss */
+page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	background: #f7f4ed;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.bg .page-bg{
+	width: 100%;
+	height: 100%;
+  display: block;
+}
+.nr{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+}
+.input{
+	width: 636rpx;
+	height: 82rpx;
+	margin: 0 auto;
+	margin-top: 53rpx;
+	border: 2rpx solid #e5ab16;
+	border-radius: 6rpx;
+	text-align: center;
+	font-size: 36rpx;
+	color: #333;
+}
+.input-pl{
+	color: #aaaaaa;
+}
+.your{
+	overflow: hidden;
+	margin-top: 25rpx;
+}
+.your .name{
+	text-align: center;
+	font-size: 40rpx;
+	color: #aaaaaa;
+}
+.your .content{
+	width: 638rpx;
+	margin: 0 auto;
+	margin-top: 25rpx;
+	overflow: hidden;
+}
+.your .content .box{
+	width: 672rpx;
+	height: auto;
+}
+.your .content .box .your-list{
+	width: 128rpx;
+	float: left;
+	margin-right: 40rpx;
+	overflow: hidden;
+	margin-bottom: 25rpx;
+}
+.your .content .box .your-list .heade-img{
+	width: 128rpx;
+	height: 128rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.your .content .box .your-list .heade-cur{
+  	width: 128rpx;
+	height: 128rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #eab11f !important;
+}
+.your .content .box .your-list .heade-img image{
+	width: 120rpx;
+	height: 120rpx;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10rpx;
+}
+.your .content .box .your-list .heade-cur image{
+  	width: 120rpx;
+	height: 120rpx;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10rpx;
+}
+.your .content .box .your-list .tittle{
+	text-align: center;
+	font-size: 36rpx;
+	color: #aaaaaa;
+	margin-top: 20rpx;
+}
+.sex{
+	overflow: hidden;
+}
+.sex .name{
+	text-align: center;
+	font-size: 40rpx;
+	color: #aaaaaa;
+}
+.sex .content{
+	margin-left: 224rpx;
+	margin-top: 20rpx;
+}
+.sex .content .sex-list{
+	width: 128rpx;
+	float: left;
+	margin-right: 40rpx;
+	overflow: hidden;
+}
+.sex .content .sex-list .heade-img{
+	width: 128rpx;
+	height: 128rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.sex .content .sex-list .heade-cur{
+  	width: 128rpx;
+	height: 128rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #eab11f !important;
+}
+.sex .content .sex-list .heade-img image,.sex .content .sex-list .heade-cur image{
+	width: 120rpx;
+	height: 120rpx;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10rpx;
+}
+.sex .content .sex-list .tittle{
+	text-align: center;
+	font-size: 36rpx;
+	color: #aaaaaa;
+	margin-top: 20rpx;
+}
+.btn{
+	text-align: center;
+	line-height: 96rpx;
+	width: 400rpx !important;
+	height: 96rpx !important;
+	margin: 0 auto;
+	margin-top: 20rpx;
+	border-radius: 6rpx;
+	font-size: 44rpx;
+	color: #fff;
+	background-color: #eab11f !important;
+}

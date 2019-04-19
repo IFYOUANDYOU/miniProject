@@ -1,0 +1,101 @@
+/* pages/zhufuhongbao-shou/zhufuhongbao-shou.wxss */
+page{
+	background: #f7f4ed;
+}
+.top{
+	width: 750rpx;
+	height: 655rpx;
+	overflow: hidden;
+	position: relative;
+}
+.top .top-bg{
+	width: 750rpx;
+	height: 655rpx;
+}
+.top .top-content{width: 750rpx;
+	height: 655rpx;
+	position: absolute;
+	left: 0;top: 0;
+	overflow: hidden;
+}
+.top .top-content .mess{
+	width: 750rpx;
+	margin: 0 auto;
+	margin-top: 40rpx;
+}
+.top .top-content .mess .head-img{
+	width: 174rpx;
+	height: 174rpx;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: #000;
+	overflow: hidden;
+}
+.top .top-content .mess .head-img image{
+	width: 150rpx;
+	height: 150rpx;
+	margin: 0 auto;
+	margin-top: 12rpx;
+	border-radius: 50%;
+	display: block;
+}
+.top .top-content .mess .user-name{
+	font-size: 32rpx;
+	color: #eab11f;
+	text-align: center;
+	margin-top: 20rpx;
+}
+.top .top-content .detail{
+	width: 743rpx;
+	height: 175rpx;
+	margin: 0 auto;
+	margin-top: 40rpx;
+	position: relative;
+}
+.top .top-content .detail .de-bg{
+	width: 743rpx;
+	height: 175rpx;
+}
+.top .top-content .detail .text{
+	width: 470rpx;
+	height: 135rpx;
+	position: absolute;
+	left: 122rpx;top: 20rpx;
+	display: none;
+}
+.top .top-content .detail .text .txt{
+	font-size: 30rpx;
+	color: #db2727;
+}
+.top .top-content .detail .audio{
+	position: absolute;
+	left: 213rpx;top: 60rpx;
+}
+.top .top-content .detail .audio image{
+	width: 53rpx;
+	height: 52rpx;
+	float: left;
+	margin-top: 3rpx;
+}
+.top .top-content .detail .audio .txt{
+	float: left;
+	margin-left: 10rpx;
+	font-size: 50rpx;
+	color: #db2727;
+}
+.ma{
+	width: 394rpx;
+	margin: 0 auto;
+	margin-top: 25rpx;
+}
+.ma image{
+	width: 394rpx;
+	height: 394rpx;
+	display: block;
+}
+.ma .ti-txt{
+	text-align: center;
+	font-size: 34rpx;
+	color: #282828;
+	margin-top: 20rpx;
+}

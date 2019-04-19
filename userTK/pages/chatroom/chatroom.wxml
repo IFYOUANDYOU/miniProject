@@ -1,0 +1,52 @@
+<import src="../template/commonlist.wxml" />
+<block wx:if="{{statu==null}}">
+  <template is="loading" data="{{text: '正在加载......'}}" />
+</block>
+<view class="container">
+  <scroll-view class="msgSV" scroll-y="true" scroll-into-view="red" scroll-top="{{stop}}">
+    <block wx:for="{{chat}}" wx:key="key">
+      <view wx:if="{{item.news_text}}" class="chat-item {{item.type==1?'from':'to'}}" data-id="{{item.duser_id}}">
+        <view class="time">
+          <text>{{item.creation_time}}</text>
+        </view>
+        <image class="portrait" mode="aspectFill" src="{{item.userImg?item.userImg:'http://ys9958.com/public/upload/public/default.png'}}"></image>
+        <view class="content">
+          <text class="con">{{item.news_text}}</text>
+          <navigator class="link" wx:if="{{item.link}}" url="{{item.link}}">
+            {{item.invite}}
+            <text class="go">\n立即前往</text>
+          </navigator>
+        </view>
+      </view>
+    </block>
+    <!-- <view class="chat-item to" data-id="">
+      <view class="time">
+        <text>2018-11-11 11:11:11</text>
+      </view>
+      <image class="portrait" mode="aspectFill" src="http://ys9958.com/public/upload/public/default.png"></image>
+      <view class="content">
+        <view class="con">
+          <image class="thumbnail" src="/img/share.jpg" mode="widthFix" data-url="/img/share.jpg" catchtap="previewImg"></image>
+        </view>
+      </view>
+    </view> -->
+  </scroll-view>
+  <!--from 发送消息-->
+  <form class="input-box" bindsubmit="msgSubmit" style="{{inputMarBot?'bottom: 10px':'0'}}">
+    <!-- <button class="sendImg" type="button" catchtap="getImgs">
+      <image class="icon" mode="aspectFill" src="/img/sficon.png"></image>
+    </button> -->
+    <view class="text">
+      <input class="content" placeholder="在此输入内容..." cursor-spacing="20" name="content" value="{{msg}}"  confirm-type="send" cursor-spacing="20" bindconfirm="msgSubmit" bindfocus="textFocus" bindblur="textBlur"></input>
+    </view>
+    <scroll-view class="scroll-imgs" scroll-left="{{sleft}}" scroll-with-animation="true" scroll-x animation="{{showAnimation}}">
+      <block wx:for="{{upimgs}}" wx:key="key">
+        <view class="upimg" catchtap="sendImg" data-index="{{index}}" data-item="{{item}}"><image class="img" mode="aspectFill" src="{{item}}"></image></view>
+      </block>
+    </scroll-view>
+  </form>
+</view>
+<!--页面加载出错时显示-->
+<block wx:if="{{statu == false}}">
+  <template is="empty" data="{{text:'加载出错，请重试'}}" />
+</block>

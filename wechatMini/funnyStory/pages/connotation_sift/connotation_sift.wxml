@@ -1,0 +1,9 @@
+ 
+ <!--引入公共模版  -->
+<import src="/template/home.wxml"/>
+  <!--推荐  -->
+  <view class='recomment_box'>
+      <block wx:for="{{recomment_list}}" wx:key="{{index}}">
+        <template is="Oscroll" data="{{item}}"></template>
+      </block>
+  </view>

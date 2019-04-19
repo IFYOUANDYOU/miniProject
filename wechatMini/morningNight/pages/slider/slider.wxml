@@ -1,0 +1,50 @@
+<view class="home-container">
+    <block wx:for="{{newsdata}}" wx:key="l">
+      <view style="border-bottom: 0.5rem solid #F5F8F7">
+        <view class="home-subbox" data-id="{{item.id}}" bindtap="click_skip">
+            <view class="home-imgbox" >
+                <image style="height:{{item.imageheight}}px;" mode='widthFix'  bind class="home-img" src="{{item.mood_img}}"></image>
+            </view>
+            <view class="home-fz">
+                {{item.mood_word}}
+            </view>
+
+<!--分享评论点赞收藏-->
+           <view class="yl_xzdzsc">
+
+              <!--<button class="yl_xzdzsc_share fl" open-type="share" >
+                 <image class="yl_xzdzsc_img_fx" src="/images/icon/icon_fx.png"></image>
+              </button>    -->
+              
+            <!--评论-->
+            <view class="hhx_home_flex" catchtap="click_pl" data-index="{{index}}" id="{{item.id}}">
+                <view class="yl_xzdzsc_dz fl hhx_img_box1">
+                    <image class="yl_xzdzsc_img hhx_img1" src="/images/icon/icon_pl.png"></image>        
+                </view>
+                <text class="hhx_mr" wx:if="{{item.comment == null}}">0</text>       
+                <text class="hhx_mr" wx:if="{{item.comment > -1}}">{{item.comment}}</text>
+            </view>
+            <!--收藏-->
+              <view catchtap="click_shouchang" data-id="{{item.id}}" data-is_collect="{{item.is_collect}}" data-index="{{index}}" class="hhx_home_flex fl" style="width:44rpx;height:42rpx;margin-right:50rpx">
+                <image class="yl_xzdzsc_sc" src="{{item.is_collect == 2?'/images/icon/shoucang2.png':'/images/icon/shoucang.png'}}"></image>
+                <text></text>
+              </view>
+            <!--点赞-->
+            <view class="hhx_home_flex" catchtap="click_dianzan" data-index="{{index}}" data-is_like="{{item.is_like}}" data-id="{{item.id}}">
+                <view class="yl_xzdzsc_dz fl hhx_img_box2">
+                    <image class="yl_xzdzsc_img hhx_img2" src="{{item.is_like == 1?'/images/icon/icon_dz.png':'/images/icon/icon_dz2.png'}}"></image>  
+                </view>
+                <text class="hhx_mr" wx:if="{{item.good == null}}">0</text>
+                <text class="hhx_mr" wx:if="{{item.good > -1}}">{{item.good}}</text>
+            </view>
+              
+              <!--下载-->
+              <view class="hhx_home_flex fl" style="width:44rpx;height:42rpx">
+                <image  bindtap="" class="yl_xzdzsc_sc2" src="/images/download.png"></image>
+                <text></text>
+              </view>
+            </view>
+        </view>  
+       </view>   
+    </block>
+</view>

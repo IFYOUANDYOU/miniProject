@@ -1,0 +1,16 @@
+<view class='page'>
+  <!--顶部搜索框  -->
+    <view class='top_search'>
+        <input confirm-type='search' focus='{{true}}' bindconfirm='search' placeholder='请输入关键词，搜索头像或表情' placeholder-class='place'></input>
+        <image class='search_img' src='/img/icon/search.png'></image>
+    </view>
+  <!--热门搜索词  -->
+    <view class='hot_txt'>
+      <view>热门搜索</view>
+      <view class='txt_box'>
+        <block wx:for="{{list2}}" wx:key="{{index}}">
+          <view catchtap='txt_search' data-name="{{item.name}}" class='txt'>{{item.name}}</view>
+        </block>
+      </view>
+    </view>
+</view>

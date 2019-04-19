@@ -1,0 +1,59 @@
+
+<view class='container'>
+    <canvas canvas-id="my_img" style='width:{{c_width}}px;height:{{c_height}}px'>
+
+    </canvas>
+
+  <view class='show_pintu'>
+      <view class='head_box'>
+        <image class='show_head' mode='widthFix' src='{{Davatar}}'></image>
+      </view>
+      
+      <image class='show_guajian' style='left:{{left}};top:{{top}}' src='{{now_img}}'></image>
+    </view>
+    <view class='choose_img' bindtap='choose_img'>更换照片</view>
+    <view  class='img_list_box'>
+        <block wx:for="{{img_list}}" wx:key="{{index}}">
+          <view wx:if="{{index<30?true:false}}" style='border:{{now_index==index?"3rpx solid #FF7891":""}}' catchtap='select_img' data-coordinate="{{item.coordinate}}" data-img="{{item.img}}" data-id="{{index}}" class='img_box'>
+            <image class='box_img' src='{{item.img}}'></image>
+          </view>
+        </block>
+    </view>
+    
+    <!--分享  -->
+    <view class='share_box'>
+      <form class='share_form'>
+        <button class='share_btn' open-type='share'>
+          分享到群
+        </button>
+      </form>
+      <form class='save_form'>
+        <button class='save_btn' bindtap='create_img'>
+          保存到手机
+        </button>
+      </form>
+    </view>
+
+    <view class='share_bottom'>
+      <swiper indicator-dots="{{true}}" indicator-color="RGBA(255, 163, 180, 1)" indicator-active-color="RGBA(255, 120, 145, 1)" autoplay="{{true}}" circular="{{true}}">
+        <block wx:for="{{banner_list}}" wx:key="{{index}}">
+          <swiper-item bindtap='go_app' data-appid = "{{item.link}}">
+                <image class='share_img' src='{{item.banner}}'></image>         
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+      <!-- <image style='width:240px;height:240px;' src='{{ooiimmgg}}' bindload="get_img"></image>   -->
+</view>
+
+
+ <!--客服按钮  -->
+  <form report-submit='{{true}}' bindsubmit='send_formID'>
+      <button hover-class='none' class='server' form-type='submit' open-type='contact'>
+        <image class='server_img' src='/img/icon/server.png'></image>
+        <view class='txt'>
+          <text style='font-size:28rpx'>点这里</text>
+          <view>开启最IN模式</view>
+        </view>
+      </button>
+  </form>

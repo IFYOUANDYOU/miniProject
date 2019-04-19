@@ -1,0 +1,10 @@
+.title{font-size: 58rpx;text-align: center;padding: 42rpx 24rpx;}
+.title .tg{display: block;color: #3081f2;font-size: 30rpx;}
+
+.cards{transform: translateX(-100%);}
+.card{position: relative;padding: 0 20rpx;}
+.card::before{content: "";display: block;position: absolute;top: 50%;left: 0;background: url(http://ys9958.com/public/upload/dt/tag1.png) no-repeat;background-size: 85rpx auto;width: 85rpx;height: 43rpx;}
+.card .item{margin: 30rpx 20rpx;background: #fff;box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.2);padding: 30rpx 20rpx 30rpx 50rpx;border-radius: 10rpx;overflow: hidden;display: flex;align-items: center;}
+.card .img{width: 220rpx;height: 160rpx;border-radius: 10rpx;flex-shrink: 0;}
+.card .info{margin-left: 20rpx;line-height: 48rpx;color: #666;}
+.card .tt{font-size: 32rpx;color: #333;margin-bottom: 12rpx;}
